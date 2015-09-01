@@ -1,0 +1,1076 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"p",
+				"person"
+			],
+			[
+				"s",
+				"stick"
+			],
+			[
+				"get",
+				"getName"
+			],
+			[
+				"co",
+				"count"
+			],
+			[
+				"vis",
+				"visibility"
+			],
+			[
+				"bora",
+				"border-bottom-right-radius"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"table-",
+				"table-cell"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"fon",
+				"font"
+			],
+			[
+				"bo",
+				"box-shadow"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"border-to",
+				"border-top"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"to",
+				"top"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"bagr",
+				"background"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"bg-ba",
+				"bg-banner-bottom.png	w:34 h:8"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"border-bottom",
+				"border-bottom"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"h",
+				"h2	Tag"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"i",
+				"inline-block"
+			],
+			[
+				"t",
+				"textarea	Tag"
+			],
+			[
+				"o",
+				"option	Tag"
+			],
+			[
+				"f",
+				"form	Tag"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"bot",
+				"bottom"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"r",
+				"relative"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"bg",
+				"bg-span-hov-right.png	w:7 h:30"
+			],
+			[
+				"b",
+				"bg-span-hov-center.png	w:1 h:30"
+			],
+			[
+				"ta",
+				"table-cell"
+			],
+			[
+				"background",
+				"background-position"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"th",
+				"thead	Tag"
+			],
+			[
+				"backgr",
+				"background"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"filter",
+				"filter_var"
+			],
+			[
+				"ls",
+				"list-style"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"load",
+				"loadedData"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"file",
+				"file_arr"
+			],
+			[
+				"echo",
+				"echo	echo \"…\""
+			],
+			[
+				"fge",
+				"fgetcsv"
+			],
+			[
+				"bacr",
+				"background"
+			],
+			[
+				"inl",
+				"inline"
+			],
+			[
+				"sess",
+				"session_start"
+			],
+			[
+				"unse",
+				"unset"
+			],
+			[
+				"_",
+				"_SESSION"
+			],
+			[
+				"SESSION",
+				"session_start"
+			],
+			[
+				"e",
+				"echo	echo \"…\""
+			],
+			[
+				"er",
+				"errno"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"Ex",
+				"ExceptionClass"
+			],
+			[
+				"Ca",
+				"CanSay"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"ad",
+				"addClass"
+			],
+			[
+				"prot",
+				"prototype"
+			],
+			[
+				"background-",
+				"background-position"
+			],
+			[
+				"text-",
+				"text-transform"
+			],
+			[
+				"repeat",
+				"repeat-x"
+			],
+			[
+				"lis",
+				"list	list-style-type"
+			],
+			[
+				"backg",
+				"background"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"mi",
+				"min-height"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"hi",
+				"height"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"me",
+				"META	Tag"
+			],
+			[
+				"title",
+				"TITLE	Tag"
+			],
+			[
+				"out",
+				"outline"
+			],
+			[
+				"select",
+				"select"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"link",
+				"link-sidebar"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"ul",
+				"ul"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"ho",
+				"hover"
+			],
+			[
+				"list-s",
+				"list-style"
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"borde",
+				"border-bottom-style"
+			],
+			[
+				"lef",
+				"left"
+			],
+			[
+				"border-top",
+				"border-top-left-radius"
+			],
+			[
+				"m",
+				"multiArr"
+			],
+			[
+				"sor",
+				"sortInsert"
+			],
+			[
+				"arr",
+				"arr"
+			],
+			[
+				"so",
+				"sortingArray1"
+			],
+			[
+				"si",
+				"simpleList"
+			],
+			[
+				"ite",
+				"iterLength"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"n",
+				"no-repeat"
+			],
+			[
+				"user",
+				"userMessage"
+			],
+			[
+				"re",
+				"result"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Z/home/test1.ru/www/hunter/index.html",
+			"settings":
+			{
+				"buffer_size": 540,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/Z/home/test1.ru/www/hunter/header.html",
+			"settings":
+			{
+				"buffer_size": 757,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/Z/home/test1.ru/www/hunter/products/products.json",
+			"settings":
+			{
+				"buffer_size": 234,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/Z/home/test1.ru/www/hunter/js/controllers.js",
+			"settings":
+			{
+				"buffer_size": 134,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "style.less",
+			"settings":
+			{
+				"buffer_size": 3399,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "variables.less",
+			"settings":
+			{
+				"buffer_size": 19357,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "mixins.less",
+			"settings":
+			{
+				"buffer_size": 6735,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 219.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 154.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Z/home/test1.ru/www/hunter/css/mixins.less",
+		"/Z/home/test1.ru/www/hunter/css/icons.less",
+		"/Z/home/test1.ru/www/hunter/css/variables.less",
+		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.528/font-awesome-4.4.0/less/variables.less",
+		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.753/font-awesome-4.4.0/less/font-awesome.less",
+		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.534/font-awesome-4.4.0/less/mixins.less",
+		"/C/Users/spalah/AppData/Local/Temp/Rar$DIa0.573/font-awesome.css",
+		"/Z/home/test1.ru/www/hunter/js/controller.js",
+		"/Z/home/test1.ru/www/hunter/js/items.json",
+		"/E/Hunter/css/variables.less",
+		"/E/Hunter/css/mixins.less",
+		"/E/Hunter/css/style.less",
+		"/E/Hunter/header.html",
+		"/E/Hunter/index.html",
+		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.388/fonts.css",
+		"/C/Users/spalah/AppData/Local/Temp/Rar$DIa0.601/fonts.css",
+		"/E/Hunter/css/reset.css",
+		"/C/Users/spalah/AppData/Roaming/Sublime Text 2/Packages/User/GoldenRatio.sublime-settings",
+		"/Z/home/test1.ru/www/lesson5/index.html",
+		"/E/programma/project/applephone/js/jquery.main.js",
+		"/E/programma/project/applephone1/js/jquery.gallery.js",
+		"/Z/home/test1.ru/www/lesson5/js/controllers.js",
+		"/Z/home/test1.ru/www/lesson5/css/style.css",
+		"/C/Users/spalah/angular-phonecat/app/index.html",
+		"/C/Users/spalah/angular-phonecat/test/e2e/scenarios.js",
+		"/C/Users/spalah/angular-phonecat/test/unit/controllersSpec.js",
+		"/C/Users/spalah/angular-phonecat/test/karma.conf.js",
+		"/C/Users/spalah/angular-phonecat/test/protractor-conf.js",
+		"/C/Users/spalah/AppData/Roaming/Sublime Text 2/Packages/User/temp.sublime-snippet",
+		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.844/svgdefs.svg",
+		"/C/Users/spalah/Downloads/search109.svg",
+		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.611/style.css",
+		"/C/Users/spalah/Desktop/form/index.html",
+		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.242/SVG/office.svg",
+		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.330/SVG/newspaper.svg",
+		"/C/Users/spalah/Desktop/form/css/all.css",
+		"/C/Users/spalah/AppData/Roaming/Sublime Text 2/Packages/GoldenRatio/GoldenRatio.sublime-settings",
+		"/Z/home/test1.ru/www/lesson3/css/jquery.jscrollpane.css",
+		"/Z/home/test1.ru/www/lesson3/js/main.js",
+		"/Z/home/test1.ru/www/lesson3/css/style.css",
+		"/Z/home/test1.ru/www/lesson3/index.html",
+		"/Z/home/test1.ru/www/lesson3/js/jquery.jscrollpane.min.js",
+		"/C/Users/spalah/Desktop/lesson3/index.html",
+		"/C/Users/spalah/Desktop/lesson3/css/style.css",
+		"/C/Users/spalah/Desktop/lesson4/index.html",
+		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.845/hw5/css/style.css",
+		"/C/Users/spalah/Desktop/Новая папка/css/style.css",
+		"/C/Users/spalah/Desktop/Новая папка/js/main.js",
+		"/C/Users/spalah/Desktop/Новая папка/index.html",
+		"/E/programma/html5/css/all.css",
+		"/C/Users/spalah/Desktop/index.html",
+		"/E/programma/css3/css/all.css",
+		"/E/programma/1/examples/XHTML_1_0_Transitional.html",
+		"/C/Users/Public/Documents/My script",
+		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.194/HomeWork5-Краснобай Елена/index.html",
+		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.108/HomeWork5-Краснобай Елена/js/main.js",
+		"/C/Users/spalah/AppData/Local/Temp/Rar$DIa0.840/styles.css",
+		"/C/Users/spalah/AppData/Local/Temp/Rar$DIa0.942/styles.css",
+		"/E/!!template/src/scss/template/mixins/_buttons.scss",
+		"/E/!!template/src/scss/template/_forms.scss",
+		"/E/!!template/src/scss/template/_buttons.scss",
+		"/E/!!template/src/scss/all.scss",
+		"/E/!!template/dist/forma 1.html",
+		"/E/!!template/src/scss/_template.scss",
+		"/E/!!template/src/scss/template/_variables.scss",
+		"/E/!!template/src/scss/template/mixins/_forms.scss",
+		"/E/18/css/all.css",
+		"/E/17/Резина/css/all.css",
+		"/E/17/Резина/index.html",
+		"/E/project_res/marcup/index.html",
+		"/E/lesson_31_07/markup/index.html",
+		"/E/project_res/marcup/css/all.css",
+		"/E/lesson_31_07/markup/css/all.css",
+		"/E/index.html",
+		"/C/Users/spalah/Desktop/burbank/index.html",
+		"/C/Users/spalah/Desktop/burbank/css/all.css",
+		"/C/Users/spalah/Desktop/burbank/js/jquery.main.js",
+		"/C/Users/spalah/Desktop/burbank/css/748.css",
+		"/C/Users/spalah/Desktop/burbank/css/748",
+		"/Z/home/localhost/www/oskar_php_project/27_07_15.php",
+		"/Z/denwer/www/oskar_php_project/27_07_15.php",
+		"/Z/denwer/www/oskar_php_project/index.php",
+		"/Z/denwer/www/oskar_php_project/конспект.txt",
+		"/E/Html Css S-label/Study-s-label/maket_5_casino/index.html",
+		"/E/Html Css S-label/Study-s-label/maket_5_casino/css/all.css",
+		"/E/for today 25.06/html5/index.html",
+		"/Z/123/css/all.css",
+		"/Z/123/index.html",
+		"/Z/123/js/hscrollarea.js",
+		"/C/Users/spalah/AppData/Local/Temp/Rar$DIa0.454/css.css",
+		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.034/examples/XHTML_1_0_Transitional.html",
+		"/C/Users/spalah/Desktop/lesson 19/css/all.css",
+		"/C/Users/spalah/Desktop/lesson 19/index.html",
+		"/C/Users/spalah/Desktop/lesson 19/js/jcarousel.responsive.js",
+		"/E/lesson 19/2 галерея 19 урок/css/all.css",
+		"/E/lesson 19/2 галерея 19 урок/js/jcarousel.responsive.js",
+		"/C/Users/spalah/Desktop/lesson 19/js/main.js",
+		"/C/Users/spalah/Desktop/lesson 19/js/jquery.js",
+		"/C/Users/spalah/Desktop/lesson 19/js/jquery.sidr.min.js",
+		"/E/12/Новая папка/index.html",
+		"/E/12/Новая папка/css/all.css",
+		"/C/Users/spalah/Desktop/ДЗ lesson3/css/style.css",
+		"/C/Users/spalah/Desktop/ДЗ lesson3/index.html",
+		"/E/Lessons/Lesson19/Manual/jsor-jcarousel-60e2338/examples/responsive/index.html",
+		"/E/Lessons/Lesson19/Manual/jsor-jcarousel-60e2338/examples/responsive/jcarousel.responsive.css",
+		"/E/Lessons/Lesson18/Lesson/index.html",
+		"/E/Lessons/Lesson19/Lesson/css/all.css",
+		"/E/Lessons/Lesson19/Lesson/index.html",
+		"/E/Lessons/Lesson18/Lesson/css/all.css",
+		"/E/Lessons/Lesson19/Manual/jsor-jcarousel-60e2338/examples/responsive/jcarousel.responsive.js",
+		"/C/Users/spalah/Desktop/Урок 7 формы Конерольная/Урок 12/markup/css/all.css",
+		"/C/Users/spalah/Desktop/Урок 7 формы Конерольная/HTML5/markup/css/ie.css",
+		"/C/Users/spalah/Desktop/Урок 7 формы Конерольная/HTML5/markup/css/all.css",
+		"/C/Users/spalah/Desktop/Урок 7 формы Конерольная/Контрольная 9-11/markup/index.html",
+		"/C/Users/spalah/Desktop/Урок 7 формы Конерольная/Урок 12/markup/index.html",
+		"/C/Users/spalah/Desktop/Урок 7 формы Конерольная/HTML5/markup/index.html",
+		"/C/Users/spalah/Desktop/Alona_Bilych_Task03_classwork/index.html",
+		"/C/Users/spalah/Desktop/Alona_Bilych_Task03_classwork/css/all.css",
+		"/E/home_work/home_work_Task_02/css/all.css",
+		"/E/home_work/Alona_Bilych_Task_01/css/all.css",
+		"/E/home_work/Alona_Bilych_Task_01/index.html",
+		"/F/Serjio/index html/index.html.html",
+		"/F/Serjio/index html/css/all.css.css",
+		"/F/Serjio/index html/css/all.css",
+		"/D/project/css/all.css",
+		"/C/Users/spalah/Desktop/progect/css/all.css",
+		"/C/Users/spalah/Desktop/Шубин/SVC/img/2 (1).psd",
+		"/E/HTML CSS/lesson21/fonts/stylesheet.css"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"person",
+			"<div></div>",
+			">\n",
+			"true",
+			"style.css",
+			"twenty_thirteen",
+			"<!",
+			".tab",
+			"tab",
+			"slider",
+			"scr",
+			";\n",
+			"\">\n",
+			";\n",
+			"home",
+			"nav ul li:last-child{\npadding-right:0;\n}",
+			"=\"#\"><",
+			"sprite",
+			";\n",
+			"\" ",
+			">\n",
+			"FF4500",
+			"1345",
+			"sidebar",
+			"tab-info",
+			"accordion",
+			"whit",
+			"show",
+			"spase",
+			"scaleY",
+			"rotate",
+			"id",
+			"Home\n			ipad apps\n			Demonstrations\n			Leopards media\n			Connect us",
+			"100",
+			"activer",
+			"acc",
+			"img",
+			"get",
+			"img[Attribute Style]",
+			"disa"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Z/home/test1.ru/www/hunter/index.html",
+					"settings":
+					{
+						"buffer_size": 540,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								296,
+								296
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Z/home/test1.ru/www/hunter/header.html",
+					"settings":
+					{
+						"buffer_size": 757,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								519,
+								519
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "/Z/home/test1.ru/www/hunter/products/products.json",
+					"settings":
+					{
+						"buffer_size": 234,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								227,
+								227
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Z/home/test1.ru/www/hunter/js/controllers.js",
+					"settings":
+					{
+						"buffer_size": 134,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								134,
+								134
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "style.less",
+					"settings":
+					{
+						"buffer_size": 3399,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2464,
+								2464
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1350.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "variables.less",
+					"settings":
+					{
+						"buffer_size": 19357,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								142,
+								120
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "mixins.less",
+					"settings":
+					{
+						"buffer_size": 6735,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1687,
+								1687
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 468.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.241744284505,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 185.0,
+	"status_bar_visible": true
+}

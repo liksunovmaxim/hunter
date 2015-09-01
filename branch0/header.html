@@ -1,0 +1,30 @@
+<div class="header-wrapper">
+	<a class="logo" href="#">Hunter</a>
+	<div class="header-center">
+		<div class="header-top">
+			<div class="quick-search">
+				<input id="searchform" type="text" placeholder="search">
+				<label class="fa fa-search" for="searchform"></label>
+			</div>
+			<ul class="top-links">
+				<li><a href="#">log in</a></li>
+				<li><a href="#">register</a></li>
+			</ul>
+			<ul class="lang-cur-switch">
+				<li>
+					<a href="#">language</a>
+				</li>
+				<li>
+					<a href="#">currency</a>
+				</li>
+			</ul>
+		</div>
+		<ul class="nav" ng-controller="NavCtrl">
+			<li ng-repeat="item in items"><a href="#">{{item.category}}</a></li>
+		</ul>
+	</div>
+	<div class="cart-holder">
+		<a class="fa fa-shopping-cart" href="#"></a>
+		<span>$250</span>
+	</div>
+</div>

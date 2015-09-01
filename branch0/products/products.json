@@ -1,0 +1,13 @@
+{
+	"products":[
+	    {"category":"rifles",
+	     "image":"images/homepage-banner.jpg"},
+	    {"category":"handguns",
+	   	 "image":"images/hunting-wallpaper.jpg"},
+	    {"category":"bullets"},
+	    {"category":"sights"},
+	    {"category":"holsters and cases"},
+	    {"category":"crossbows"},
+	    {"category":"pistols"}
+	]
+}
