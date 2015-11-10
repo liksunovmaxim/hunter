@@ -13,25 +13,884 @@
 </head>
 <body>
 	<div class="wrapper">
-		<header ng-include=" 'header.html' "></header>
-		<main>
+		<div class="header-holder" ng-include=" 'header.html' "></div>
+		<div class="main">
 			<div ng-controller="NavCtrl" class="homepage-slider">
 				<ul>
 					<li style="background: url('images/homepage-banner.jpg') no-repeat 50% 50%; background-size: cover;">
-						
+						<div class="category-description-holder">
+							<div class="category-description-wrapper">
+								<div class="category-description">
+									<div class="title">
+										<span>Lightweight suits for active hunting</span>
+									</div>
+									<div class="price">
+										<span>$1215</span>
+									</div>
+									<div class="look-more-holder">
+										<a class href="#">Look</a>
+									</div>
+								</div>
+							</div>
+						</div>
 					</li>
 					<li style="background: url(images/hunting-wallpaper.jpg) no-repeat 50% 50%; background-size: cover;">
+						<div class="category-description-holder">
+							<div class="category-description-wrapper">
+								<div class="category-description">
+									<div class="title">
+										<span>Sniper rifles</span>
+									</div>
+									<div class="price">
+										<span>$7615</span>
+									</div>
+									<div class="look-more-holder">
+										<a class href="#">Look</a>
+									</div>
+								</div>
+							</div>
+						</div>
 					</li>
 				</ul>
 				<div class="welcome-msg-holder">
 					<div class="welcome-msg-container">
-						<div class="welcome-msg-holder">
-							
+						<h1><span>Welcome to hunter</span></h1>
+						<div class="description">
+							 Active hunters worldwide give their feedback on HUNTER products and comes up with ideas for new details and functionalities.
 						</div>
 					</div>
 				</div>
 			</div>
-		</main>
+			<div class="content">
+				<div class="content-holder">
+					<div class="collection-block">
+						<h2 class="slow-show" data-timeline="100">
+							<span>Collezione autunno</span>
+						</h2>
+						<div class="collection">
+							<div class="left-block slow-show"  data-timeline="100">
+								<img src="images/collection-1.jpg" alt="">
+								<div class="title">
+									One hit, one shot, one victory
+								</div>
+								<div class="description">
+									Established in 1928, our history and heritage are that of a world-class hunting
+								</div>
+							</div>
+							<div class="right-block slow-show"  data-timeline="100">
+								<div class="first-block">
+									<div class="image-holder">
+										<img src="images/collection-2.jpg" alt="">
+										<div class="text-holder">
+											<div class="text-wrapper">
+												<div class="text-container">
+													Collezione
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="second-block">
+									<div class="top">
+										<div class="image-holder">
+											<div class="image-container">
+												<div class="image">
+													<img src="images/collection-3.jpg" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="bottom">
+										<div class="image-holder">
+											<div class="image-container">
+												<div class="image">
+													<img src="images/gloves.png" height="172" width="163" alt="">
+												</div>
+											</div>
+										</div>
+									</div>	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="products-block slow-show" data-timeline="100">
+					<div class="products-container">
+						<ul class="tabs-heading">
+						    <li><a class="active" href="#tabs-1">Desktop</a></li>
+						    <li><a href="#tabs-2">Computer part</a></li>
+						    <li><a href="#tabs-3">Electronics</a></li>
+						   	<li><a href="#tabs-4">Apparel</a></li>
+						    <li><a href="#tabs-5">Furniture</a></li>
+						</ul>
+						<div class="tabs-wrapper">
+							<div ng-include=" 'tabs/tab-1.html' " class="tabs active" id="tabs-1"></div>
+							<div ng-include=" 'tabs/tab-2.html' " class="tabs" id="tabs-2"></div>
+							<div ng-include=" 'tabs/tab-3.html' " class="tabs" id="tabs-3"></div>
+							<div ng-include=" 'tabs/tab-4.html' " class="tabs" id="tabs-4"></div>
+							<div ng-include=" 'tabs/tab-5.html' " class="tabs" id="tabs-5"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="blog-block-holder">
+				<div class="hp-section blog-block slow-show" data-timeline="100">
+					<div class="carousel-holder">
+						<div class="title">Recent post</div>
+						<div class="controls-holder">
+							<div class="prev-post"></div>
+							<div class="next-post"></div>
+						</div>
+						<ul class="blog-carousel">
+							<li>
+								<div class="post-title">
+									Expedition gloves
+								</div>
+								<div class="post-description">
+									Lightweight mittens with PrimaLoft&reg;
+									insulation, waterproof, breathable
+									GORE&reg; membrane and reinforce
+									ments in CORDURA&reg;.
+									Features an inner fleece glove.
+									Opens with a zipper along the 
+									indexfinger for weapon handling
+									even with the mittens on weapon 
+									handling even with the 
+								</div>
+								<a href="#">Read more</a>
+							</li>
+							<li>
+								<div class="post-title">
+									Expedition gloves
+								</div>
+								<div class="post-description">
+									Lightweight mittens with PrimaLoft&reg;
+									insulation, waterproof, breathable
+									GORE&reg; membrane and reinforce
+									ments in CORDURA&reg;.
+									Features an inner fleece glove.
+									Opens with a zipper along the 
+									indexfinger for weapon handling
+									even with the mittens on weapon 
+									handling even with the 
+								</div>
+								<a href="#">Read more</a>
+							</li>
+							<li>
+								<div class="post-title">
+									Expedition gloves
+								</div>
+								<div class="post-description">
+									Lightweight mittens with PrimaLoft&reg;
+									insulation, waterproof, breathable
+									GORE&reg; membrane and reinforce
+									ments in CORDURA&reg;.
+									Features an inner fleece glove.
+									Opens with a zipper along the 
+									indexfinger for weapon handling
+									even with the mittens on weapon 
+									handling even with the 
+								</div>
+								<a href="#">Read more</a>
+							</li>
+							<li>
+								<div class="post-title">
+									Expedition gloves
+								</div>
+								<div class="post-description">
+									Lightweight mittens with PrimaLoft&reg;
+									insulation, waterproof, breathable
+									GORE&reg; membrane and reinforce
+									ments in CORDURA&reg;.
+									Features an inner fleece glove.
+									Opens with a zipper along the 
+									indexfinger for weapon handling
+									even with the mittens on weapon 
+									handling even with the 
+								</div>
+								<a href="#">Read more</a>
+							</li>
+						</ul>
+					</div>
+					<div class="sign-up-block">
+						<img src="images/posts-image.jpg" height="333" width="572" alt="">
+						<div class="text-holder">
+							<div class="text-wrapper">
+								<div class="text-container">
+									<div class="text">
+										<div class="title">
+											<span>New post</span>
+										</div>
+										<div class="short-desc">
+											sign up to get exclusive offers from your favourite brands
+										</div>
+										<form action="#">
+											<div>
+												<input type="email" placeholder="email">
+											</div>
+											<div>
+												<input type="submit" value="send">
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="newsletter-block-holder slow-show" data-timeline="100">
+				<div class="newsletter-block hp-section">
+					<div class="newsletter">
+						<img src="images/newsletter.jpg" height="445" width="272" alt="">
+						<div class="text-holder">
+							<div class="text-wrapper">
+								<div class="text-container">
+									<div class="text">
+										<div class="title">
+											<span>Newsletter</span>
+										</div>
+										<div class="short-desc">
+											sign up to get exclusive offers from your favourite brands
+										</div>
+										<form action="#">
+											<div>
+												<input type="email" placeholder="email">
+											</div>
+											<div>
+												<input type="submit" value="send">
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="best-sell-block products-container">
+						<div class="title">
+							Best sellers
+						</div>
+						<div class="carousel-holder">
+							<div class="controls">
+								<div class="prev prev-sell"></div>
+								<div class="next next-sell"></div>
+							</div>
+							<ul>
+								<li>
+									<a href="#">
+										<img src="images/prod-2.jpg" alt="">
+										<span class="name">
+											Annaboda Jersey
+										</span>
+										<span class="price">
+											$400
+										</span>
+									</a>
+									<div class="prod-hover">
+										<div class="image-holder">
+											<a href="#">
+												<img src="images/prod-1-hover.jpg" alt="">
+											</a>
+										</div>
+										<div class="product-info">
+							    			<div class="name">
+							    				Annaboda Jersey
+							    			</div>
+							    			<div class="quick-link-holder">
+							    				<a href="#">Quick look</a>
+							    			</div>
+							    			<div class="raiting-holder">
+							    				<ul>
+							    					<li>
+							    						<span class="fa fa-star"></span>
+							    					</li>
+							    					<li>
+							    						<span class="fa fa-star"></span>
+							    					</li>
+							    					<li>
+							    						<span class="fa fa-star"></span>
+							    					</li>
+							    					<li>
+							    						<span class="fa fa-star"></span>
+							    					</li>
+							    					<li>
+							    						<span class="fa fa-star-o"></span>
+							    					</li>
+							    				</ul>
+							    			</div>
+							    			<div class="price-container">
+							    				$400.00
+							    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+							    			</div>
+							    		</div>
+									</div>
+								</li>
+								<li>
+									<a href="#">
+										<img src="images/prod-3.jpg" alt="">
+										<span class="name">
+											Annaboda Jersey
+										</span>
+										<span class="price">
+											$400
+										</span>
+									</a>
+									<div class="prod-hover">
+										<div class="image-holder">
+											<a href="#">
+												<img src="images/prod-1-hover.jpg" alt="">
+											</a>
+										</div>
+										<div class="product-info">
+							    			<div class="name">
+							    				Annaboda Jersey
+							    			</div>
+							    			<div class="quick-link-holder">
+							    				<a href="#">Quick look</a>
+							    			</div>
+							    			<div class="raiting-holder">
+							    				<ul>
+							    					<li>
+							    						<span class="fa fa-star"></span>
+							    					</li>
+							    					<li>
+							    						<span class="fa fa-star"></span>
+							    					</li>
+							    					<li>
+							    						<span class="fa fa-star"></span>
+							    					</li>
+							    					<li>
+							    						<span class="fa fa-star"></span>
+							    					</li>
+							    					<li>
+							    						<span class="fa fa-star-o"></span>
+							    					</li>
+							    				</ul>
+							    			</div>
+							    			<div class="price-container">
+							    				$400.00
+							    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+							    			</div>
+							    		</div>
+									</div>
+								</li>
+								<li>
+									<a href="#">
+										<img src="images/prod-4.jpg" alt="">
+										<span class="name">
+											Annaboda Jersey
+										</span>
+										<span class="price">
+											$400
+										</span>
+									</a>
+									<div class="prod-hover">
+										<div class="image-holder">
+											<a href="#">
+												<img src="images/prod-1-hover.jpg" alt="">
+											</a>
+										</div>
+										<div class="product-info">
+							    			<div class="name">
+							    				Annaboda Jersey
+							    			</div>
+							    			<div class="quick-link-holder">
+							    				<a href="#">Quick look</a>
+							    			</div>
+							    			<div class="raiting-holder">
+							    				<ul>
+							    					<li>
+							    						<span class="fa fa-star"></span>
+							    					</li>
+							    					<li>
+							    						<span class="fa fa-star"></span>
+							    					</li>
+							    					<li>
+							    						<span class="fa fa-star"></span>
+							    					</li>
+							    					<li>
+							    						<span class="fa fa-star"></span>
+							    					</li>
+							    					<li>
+							    						<span class="fa fa-star-o"></span>
+							    					</li>
+							    				</ul>
+							    			</div>
+							    			<div class="price-container">
+							    				$400.00
+							    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+							    			</div>
+							    		</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="contacs-block-holder slow-show" data-timeline="100">
+				<div class="contacts-block">
+					<div class="title">
+						Contact us
+					</div>
+					<div class="contacts-wrapper">
+						<ul class="contacts">
+							<li class="fa fa-map-marker">
+								<div class="caption">
+									Address
+								</div>
+								<div class="info">
+									Drem Airfield, North Berwick EH39 5AW, United Kingdom
+								</div>
+							</li>
+							<li class="fa fa-mobile">
+								<div class="caption">
+									Phone
+								</div>
+								<div class="info">
+									+39 393 33 26 294
+								</div>
+							</li>
+							<li class="fa fa-envelope">
+								<div class="caption">
+									Mail
+								</div>
+								<div class="info">
+									<span>hello@hunter.com</span>
+									<span>info@hunter.com</span>
+								</div>
+							</li>
+							<li class="fa fa-skype">
+								<div class="caption">
+									Skype
+								</div>
+								<div class="info">
+									<span>Hunter</span>
+									<span>Oytheme</span>
+								</div>
+							</li>
+						</ul>
+						<form action="#">
+							<div class="caption">Send message</div>
+							<div class="input-block">
+								<div class="input-holder">
+									<label for="name02">Your name</label>
+									<input type="text" id="name02" placeholder="name">
+								</div>
+								<div class="input-holder">
+									<label for="mail02">Email</label>
+									<input type="email" id="mail02" placeholder="info@hunter.com">
+								</div>
+							</div>
+							<label for="txt01">Message</label>
+							<textarea id="txt01">message</textarea>
+							<input type="submit" value="Submit">
+						</form>
+					</div>
+					<div id="homepage_map"></div>
+				</div>
+			</div>
+		</div>	
+		<footer class="slow-show" ng-include=" 'footer.html' " data-timeline="100"></footer>
 	</div>
 </body>
+	<!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&callback=initMap"
+ async defer></script>
+<script>
+	function initMap() {
+	  var customMapType = new google.maps.StyledMapType([
+	      {
+		        "featureType": "administrative",
+		        "elementType": "geometry.fill",
+		        "stylers": [
+		            {
+		                "visibility": "off"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "administrative",
+		        "elementType": "geometry.stroke",
+		        "stylers": [
+		            {
+		                "hue": "#ff0000"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "administrative",
+		        "elementType": "labels.text",
+		        "stylers": [
+		            {
+		                "visibility": "on"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "administrative",
+		        "elementType": "labels.text.fill",
+		        "stylers": [
+		            {
+		                "color": "#2e404d"
+		            },
+		            {
+		                "weight": "1.00"
+		            },
+		            {
+		                "visibility": "on"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "administrative",
+		        "elementType": "labels.text.stroke",
+		        "stylers": [
+		            {
+		                "color": "#0f151a"
+		            },
+		            {
+		                "visibility": "off"
+		            },
+		            {
+		                "weight": "0.50"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "administrative.locality",
+		        "elementType": "labels.text",
+		        "stylers": [
+		            {
+		                "visibility": "off"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "administrative.land_parcel",
+		        "elementType": "labels.text",
+		        "stylers": [
+		            {
+		                "visibility": "off"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "landscape",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "color": "#f2f2f2"
+		            },
+		            {
+		                "visibility": "off"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "landscape",
+		        "elementType": "geometry",
+		        "stylers": [
+		            {
+		                "visibility": "on"
+		            },
+		            {
+		                "color": "#e6edf2"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "landscape",
+		        "elementType": "labels.text",
+		        "stylers": [
+		            {
+		                "visibility": "off"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "poi",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "visibility": "off"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "saturation": -100
+		            },
+		            {
+		                "lightness": 45
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road",
+		        "elementType": "geometry",
+		        "stylers": [
+		            {
+		                "color": "#2e404d"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road",
+		        "elementType": "geometry.fill",
+		        "stylers": [
+		            {
+		                "color": "#8598a6"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road",
+		        "elementType": "geometry.stroke",
+		        "stylers": [
+		            {
+		                "color": "#2e404d"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road",
+		        "elementType": "labels",
+		        "stylers": [
+		            {
+		                "visibility": "off"
+		            },
+		            {
+		                "hue": "#ff0000"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road",
+		        "elementType": "labels.text",
+		        "stylers": [
+		            {
+		                "visibility": "off"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road",
+		        "elementType": "labels.text.fill",
+		        "stylers": [
+		            {
+		                "color": "#0f151a"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road",
+		        "elementType": "labels.text.stroke",
+		        "stylers": [
+		            {
+		                "color": "#df4848"
+		            },
+		            {
+		                "visibility": "off"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road.highway",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "visibility": "simplified"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road.highway",
+		        "elementType": "geometry.fill",
+		        "stylers": [
+		            {
+		                "visibility": "on"
+		            },
+		            {
+		                "color": "#f2f2f2"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road.highway",
+		        "elementType": "labels.icon",
+		        "stylers": [
+		            {
+		                "visibility": "off"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road.arterial",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "visibility": "on"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road.arterial",
+		        "elementType": "geometry.fill",
+		        "stylers": [
+		            {
+		                "visibility": "on"
+		            },
+		            {
+		                "color": "#e6edf2"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road.arterial",
+		        "elementType": "geometry.stroke",
+		        "stylers": [
+		            {
+		                "visibility": "on"
+		            },
+		            {
+		                "color": "#746547"
+		            },
+		            {
+		                "weight": "1"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road.arterial",
+		        "elementType": "labels.text",
+		        "stylers": [
+		            {
+		                "visibility": "off"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road.arterial",
+		        "elementType": "labels.icon",
+		        "stylers": [
+		            {
+		                "visibility": "off"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road.local",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "visibility": "on"
+		            },
+		            {
+		                "color": "#685b41"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road.local",
+		        "elementType": "geometry.fill",
+		        "stylers": [
+		            {
+		                "visibility": "on"
+		            },
+		            {
+		                "hue": "#ffac00"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road.local",
+		        "elementType": "labels.text",
+		        "stylers": [
+		            {
+		                "visibility": "off"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "transit",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "visibility": "off"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "water",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "color": "#46bcec"
+		            },
+		            {
+		                "visibility": "on"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "water",
+		        "elementType": "geometry.fill",
+		        "stylers": [
+		            {
+		                "color": "#bfa369"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "water",
+		        "elementType": "geometry.stroke",
+		        "stylers": [
+		            {
+		                "visibility": "off"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "water",
+		        "elementType": "labels.text.fill",
+		        "stylers": [
+		            {
+		                "color": "#2e404d"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "water",
+		        "elementType": "labels.text.stroke",
+		        "stylers": [
+		            {
+		                "visibility": "on"
+		            },
+		            {
+		                "color": "#bfa369"
+		            }
+		        ]
+		    }
+	    ], {
+	      name: 'Custom Style'
+	  });
+	  var customMapTypeId = 'custom_style';
+
+	  var map = new google.maps.Map(document.getElementById('homepage_map'), {
+	    zoom: 11,
+	    disableDefaultUI: true,
+	    center: {lat: 40.503441, lng: -74.338136},
+	    scrollwheel: false,
+	    mapTypeControlOptions: {
+	      mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
+	    }
+	  });
+
+	  map.mapTypes.set(customMapTypeId, customMapType);
+	  map.setMapTypeId(customMapTypeId);
+	}
+</script>-->
 </html>

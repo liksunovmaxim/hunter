@@ -7,6 +7,15 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'MyriadPro-Regular';
+	src: url('../fonts/MyriadPro-Regular.eot');
+	src: local('☺'), url('../fonts/MyriadPro-Regular.woff') format('woff'), 
+	url('../fonts/MyriadPro-Regular.ttf') format('truetype'), 
+	url('../fonts/MyriadPro-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 .fa-icon() {
   display: inline-block;
@@ -35,6 +44,9 @@
 
 .base-font(@size:15px){
 	font: @size 'Modern_Grotesk', arial, sans-serif;
+}
+.secondary-font(@size:15px){
+	font: @size 'MyriadPro-Regular', arial, sans-serif;
 }
 
 .rel{position: relative;}
@@ -114,68 +126,6 @@
 				 58px 58px 0 darken(@color, 10%),
 				 59px 59px 0 darken(@color, 10%);
 }
-.big-text-shadow-hover{
-	text-shadow: -1px 1px 0 darken(@third-color, 10%),
-				 -2px 2px 0 darken(@third-color, 10%),
-				 -3px 3px 0 darken(@third-color, 10%),
-				 -4px 4px 0 darken(@third-color, 10%),
-				 -5px 5px 0 darken(@third-color, 10%),
-				 -6px 6px 0 darken(@third-color, 10%),
-				 -7px 7px 0 darken(@third-color, 10%),
-				 -8px 8px 0 darken(@third-color, 10%),
-				 -9px 9px 0 darken(@third-color, 10%),
-				 -10px 10px 0 darken(@third-color, 10%),
-				 -11px 11px 0 darken(@third-color, 10%),
-				 -12px 12px 0 darken(@third-color, 10%),
-				 -13px 13px 0 darken(@third-color, 10%),
-				 -14px 14px 0 darken(@third-color, 10%),
-				 -15px 15px 0 darken(@third-color, 10%),
-				 -16px 16px 0 darken(@third-color, 10%),
-				 -17px 17px 0 darken(@third-color, 10%),
-				 -18px 18px 0 darken(@third-color, 10%),
-				 -19px 19px 0 darken(@third-color, 10%),
-				 -20px 20px 0 darken(@third-color, 10%),
-				 -21px 21px 0 darken(@third-color, 10%),
-				 -22px 22px 0 darken(@third-color, 10%),
-				 -23px 23px 0 darken(@third-color, 10%),
-				 -24px 24px 0 darken(@third-color, 10%),
-				 -25px 25px 0 darken(@third-color, 10%),
-				 -26px 26px 0 darken(@third-color, 10%),
-				 -27px 27px 0 darken(@third-color, 10%),
-				 -28px 28px 0 darken(@third-color, 10%),
-				 -29px 29px 0 darken(@third-color, 10%),
-				 -30px 30px 0 darken(@third-color, 10%),
-				 -31px 31px 0 darken(@third-color, 10%),
-				 -32px 32px 0 darken(@third-color, 10%),
-				 -33px 33px 0 darken(@third-color, 10%),
-				 -34px 34px 0 darken(@third-color, 10%),
-				 -35px 35px 0 darken(@third-color, 10%),
-				 -36px 36px 0 darken(@third-color, 10%),
-				 -37px 37px 0 darken(@third-color, 10%),
-				 -38px 38px 0 darken(@third-color, 10%),
-				 -39px 39px 0 darken(@third-color, 10%),
-				 -40px 40px 0 darken(@third-color, 10%),
-				 -41px 41px 0 darken(@third-color, 10%),
-				 -42px 42px 0 darken(@third-color, 10%),
-				 -43px 43px 0 darken(@third-color, 10%),
-				 -44px 44px 0 darken(@third-color, 10%),
-				 -45px 45px 0 darken(@third-color, 10%),
-				 -46px 46px 0 darken(@third-color, 10%),
-				 -47px 47px 0 darken(@third-color, 10%),
-				 -48px 48px 0 darken(@third-color, 10%),
-				 -49px 49px 0 darken(@third-color, 10%),
-				 -50px 50px 0 darken(@third-color, 10%),
-				 -51px 51px 0 darken(@third-color, 10%),
-				 -52px 52px 0 darken(@third-color, 10%),
-				 -53px 53px 0 darken(@third-color, 10%),
-				 -54px 54px 0 darken(@third-color, 10%),
-				 -55px 55px 0 darken(@third-color, 10%),
-				 -56px 56px 0 darken(@third-color, 10%),
-				 -57px 57px 0 darken(@third-color, 10%),
-				 -58px 58px 0 darken(@third-color, 10%),
-				 -59px 59px 0 darken(@third-color, 10%);
-}
-
 @keyframes logo-color {
     0%   {color: @second-color;}
     50%  {color: lighten(@second-color, 20%);}

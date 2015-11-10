@@ -1,30 +1,72 @@
-<div class="header-wrapper">
-	<a class="logo" href="#">Hunter</a>
-	<div class="header-center">
-		<div class="header-top">
-			<div class="quick-search">
-				<input id="searchform" type="text" placeholder="search">
-				<label class="fa fa-search" for="searchform"></label>
+<header>
+	<div class="header-wrapper">
+		<a class="logo" href="#">Hunter</a>
+		<div class="header-center">
+			<div class="header-top">
+				<div class="quick-search">
+					<input id="searchform" type="text" placeholder="search">
+					<label class="fa fa-search" for="searchform"></label>
+				</div>
+				<ul class="top-links">
+					<li><a href="#">log in</a></li>
+					<li><a href="#">register</a></li>
+				</ul>
+				<ul class="lang-cur-switch">
+					<li>
+						<a href="#">language</a>
+					</li>
+					<li>
+						<a href="#">currency</a>
+					</li>
+				</ul>
 			</div>
-			<ul class="top-links">
-				<li><a href="#">log in</a></li>
-				<li><a href="#">register</a></li>
-			</ul>
-			<ul class="lang-cur-switch">
-				<li>
-					<a href="#">language</a>
-				</li>
-				<li>
-					<a href="#">currency</a>
-				</li>
+			<ul class="nav" ng-controller="NavCtrl">
+				<li ng-repeat="item in items"><a href="#">{{item.category}}</a></li>
 			</ul>
 		</div>
-		<ul class="nav" ng-controller="NavCtrl">
-			<li ng-repeat="item in items"><a href="#">{{item.category}}</a></li>
-		</ul>
+		<div class="cart-holder">
+			<a class="fa fa-shopping-cart" href="#"><span class="count">2</span></a>
+			<span>$250</span>
+		</div>
 	</div>
-	<div class="cart-holder">
-		<a class="fa fa-shopping-cart" href="#"></a>
-		<span>$250</span>
+</header>
+<div class="ajax-cart-holder">
+	<div class="ajax-cart-container">
+		<div class="ajax-cart-wrapper">
+			
+		</div>
 	</div>
 </div>
+<script>
+	jQuery('.cart-holder a').on('click', function(e){
+		var self = this;
+		self.container = jQuery('.ajax-cart-holder');
+		if(!self.container.hasClass('opened'))
+        jQuery.ajax({
+            url: 'cart.html',
+            success: function(html){
+                self.container.find('.ajax-cart-wrapper').append(html);
+                self.container.addClass('opened');
+            }
+        });
+        self.container.slideDown('fast');
+        e.preventDefault();
+	});
+	jQuery('.ajax-cart-holder').on('mouseenter', function(){
+		if(!jQuery(this).hasClass('entered')){
+			jQuery(this).addClass('entered');
+		}
+	});
+	jQuery('.ajax-cart-holder').on('mouseleave', function(){
+		var self = this;
+		self.container = jQuery('.ajax-cart-holder');
+		self.container.removeClass('entered');
+		if(!self.container.hasClass('entered')){
+			setTimeout(function() {
+				self.container.removeClass('opened');
+				self.container.slideUp('fast');
+				self.container.find('.ajax-cart-wrapper').html('');
+			}, 1500);			
+		}
+	});
+</script>
