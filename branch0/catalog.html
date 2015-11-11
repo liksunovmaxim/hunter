@@ -12,270 +12,116 @@
 	<script type="text/javascript" src="js/main.js"></script>
 	<title>Hunter</title>
 </head>
-<body>
+<body class="catalog">
 	<div class="wrapper">
 		<div class="header-holder" ng-include=" 'header.html' "></div>
 		<div class="main">
-			<div ng-controller="NavCtrl" class="homepage-slider">
-				<ul>
-					<li style="background: url('images/homepage-banner.jpg') no-repeat 50% 50%; background-size: cover;">
-						<div class="category-description-holder">
-							<div class="category-description-wrapper">
-								<div class="category-description">
-									<div class="title">
-										<span>Lightweight suits for active hunting</span>
-									</div>
-									<div class="price">
-										<span>$1215</span>
-									</div>
-									<div class="look-more-holder">
-										<a class href="#">Look</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li style="background: url(images/hunting-wallpaper.jpg) no-repeat 50% 50%; background-size: cover;">
-						<div class="category-description-holder">
-							<div class="category-description-wrapper">
-								<div class="category-description">
-									<div class="title">
-										<span>Sniper rifles</span>
-									</div>
-									<div class="price">
-										<span>$7615</span>
-									</div>
-									<div class="look-more-holder">
-										<a class href="#">Look</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-				</ul>
-				<div class="welcome-msg-holder">
-					<div class="welcome-msg-container">
-						<h1><span>Welcome to hunter</span></h1>
-						<div class="description">
-							 Active hunters worldwide give their feedback on HUNTER products and comes up with ideas for new details and functionalities.
-						</div>
-					</div>
-				</div>
-			</div>
 			<div class="content">
+				<div class="top-image-holder">
+					<div class="top-image">
+						<div class="text-holder">
+							<h1>Mens</h1>
+							<ul class="breadcrumbs">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Men</a></li>
+								<li><a href="#">Shirts</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="image-tuneup"></div>
+				</div>
 				<div class="content-holder">
-					<div class="collection-block">
-						<h2 class="slow-show" data-timeline="100">
-							<span>Collezione autunno</span>
-						</h2>
-						<div class="collection">
-							<div class="left-block slow-show"  data-timeline="100">
-								<img src="images/collection-1.jpg" alt="">
-								<div class="title">
-									One hit, one shot, one victory
-								</div>
-								<div class="description">
-									Established in 1928, our history and heritage are that of a world-class hunting
-								</div>
+					<div class="side-col">
+						<div class="side-col-container">
+							<div class="products-menu">
+								<div class="title">Shop mens</div>
+								<ul class="products-menu__list">
+									<li><a href="#">Boots</a></li>
+									<li><a href="#">Breeks &amp; trousers</a></li>
+									<li><a href="#">Hats</a></li>
+									<li><a href="#">Coats &amp; jackets</a></li>
+									<li><a href="#">Jumpers</a></li>
+									<li><a href="#">Shirts</a></li>
+									<li><a href="#">Socks</a></li>
+									<li><a href="#">Waistcoats</a></li>
+									<li><a href="#">Menswear outlet</a></li>
+								</ul>
 							</div>
-							<div class="right-block slow-show"  data-timeline="100">
-								<div class="first-block">
-									<div class="image-holder">
-										<img src="images/collection-2.jpg" alt="">
+							<div class="sell-side">
+								<div class="title">bestsellers</div>
+								<ul class="sell-side__list">
+									<li>
+										<div class="image-holder">
+											<a href="#" class=""><img src="images/sell-side-1.jpg" alt="Roebuck"></a>
+										</div>
 										<div class="text-holder">
-											<div class="text-wrapper">
-												<div class="text-container">
-													Collezione
-												</div>
-											</div>
+											<a href="#">Roebuck</a>
+											<div class="price">295.00$</div>
 										</div>
-									</div>
-								</div>
-								<div class="second-block">
-									<div class="top">
+									</li>
+									<li>
+									<div class="image-holder">
+											<a href="#"><img src="images/sell-side-2.jpg" alt="Kamko fleece"></a>
+										</div>
+										<div class="text-holder">									
+											<a href="#">Kamko fleece</a>
+											<div class="price price--cross">175.00$<span>50.00$</span></div>	
+										</div>
+									</li>
+									<li>
 										<div class="image-holder">
-											<div class="image-container">
-												<div class="image">
-													<img src="images/collection-3.jpg" alt="">
-												</div>
-											</div>
+											<a href="#"><img src="images/sell-side-2.jpg" alt="Kamko fleece"></a>
 										</div>
-									</div>
-									<div class="bottom">
-										<div class="image-holder">
-											<div class="image-container">
-												<div class="image">
-													<img src="images/gloves.png" height="172" width="163" alt="">
-												</div>
-											</div>
+										<div class="text-holder">									
+											<a href="#">Kamko fleece</a>
+											<div class="price">29.00$</div>		
 										</div>
-									</div>	
-								</div>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="products-block slow-show" data-timeline="100">
-					<div class="products-container">
-						<ul class="tabs-heading">
-						    <li><a class="active" href="#tabs-1">Desktop</a></li>
-						    <li><a href="#tabs-2">Computer part</a></li>
-						    <li><a href="#tabs-3">Electronics</a></li>
-						   	<li><a href="#tabs-4">Apparel</a></li>
-						    <li><a href="#tabs-5">Furniture</a></li>
-						</ul>
-						<div class="tabs-wrapper">
-							<div ng-include=" 'tabs/tab-1.html' " class="tabs active" id="tabs-1"></div>
-							<div ng-include=" 'tabs/tab-2.html' " class="tabs" id="tabs-2"></div>
-							<div ng-include=" 'tabs/tab-3.html' " class="tabs" id="tabs-3"></div>
-							<div ng-include=" 'tabs/tab-4.html' " class="tabs" id="tabs-4"></div>
-							<div ng-include=" 'tabs/tab-5.html' " class="tabs" id="tabs-5"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="blog-block-holder">
-				<div class="hp-section blog-block slow-show" data-timeline="100">
-					<div class="carousel-holder">
-						<div class="title">Recent post</div>
-						<div class="controls-holder">
-							<div class="prev-post"></div>
-							<div class="next-post"></div>
-						</div>
-						<ul class="blog-carousel">
-							<li>
-								<div class="post-title">
-									Expedition gloves
+					<div class="main-col">
+						<div class="catalog-set-holder">
+							<div class="catalog-set">
+								<ul class="catalog-set__view">
+									<li class="active"><a href="#" class="fa fa-th"></a></li>
+									<li><a href="#" class="fa fa-list"></a></li>
+								</ul>
+								<div class="catalog-set__sort">
+									<span>Sort</span>
+									<select name="catalog-sort" id="catalog-sort">
+										<option>price</option>
+										<option>sells</option>
+									</select>
 								</div>
-								<div class="post-description">
-									Lightweight mittens with PrimaLoft&reg;
-									insulation, waterproof, breathable
-									GORE&reg; membrane and reinforce
-									ments in CORDURA&reg;.
-									Features an inner fleece glove.
-									Opens with a zipper along the 
-									indexfinger for weapon handling
-									even with the mittens on weapon 
-									handling even with the 
+								<div class="catalog-set__show">
+									<span>Show</span>
+									<select name="catalog-show" id="catalog-show">
+										<option>5</option>
+										<option>10</option>
+										<option>15</option>
+										<option>20</option>
+									</select>
+									<span>per</span>
 								</div>
-								<a href="#">Read more</a>
-							</li>
-							<li>
-								<div class="post-title">
-									Expedition gloves
-								</div>
-								<div class="post-description">
-									Lightweight mittens with PrimaLoft&reg;
-									insulation, waterproof, breathable
-									GORE&reg; membrane and reinforce
-									ments in CORDURA&reg;.
-									Features an inner fleece glove.
-									Opens with a zipper along the 
-									indexfinger for weapon handling
-									even with the mittens on weapon 
-									handling even with the 
-								</div>
-								<a href="#">Read more</a>
-							</li>
-							<li>
-								<div class="post-title">
-									Expedition gloves
-								</div>
-								<div class="post-description">
-									Lightweight mittens with PrimaLoft&reg;
-									insulation, waterproof, breathable
-									GORE&reg; membrane and reinforce
-									ments in CORDURA&reg;.
-									Features an inner fleece glove.
-									Opens with a zipper along the 
-									indexfinger for weapon handling
-									even with the mittens on weapon 
-									handling even with the 
-								</div>
-								<a href="#">Read more</a>
-							</li>
-							<li>
-								<div class="post-title">
-									Expedition gloves
-								</div>
-								<div class="post-description">
-									Lightweight mittens with PrimaLoft&reg;
-									insulation, waterproof, breathable
-									GORE&reg; membrane and reinforce
-									ments in CORDURA&reg;.
-									Features an inner fleece glove.
-									Opens with a zipper along the 
-									indexfinger for weapon handling
-									even with the mittens on weapon 
-									handling even with the 
-								</div>
-								<a href="#">Read more</a>
-							</li>
-						</ul>
-					</div>
-					<div class="sign-up-block">
-						<img src="images/posts-image.jpg" height="333" width="572" alt="">
-						<div class="text-holder">
-							<div class="text-wrapper">
-								<div class="text-container">
-									<div class="text">
-										<div class="title">
-											<span>New post</span>
-										</div>
-										<div class="short-desc">
-											sign up to get exclusive offers from your favourite brands
-										</div>
-										<form action="#">
-											<div>
-												<input type="email" placeholder="email">
-											</div>
-											<div>
-												<input type="submit" value="send">
-											</div>
-										</form>
-									</div>
+								<div class="catalog-set__page">
+									<span>Page:</span>
+									<ul class="catalog-set__page-list">
+										<li class="prev-page"><a href="#" class="fa fa-chevron-left"></a></li>
+										<li class="active"><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li class="next-page"><a href="#" class="fa fa-chevron-right"></a></li>
+									</ul>
 								</div>
 							</div>
 						</div>
-					</div>	
-				</div>
-			</div>
-			<div class="newsletter-block-holder slow-show" data-timeline="100">
-				<div class="newsletter-block hp-section">
-					<div class="newsletter">
-						<img src="images/newsletter.jpg" height="445" width="272" alt="">
-						<div class="text-holder">
-							<div class="text-wrapper">
-								<div class="text-container">
-									<div class="text">
-										<div class="title">
-											<span>Newsletter</span>
-										</div>
-										<div class="short-desc">
-											sign up to get exclusive offers from your favourite brands
-										</div>
-										<form action="#">
-											<div>
-												<input type="email" placeholder="email">
-											</div>
-											<div>
-												<input type="submit" value="send">
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
+						<div class="page-intro">
+							<h2 class="title">Autumn collection</h2>
+							<img src="images/page-intro-1.jpg" alt="Autumn collection">
 						</div>
-					</div>
-					<div class="best-sell-block products-container">
-						<div class="title">
-							Best sellers
-						</div>
-						<div class="carousel-holder">
-							<div class="controls">
-								<div class="prev prev-sell"></div>
-								<div class="next next-sell"></div>
-							</div>
+						<div class="products-list-holder">
 							<ul class="products-list">
 								<li>
 									<a href="#">
@@ -426,69 +272,148 @@
 								</li>
 							</ul>
 						</div>
+						<div class="catalog-set-holder">
+							<div class="catalog-set">
+								<ul class="catalog-set__view">
+									<li class="active"><a href="#" class="fa fa-th"></a></li>
+									<li><a href="#" class="fa fa-list"></a></li>
+								</ul>
+								<div class="catalog-set__sort">
+									<span>Sort</span>
+									<select name="catalog-sort" id="catalog-sort">
+										<option>price</option>
+										<option>sells</option>
+									</select>
+								</div>
+								<div class="catalog-set__show">
+									<span>Show</span>
+									<select name="catalog-show" id="catalog-show">
+										<option>5</option>
+										<option>10</option>
+										<option>15</option>
+										<option>20</option>
+									</select>
+									<span>per</span>
+								</div>
+								<div class="catalog-set__page">
+									<span>Page:</span>
+									<ul class="catalog-set__page-list">
+										<li class="prev-page"><a href="#" class="fa fa-chevron-left"></a></li>
+										<li class="active"><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li class="next-page"><a href="#" class="fa fa-chevron-right"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>						
 					</div>
 				</div>
 			</div>
-			<div class="contacs-block-holder slow-show" data-timeline="100">
-				<div class="contacts-block">
-					<div class="title">
-						Contact us
-					</div>
-					<div class="contacts-wrapper">
-						<ul class="contacts">
-							<li class="fa fa-map-marker">
-								<div class="caption">
-									Address
+			<div class="blog-block-holder">
+				<div class="hp-section blog-block slow-show" data-timeline="100">
+					<div class="carousel-holder">
+						<div class="title">Recent post</div>
+						<div class="controls-holder">
+							<div class="prev-post"></div>
+							<div class="next-post"></div>
+						</div>
+						<ul class="blog-carousel">
+							<li>
+								<div class="post-title">
+									Expedition gloves
 								</div>
-								<div class="info">
-									Drem Airfield, North Berwick EH39 5AW, United Kingdom
+								<div class="post-description">
+									Lightweight mittens with PrimaLoft&reg;
+									insulation, waterproof, breathable
+									GORE&reg; membrane and reinforce
+									ments in CORDURA&reg;.
+									Features an inner fleece glove.
+									Opens with a zipper along the 
+									indexfinger for weapon handling
+									even with the mittens on weapon 
+									handling even with the 
 								</div>
+								<a href="#">Read more</a>
 							</li>
-							<li class="fa fa-mobile">
-								<div class="caption">
-									Phone
+							<li>
+								<div class="post-title">
+									Expedition gloves
 								</div>
-								<div class="info">
-									+39 393 33 26 294
+								<div class="post-description">
+									Lightweight mittens with PrimaLoft&reg;
+									insulation, waterproof, breathable
+									GORE&reg; membrane and reinforce
+									ments in CORDURA&reg;.
+									Features an inner fleece glove.
+									Opens with a zipper along the 
+									indexfinger for weapon handling
+									even with the mittens on weapon 
+									handling even with the 
 								</div>
+								<a href="#">Read more</a>
 							</li>
-							<li class="fa fa-envelope">
-								<div class="caption">
-									Mail
+							<li>
+								<div class="post-title">
+									Expedition gloves
 								</div>
-								<div class="info">
-									<span>hello@hunter.com</span>
-									<span>info@hunter.com</span>
+								<div class="post-description">
+									Lightweight mittens with PrimaLoft&reg;
+									insulation, waterproof, breathable
+									GORE&reg; membrane and reinforce
+									ments in CORDURA&reg;.
+									Features an inner fleece glove.
+									Opens with a zipper along the 
+									indexfinger for weapon handling
+									even with the mittens on weapon 
+									handling even with the 
 								</div>
+								<a href="#">Read more</a>
 							</li>
-							<li class="fa fa-skype">
-								<div class="caption">
-									Skype
+							<li>
+								<div class="post-title">
+									Expedition gloves
 								</div>
-								<div class="info">
-									<span>Hunter</span>
-									<span>Oytheme</span>
+								<div class="post-description">
+									Lightweight mittens with PrimaLoft&reg;
+									insulation, waterproof, breathable
+									GORE&reg; membrane and reinforce
+									ments in CORDURA&reg;.
+									Features an inner fleece glove.
+									Opens with a zipper along the 
+									indexfinger for weapon handling
+									even with the mittens on weapon 
+									handling even with the 
 								</div>
+								<a href="#">Read more</a>
 							</li>
 						</ul>
-						<form action="#">
-							<div class="caption">Send message</div>
-							<div class="input-block">
-								<div class="input-holder">
-									<label for="name02">Your name</label>
-									<input type="text" id="name02" placeholder="name">
-								</div>
-								<div class="input-holder">
-									<label for="mail02">Email</label>
-									<input type="email" id="mail02" placeholder="info@hunter.com">
+					</div>
+					<div class="sign-up-block">
+						<img src="images/posts-image.jpg" height="333" width="572" alt="">
+						<div class="text-holder">
+							<div class="text-wrapper">
+								<div class="text-container">
+									<div class="text">
+										<div class="title">
+											<span>New post</span>
+										</div>
+										<div class="short-desc">
+											sign up to get exclusive offers from your favourite brands
+										</div>
+										<form action="#">
+											<div>
+												<input type="email" placeholder="email">
+											</div>
+											<div>
+												<input type="submit" value="send">
+											</div>
+										</form>
+									</div>
 								</div>
 							</div>
-							<label for="txt01">Message</label>
-							<textarea id="txt01">message</textarea>
-							<input type="submit" value="Submit">
-						</form>
-					</div>
-					<div id="homepage_map"></div>
+						</div>
+					</div>	
 				</div>
 			</div>
 		</div>	

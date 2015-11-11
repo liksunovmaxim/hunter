@@ -269,6 +269,9 @@ var Homepage = {
 			prevSelector: '.prev-sell',
 			nextSelector: '.next-sell'
 		});
+	},
+	formStyler: function(){
+		$('#catalog-sort, #catalog-show').styler();
 	}
 };
 
@@ -277,6 +280,7 @@ jQuery(function(){
 	Homepage.mainBanner();
 	Homepage.welcomeMsg();
 	Homepage.customTabs();
+	Homepage.formStyler();
 
 	jQuery(window).on('load', function(){
 		Homepage.mainBanner();

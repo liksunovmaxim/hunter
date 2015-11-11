@@ -507,67 +507,11 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/Z/home/test1.ru/www/hunter/index.html",
-			"settings":
-			{
-				"buffer_size": 540,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/Z/home/test1.ru/www/hunter/header.html",
-			"settings":
-			{
-				"buffer_size": 757,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/Z/home/test1.ru/www/hunter/products/products.json",
-			"settings":
-			{
-				"buffer_size": 234,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/Z/home/test1.ru/www/hunter/js/controllers.js",
-			"settings":
-			{
-				"buffer_size": 134,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "style.less",
-			"settings":
-			{
-				"buffer_size": 3399,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "variables.less",
-			"settings":
-			{
-				"buffer_size": 19357,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "mixins.less",
-			"settings":
-			{
-				"buffer_size": 6735,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 219.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
@@ -591,11 +535,15 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 400.0
+		"width": 223.0
 	},
 	"console":
 	{
-		"height": 154.0
+		"height": 154.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
 	},
 	"distraction_free":
 	{
@@ -606,8 +554,40 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/C/Users/spalah/Desktop/form",
+		"/E/Hunter",
+		"/Z/home/test1.ru/www/hunter"
+	],
 	"file_history":
 	[
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/js/main.js",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/js/controllers.js",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/header.html",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/footer.html",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/cart.html",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/style.less",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/style.css",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/variables.less",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/animated.less",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/bordered-pulled.less",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/rotated-flipped.less",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/mixins.less",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/font-awesome.less",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/stacked.less",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/fixed-width.less",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/icons.less",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/larger.less",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/list.less",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/core.less",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/path.less",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/reset.css",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/index.html",
+		"/Z/home/test1.ru/www/hunter/js/controllers.js",
+		"/Z/home/test1.ru/www/hunter/products/products.json",
+		"/Z/home/test1.ru/www/hunter/index.html",
+		"/Z/home/test1.ru/www/hunter/header.html",
 		"/Z/home/test1.ru/www/hunter/css/mixins.less",
 		"/Z/home/test1.ru/www/hunter/css/icons.less",
 		"/Z/home/test1.ru/www/hunter/css/variables.less",
@@ -709,33 +689,7 @@
 		"/C/Users/spalah/Desktop/lesson 19/js/jquery.sidr.min.js",
 		"/E/12/Новая папка/index.html",
 		"/E/12/Новая папка/css/all.css",
-		"/C/Users/spalah/Desktop/ДЗ lesson3/css/style.css",
-		"/C/Users/spalah/Desktop/ДЗ lesson3/index.html",
-		"/E/Lessons/Lesson19/Manual/jsor-jcarousel-60e2338/examples/responsive/index.html",
-		"/E/Lessons/Lesson19/Manual/jsor-jcarousel-60e2338/examples/responsive/jcarousel.responsive.css",
-		"/E/Lessons/Lesson18/Lesson/index.html",
-		"/E/Lessons/Lesson19/Lesson/css/all.css",
-		"/E/Lessons/Lesson19/Lesson/index.html",
-		"/E/Lessons/Lesson18/Lesson/css/all.css",
-		"/E/Lessons/Lesson19/Manual/jsor-jcarousel-60e2338/examples/responsive/jcarousel.responsive.js",
-		"/C/Users/spalah/Desktop/Урок 7 формы Конерольная/Урок 12/markup/css/all.css",
-		"/C/Users/spalah/Desktop/Урок 7 формы Конерольная/HTML5/markup/css/ie.css",
-		"/C/Users/spalah/Desktop/Урок 7 формы Конерольная/HTML5/markup/css/all.css",
-		"/C/Users/spalah/Desktop/Урок 7 формы Конерольная/Контрольная 9-11/markup/index.html",
-		"/C/Users/spalah/Desktop/Урок 7 формы Конерольная/Урок 12/markup/index.html",
-		"/C/Users/spalah/Desktop/Урок 7 формы Конерольная/HTML5/markup/index.html",
-		"/C/Users/spalah/Desktop/Alona_Bilych_Task03_classwork/index.html",
-		"/C/Users/spalah/Desktop/Alona_Bilych_Task03_classwork/css/all.css",
-		"/E/home_work/home_work_Task_02/css/all.css",
-		"/E/home_work/Alona_Bilych_Task_01/css/all.css",
-		"/E/home_work/Alona_Bilych_Task_01/index.html",
-		"/F/Serjio/index html/index.html.html",
-		"/F/Serjio/index html/css/all.css.css",
-		"/F/Serjio/index html/css/all.css",
-		"/D/project/css/all.css",
-		"/C/Users/spalah/Desktop/progect/css/all.css",
-		"/C/Users/spalah/Desktop/Шубин/SVC/img/2 (1).psd",
-		"/E/HTML CSS/lesson21/fonts/stylesheet.css"
+		"/C/Users/spalah/Desktop/ДЗ lesson3/css/style.css"
 	],
 	"find":
 	{
@@ -810,201 +764,13 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/Z/home/test1.ru/www/hunter/index.html",
-					"settings":
-					{
-						"buffer_size": 540,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								296,
-								296
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/Z/home/test1.ru/www/hunter/header.html",
-					"settings":
-					{
-						"buffer_size": 757,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								519,
-								519
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		},
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 2,
-					"file": "/Z/home/test1.ru/www/hunter/products/products.json",
-					"settings":
-					{
-						"buffer_size": 234,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								227,
-								227
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/Z/home/test1.ru/www/hunter/js/controllers.js",
-					"settings":
-					{
-						"buffer_size": 134,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								134,
-								134
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "style.less",
-					"settings":
-					{
-						"buffer_size": 3399,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2464,
-								2464
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1350.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "variables.less",
-					"settings":
-					{
-						"buffer_size": 19357,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								142,
-								120
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "mixins.less",
-					"settings":
-					{
-						"buffer_size": 6735,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1687,
-								1687
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 468.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1046,6 +812,11 @@
 		]
 	},
 	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "hunter.sublime-project",
 	"replace":
 	{
 		"height": 0.0
@@ -1067,10 +838,25 @@
 		],
 		"width": 0.0
 	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 185.0,
-	"status_bar_visible": true
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }
