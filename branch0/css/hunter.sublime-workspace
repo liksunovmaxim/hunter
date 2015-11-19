@@ -511,7 +511,7 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 219.0,
 		"selected_items":
 		[
 			[
@@ -535,7 +535,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 223.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -562,12 +562,6 @@
 	],
 	"file_history":
 	[
-		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/js/main.js",
-		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/js/controllers.js",
-		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/header.html",
-		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/footer.html",
-		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/cart.html",
-		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/style.less",
 		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/style.css",
 		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/variables.less",
 		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/animated.less",
@@ -584,6 +578,7 @@
 		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/path.less",
 		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/reset.css",
 		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/index.html",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/style.less",
 		"/Z/home/test1.ru/www/hunter/js/controllers.js",
 		"/Z/home/test1.ru/www/hunter/products/products.json",
 		"/Z/home/test1.ru/www/hunter/index.html",
@@ -689,7 +684,12 @@
 		"/C/Users/spalah/Desktop/lesson 19/js/jquery.sidr.min.js",
 		"/E/12/Новая папка/index.html",
 		"/E/12/Новая папка/css/all.css",
-		"/C/Users/spalah/Desktop/ДЗ lesson3/css/style.css"
+		"/C/Users/spalah/Desktop/ДЗ lesson3/css/style.css",
+		"/C/Users/spalah/Desktop/ДЗ lesson3/index.html",
+		"/E/Lessons/Lesson19/Manual/jsor-jcarousel-60e2338/examples/responsive/index.html",
+		"/E/Lessons/Lesson19/Manual/jsor-jcarousel-60e2338/examples/responsive/jcarousel.responsive.css",
+		"/E/Lessons/Lesson18/Lesson/index.html",
+		"/E/Lessons/Lesson19/Lesson/css/all.css"
 	],
 	"find":
 	{

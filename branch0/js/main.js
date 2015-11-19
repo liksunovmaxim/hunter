@@ -272,15 +272,40 @@ var Homepage = {
 	},
 	formStyler: function(){
 		$('#catalog-sort, #catalog-show').styler();
+	},
+	hideCheckbox: function(){
+		var self = this;
+		self.optionLabel = jQuery('.option').children('label');
+		jQuery(self.optionLabel).on('click', function(e) {
+			if(jQuery(this).parent('div').hasClass('inactive')) {
+				jQuery(this).prev().attr("disabled", true);
+			} else {
+				jQuery(this).prev().removeAttr("disabled");
+			}
+		});
+	},
+	modal: function(){
+		var self = this;
+		self.modal = jQuery('.modal');
+		self.windowBody = jQuery('body');
+		jQuery('.quick-look-btn').click(function(){
+				self.modal.show();
+			    self.windowBody.addClass('modal-lock');
+		    });
+		jQuery('.modal-close-btn').click(function(){
+				self.modal.hide();
+			    self.windowBody.removeClass('modal-lock');
+		    });
 	}
 };
-
 jQuery(function(){
 	Mobile.init();
 	Homepage.mainBanner();
 	Homepage.welcomeMsg();
 	Homepage.customTabs();
 	Homepage.formStyler();
+	Homepage.hideCheckbox();
+	Homepage.modal();	
 
 	jQuery(window).on('load', function(){
 		Homepage.mainBanner();
@@ -288,7 +313,7 @@ jQuery(function(){
 		Homepage.tabsSliders();
 		Homepage.postSlider();
 		Homepage.bestSellSlider();
-		ScrollAnimation.init();
+		ScrollAnimation.init();		
 	});
 
 	jQuery(window).on('resize', function(){
