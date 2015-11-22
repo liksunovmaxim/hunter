@@ -730,6 +730,18 @@ header{
 	}
 	li {
 	.rel;
+		.prod-discount {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		    display: block;
+		    width: 40px;
+		    background: @second-color;
+		    color: #fff;
+		    font-size: 14px;
+		    line-height: 40px;
+		    text-align: center;
+		}
 		a{
 			color: @base-color;
 			text-decoration: none;
@@ -1154,6 +1166,26 @@ header{
 				span{
 					display: block;
 				}
+				a[href^="tel:"], a[href^="mailto:"] {
+					.rel;
+					color: #999;
+					text-decoration: none;
+					&:before{
+						content: '';
+						.abs;
+						width: 0;
+						height: 1px;
+						bottom: -1px;
+						left: 0;
+						background: #999;	
+						.transition(~"width .2s ease-out");	
+					}
+					&:hover{
+						&:before{
+							width: 100%;
+						}
+					}					
+				}
 			}
 		}
 	}
@@ -1207,6 +1239,10 @@ header{
 			text-align: center;
 			padding: 13px 20px;
 			cursor: pointer;
+			.transition(~"background .3s ease-in-out");
+			&:hover {
+				background: darken(@second-color, 20%);
+			}
 		}
 	}
 }
@@ -1248,6 +1284,26 @@ footer{
 			address{
 				line-height: 23px;
 				margin: 0 0 31px;
+				a[href^="tel:"], a[href^="mailto:"] {
+					.rel;
+					color: #656363;
+					text-decoration: none;				
+					&:before{
+						content: '';
+						.abs;
+						width: 0;
+						height: 1px;
+						bottom: 0;
+						left: 0;
+						background: #656363;	
+						.transition(~"width .2s ease-out");	
+					}
+					&:hover{
+						&:before{
+							width: 100%;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -1807,7 +1863,7 @@ footer{
 	bottom: 0;
 	left: 0;
 	background: rgba(0,0,0,0.7);
-	z-index: 99999;
+	z-index: 10000;
 	-webkit-transition: opacity 400ms ease-in;
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
@@ -1827,6 +1883,14 @@ footer{
 		pointer-events: auto;
 		opacity: 1;
 	}
+	.modal-bg {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 10001;
+	}
 	.modal-window {
 		.rel;
 	    display: inline-block;
@@ -1836,6 +1900,7 @@ footer{
 	    text-align: left;
 	    overflow: hidden;
 	    background: #fff;
+	    z-index: 99999;
 		.modal-close-btn {
 			.abs;
 		    top: 0;

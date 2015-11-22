@@ -292,11 +292,16 @@ var Homepage = {
 				self.modal.show();
 			    self.windowBody.addClass('modal-lock');
 		    });
-		jQuery('.modal-close-btn').click(function(){
+		jQuery('.modal-close-btn, .modal-bg').click(function(){
 				self.modal.hide();
 			    self.windowBody.removeClass('modal-lock');
 		    });
+		jQuery('.modal a').click(function(){
+			    self.windowBody.removeClass('modal-lock');
+		    });
+
 	}
+
 };
 jQuery(function(){
 	Mobile.init();

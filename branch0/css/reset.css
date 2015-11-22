@@ -41,3 +41,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+input:focus, textarea:focus {
+	outline: 0 none;
+    box-shadow: 1px 1px 1px rgba(191, 181, 117, 0.8) inset, 1px 1px 1px rgba(191, 181, 117, 0.8);
+}
