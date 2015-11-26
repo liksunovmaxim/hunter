@@ -45,6 +45,7 @@
         jQuery.ajax({
             url: 'cart.html',
             success: function(html){
+            	console.log(html);
                 self.container.find('.ajax-cart-wrapper').append(html);
                 self.container.addClass('opened');
             }

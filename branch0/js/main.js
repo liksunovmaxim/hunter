@@ -274,6 +274,15 @@ var Homepage = {
 		$('#catalog-sort, #catalog-show').styler();
 	},
 	hideCheckbox: function(){
+		var optionCount = jQuery('.option').find('.option-count');
+		for(i = 0; i < optionCount.length; i++) {
+			if (jQuery(optionCount[i]).text() < 1) {
+				jQuery(optionCount[i]).parent().parent().addClass('inactive');
+				 } else {
+			 	jQuery(optionCount[i]).parent().parent().removeClass('inactive');
+			 }
+		}	
+
 		var self = this;
 		self.optionLabel = jQuery('.option').children('label');
 		jQuery(self.optionLabel).on('click', function(e) {
@@ -286,11 +295,21 @@ var Homepage = {
 	},
 	modal: function(){
 		var self = this;
-		self.modal = jQuery('.modal');
 		self.windowBody = jQuery('body');
-		jQuery('.quick-look-btn').click(function(){
+		self.modal = jQuery('.modal');
+	    self.modalBg = jQuery('.modal-bg');
+		self.docH = jQuery(document).height(),
+		self.winW = jQuery(window).width(),
+		self.winH = jQuery(window).height();
+		jQuery('.quick-look-btn').click(function(e){
+				// e.preventDefault();
 				self.modal.show();
 			    self.windowBody.addClass('modal-lock');
+				// jQuery(self.modalBg).css({'width':self.winW,'height':self.docH});		    
+				// var idModal = jQuery(this).attr('href');
+				// var modalWindow = jQuery(idModal).children('.modal-window');
+				// jQuery(modalWindow).css('top',  self.winH/2-jQuery(modalWindow).height()/2);
+				// jQuery(modalWindow).css('left', self.winW/2-jQuery(modalWindow).width()/2);			    
 		    });
 		jQuery('.modal-close-btn, .modal-bg').click(function(){
 				self.modal.hide();
