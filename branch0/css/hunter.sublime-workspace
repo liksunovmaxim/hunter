@@ -4,6 +4,202 @@
 		"selected_items":
 		[
 			[
+				"he",
+				"height"
+			],
+			[
+				"z-",
+				"z-index"
+			],
+			[
+				"produc",
+				"product-desc-back.jpg	w:312 h:414"
+			],
+			[
+				"product",
+				"product-content	 style.less"
+			],
+			[
+				"pro",
+				"product-title	 style.less"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"contact",
+				"contactForm"
+			],
+			[
+				"sl",
+				"slideToggle	.slideToggle()"
+			],
+			[
+				"cli",
+				"click	.click()"
+			],
+			[
+				"in",
+				"inherit"
+			],
+			[
+				"bca",
+				"background"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"bor",
+				"border-color"
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"table",
+				"tablet-width	 _mixins.scss"
+			],
+			[
+				"tra",
+				"transition	CSS - transition: ;"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"order",
+				"order-bg.png	w:432 h:335"
+			],
+			[
+				"frame",
+				"frame-block	 main.scss"
+			],
+			[
+				"frame-b",
+				"frame-block-holder	 main.scss"
+			],
+			[
+				"text",
+				"text-indent"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"ima",
+				"images/"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"header",
+				"header-bird-l.png	w:55 h:48"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"ca",
+				"cake-photo-1.jpg	w:201 h:138"
+			],
+			[
+				"slide",
+				"slideDown	.slideDown()"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"doc",
+				"Document"
+			],
+			[
+				"product-c",
+				"product-content-holder	 style.less"
+			],
+			[
+				"prod",
+				"product-prew	 style.less"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"ce",
+				"center"
+			],
+			[
+				"cu",
+				"cursor"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"mo",
+				"modal-item-var-1.jpg	w:81 h:105"
+			],
+			[
+				"hid",
+				"hidden"
+			],
+			[
+				"has",
+				"hasClass	.hasClass()"
+			],
+			[
+				"mi",
+				"min-width"
+			],
+			[
+				"im",
+				"images/"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
 				"p",
 				"person"
 			],
@@ -28,24 +224,12 @@
 				"border-bottom-right-radius"
 			],
 			[
-				"ba",
-				"background"
-			],
-			[
 				"table-",
 				"table-cell"
 			],
 			[
-				"bac",
-				"background"
-			],
-			[
 				"l",
 				"left"
-			],
-			[
-				"text",
-				"text-decoration"
 			],
 			[
 				"fon",
@@ -54,10 +238,6 @@
 			[
 				"bo",
 				"box-shadow"
-			],
-			[
-				"bor",
-				"border-bottom"
 			],
 			[
 				"border-to",
@@ -80,14 +260,6 @@
 				"section	Tag"
 			],
 			[
-				"pad",
-				"padding"
-			],
-			[
-				"padding",
-				"padding-top"
-			],
-			[
 				"to",
 				"top"
 			],
@@ -96,16 +268,8 @@
 				"margin"
 			],
 			[
-				"font",
-				"font-family"
-			],
-			[
 				"marg",
 				"margin"
-			],
-			[
-				"he",
-				"height"
 			],
 			[
 				"tex",
@@ -116,16 +280,8 @@
 				"background"
 			],
 			[
-				"mar",
-				"margin"
-			],
-			[
 				"bg-ba",
 				"bg-banner-bottom.png	w:34 h:8"
-			],
-			[
-				"padd",
-				"padding-top"
 			],
 			[
 				"border-bottom",
@@ -138,10 +294,6 @@
 			[
 				"back",
 				"background"
-			],
-			[
-				"in",
-				"inline-block"
 			],
 			[
 				"h",
@@ -190,10 +342,6 @@
 			[
 				"wi",
 				"width"
-			],
-			[
-				"max",
-				"max-width"
 			],
 			[
 				"bg",
@@ -276,10 +424,6 @@
 				"background"
 			],
 			[
-				"inl",
-				"inline"
-			],
-			[
 				"sess",
 				"session_start"
 			],
@@ -324,10 +468,6 @@
 				"margin"
 			],
 			[
-				"add",
-				"addClass"
-			],
-			[
 				"remove",
 				"removeClass"
 			],
@@ -364,10 +504,6 @@
 				"font-style"
 			],
 			[
-				"mi",
-				"min-height"
-			],
-			[
 				"c",
 				"center"
 			],
@@ -378,130 +514,6 @@
 			[
 				"u",
 				"ul	Tag"
-			],
-			[
-				"me",
-				"META	Tag"
-			],
-			[
-				"title",
-				"TITLE	Tag"
-			],
-			[
-				"out",
-				"outline"
-			],
-			[
-				"select",
-				"select"
-			],
-			[
-				"pos",
-				"position"
-			],
-			[
-				"link",
-				"link-sidebar"
-			],
-			[
-				"di",
-				"display"
-			],
-			[
-				"ul",
-				"ul"
-			],
-			[
-				"hei",
-				"height"
-			],
-			[
-				"ho",
-				"hover"
-			],
-			[
-				"list-s",
-				"list-style"
-			],
-			[
-				"ri",
-				"right"
-			],
-			[
-				"col",
-				"color"
-			],
-			[
-				"bl",
-				"block"
-			],
-			[
-				"dis",
-				"display"
-			],
-			[
-				"rgb",
-				"rgba()"
-			],
-			[
-				"borde",
-				"border-bottom-style"
-			],
-			[
-				"lef",
-				"left"
-			],
-			[
-				"border-top",
-				"border-top-left-radius"
-			],
-			[
-				"m",
-				"multiArr"
-			],
-			[
-				"sor",
-				"sortInsert"
-			],
-			[
-				"arr",
-				"arr"
-			],
-			[
-				"so",
-				"sortingArray1"
-			],
-			[
-				"si",
-				"simpleList"
-			],
-			[
-				"ite",
-				"iterLength"
-			],
-			[
-				"fun",
-				"function"
-			],
-			[
-				"a",
-				"auto"
-			],
-			[
-				"no",
-				"no-repeat"
-			],
-			[
-				"n",
-				"no-repeat"
-			],
-			[
-				"user",
-				"userMessage"
-			],
-			[
-				"re",
-				"result"
 			]
 		]
 	},
@@ -511,9 +523,69 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 219.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: d",
+				"Package Control: Disable Package"
+			],
+			[
+				"browes",
+				"View In Browser"
+			],
+			[
+				"brow",
+				"View In Browser"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"live",
+				"LiveReload: Self test"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"Package Control: ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"LiveReload: Enable/disable plugins",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"LiveReload: Enable plugins",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Ins",
+				"Package Control: Install Package"
+			],
 			[
 				"inst",
 				"Package Control: Install Package"
@@ -525,17 +597,9 @@
 			[
 				"html",
 				"Set Syntax: HTML"
-			],
-			[
-				"ins",
-				"Package Control: Install Package"
-			],
-			[
-				"in",
-				"Package Control: Install Package"
 			]
 		],
-		"width": 400.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -556,140 +620,138 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/spalah/Desktop/form",
-		"/E/Hunter",
-		"/Z/home/test1.ru/www/hunter"
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0"
 	],
 	"file_history":
 	[
-		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/style.css",
-		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/variables.less",
-		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/animated.less",
-		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/bordered-pulled.less",
-		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/rotated-flipped.less",
 		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/mixins.less",
-		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/font-awesome.less",
-		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/stacked.less",
-		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/fixed-width.less",
-		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/icons.less",
-		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/larger.less",
-		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/list.less",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/variables.less",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/style.less",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/product.html",
+		"/D/Dropbox/WebWorks/Banana-kids/Email layouts/Спасибо что однажды выбрали нас/index.html",
+		"/D/Downloads/members_export_01f9a09c80_1.csv",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/js/main.js",
+		"/D/Dropbox/WebWorks/Banana-kids/Купоны/members_export_01f9a09c80.csv",
+		"/D/Dropbox/OpenServer/domains/cakes.com/index.html",
+		"/D/Dropbox/OpenServer/domains/cakes.com/javascripts/main.js",
+		"/D/Dropbox/OpenServer/domains/cakes.com/details.html",
+		"/D/Dropbox/OpenServer/domains/cakes.com/gallery.html",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/main.css",
+		"/D/Dropbox/Samples www/WebJedai/template_bootstrap/js/common.js",
+		"/D/Dropbox/Samples www/WebJedai/template_bootstrap/index.html",
+		"/C/Users/Andrey/AppData/Local/Temp/_tc/jquery.scrollTo-master/demo/index.html",
+		"/C/Users/Andrey/AppData/Local/Temp/_tc/template_bootstrap/js/common.js",
+		"/D/Dropbox/WebWorks/Banana-kids/Email layouts/Акционный блок + блок распродаж/index.html",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/index.html",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/tabs/tab-1.html",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/catalog.html",
 		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/core.less",
 		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/path.less",
+		"/D/Dropbox/jsStudying/Envato Lessons/index.html",
+		"/D/Dropbox/jsStudying/Envato Lessons/css/style.css",
+		"/C/Users/Andrey/AppData/Roaming/Sublime Text 3/Packages/View In Browser/View In Browser.sublime-settings",
+		"/C/Users/Andrey/AppData/Roaming/Sublime Text 3/Packages/User/View In Browser.sublime-settings",
+		"/C/Users/Andrey/AppData/Roaming/Sublime Text 3/Packages/User/LiveReload.sublime-settings",
+		"/C/Users/Andrey/AppData/Roaming/Sublime Text 3/Packages/LiveReload/LiveReload.sublime-settings",
+		"/C/Users/Andrey/AppData/Roaming/Sublime Text 3/Packages/LiveReload/web/test.html",
+		"/C/Users/Andrey/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/D/Dropbox/WebWorks/Banana-kids/Materials/Samples/kinderly.html",
+		"/D/Dropbox/WebWorks/Banana-kids/Email layouts/Приветственное письмо - для старых пользователей/index.html",
+		"/D/Dropbox/WebWorks/Banana-kids/Email layouts/Дарим купон/index.html",
+		"/D/Dropbox/Samples www/Email/rozetka.html",
+		"/D/Dropbox/Samples www/Email/Emailcraft/Tshirt/index.html",
+		"/D/Dropbox/Samples www/Email/Emailcraft/Internal_4/index.html",
+		"/D/Dropbox/Samples www/Email/Emailcraft/Internal_3/index.html",
+		"/D/Dropbox/Samples www/Email/Emailcraft/Internal_2/index.html",
+		"/D/Dropbox/Samples www/Email/Emailcraft/Internal_1/index.html",
+		"/D/Dropbox/Samples www/Email/Emailcraft/Green Magic/index.html",
+		"/D/Dropbox/Samples www/Email/Emailcraft/4 Team/index.html",
+		"/D/Dropbox/WebWorks/Banana-kids/subscribe.html",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/_reset.scss",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/main.scss",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/_mixins.scss",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/_variables.css",
+		"/D/Dropbox/WebWorks/Banana-kids/Other Letters/thankyou/index.php",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/header.html",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/cart.html",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/card.html",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/js/controllers.js",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/js/angular.min.js",
+		"/D/Dropbox/WebWorks/Banana-kids/Other Letters/Plaza/unsub/unsub.php",
+		"/D/Dropbox/WebWorks/Banana-kids/Other Letters/Plaza/unsub/MCAPI.class.php",
+		"/D/Dropbox/WebWorks/Banana-kids/Other Letters/Plaza/unsub/index.php",
+		"/D/Dropbox/WebWorks/Banana-kids/Other Letters/Plaza/unsub/.section.php",
+		"/D/Dropbox/WebWorks/Banana-kids/Other Letters/Спасибо за подписку/index.php",
+		"/D/Dropbox/WebWorks/Banana-kids/Other Letters/Спасибо за подписку/index.html",
+		"/D/Dropbox/WebWorks/Banana-kids/Other Letters/Подтвердите регистрацию/index.html",
+		"/D/Dropbox/WebWorks/Banana-kids/Other Letters/Plaza/thankyou/index.php",
+		"/D/Dropbox/WebWorks/Banana-kids/Other Letters/Подтвердите регистрацию/index.php",
+		"/D/Downloads/styles.txt",
+		"/D/Dropbox/WebWorks/Banana-kids/Other Letters/Plaza/confirm/.section.php",
+		"/D/Dropbox/WebWorks/Banana-kids/Other Letters/Plaza/thankyou/.section.php",
+		"/D/Dropbox/WebWorks/Banana-kids/Other Letters/Подтвердите регистрацию/thankyou/.section.php",
+		"/D/Dropbox/WebWorks/Banana-kids/Other Letters/Подтвердите регистрацию/confirm/.section.php",
+		"/D/Dropbox/WebWorks/Banana-kids/Other Letters/Подтвердите регистрацию/confirm/index.php",
+		"/D/Dropbox/WebWorks/Banana-kids/Other Letters/Подтвердите регистрацию/unsub/unsub.php",
+		"/D/Dropbox/WebWorks/Banana-kids/Other Letters/Подтвердите регистрацию/unsub/MCAPI.class.php",
+		"/D/Dropbox/WebWorks/Banana-kids/Other Letters/Подтвердите регистрацию/unsub/index.php",
+		"/D/Dropbox/WebWorks/Banana-kids/Other Letters/Подтвердите регистрацию/unsub/.section.php",
+		"/C/Users/Andrey/AppData/Local/Temp/_tc/index.html",
+		"/D/Downloads/common.js",
+		"/D/Dropbox/WebWorks/Banana-kids/Subscribe Forms/Subscribe full/2 question/subscribe-pop-up-4.html",
+		"/D/Dropbox/WebWorks/Banana-kids/Subscribe Forms/Subscribe full/subscribe-pop-up.html",
+		"/D/Dropbox/WebWorks/Banana-kids/Subscribe Forms/Subscribe full/template_styles.css",
+		"/D/Dropbox/WebWorks/Banana-kids/Subscribe Forms/Subscribe full/script",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/_fonts.scss",
+		"/C/Users/Andrey/AppData/Local/Temp/_tc/template_bootstrap/css/media.css",
+		"/C/Users/Andrey/AppData/Local/Temp/_tc/template_bootstrap/css/main.css",
+		"/C/Users/Andrey/AppData/Local/Temp/_tc/template_bootstrap/css/fonts.css",
+		"/D/Dropbox/OpenServer/domains/resortwp/wp-content/themes/Resort/header.php",
+		"/D/Dropbox/OpenServer/domains/resortwp/wp-content/themes/Resort/index.php",
+		"/D/Downloads/Form/common.js",
+		"/D/Downloads/Form/index.html",
+		"/D/Downloads/Form/mail.php",
+		"/D/Andrey/YandexDisc/HtmlCss Works/S-label/Les13.ua/www/css/styles.css",
+		"/D/Dropbox/WebWorks/Banana-kids/Subscribe Forms/Top-subscribe/index.html",
+		"/D/Dropbox/OpenServer/domains/enigma/wp-content/themes/twentyfifteen/style.css",
+		"/D/Andrey/YandexDisc/HtmlCss Works/S-label/Les8HW.com/www/index.html",
+		"/D/Andrey/YandexDisc/HtmlCss Works/S-label/Les8.com/www/index.html",
+		"/C/Users/Andrey/AppData/Local/Temp/_tc/style.css",
 		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/reset.css",
-		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/index.html",
-		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/style.less",
-		"/Z/home/test1.ru/www/hunter/js/controllers.js",
-		"/Z/home/test1.ru/www/hunter/products/products.json",
-		"/Z/home/test1.ru/www/hunter/index.html",
-		"/Z/home/test1.ru/www/hunter/header.html",
-		"/Z/home/test1.ru/www/hunter/css/mixins.less",
-		"/Z/home/test1.ru/www/hunter/css/icons.less",
-		"/Z/home/test1.ru/www/hunter/css/variables.less",
-		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.528/font-awesome-4.4.0/less/variables.less",
-		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.753/font-awesome-4.4.0/less/font-awesome.less",
-		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.534/font-awesome-4.4.0/less/mixins.less",
-		"/C/Users/spalah/AppData/Local/Temp/Rar$DIa0.573/font-awesome.css",
-		"/Z/home/test1.ru/www/hunter/js/controller.js",
-		"/Z/home/test1.ru/www/hunter/js/items.json",
-		"/E/Hunter/css/variables.less",
-		"/E/Hunter/css/mixins.less",
-		"/E/Hunter/css/style.less",
-		"/E/Hunter/header.html",
-		"/E/Hunter/index.html",
-		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.388/fonts.css",
-		"/C/Users/spalah/AppData/Local/Temp/Rar$DIa0.601/fonts.css",
-		"/E/Hunter/css/reset.css",
-		"/C/Users/spalah/AppData/Roaming/Sublime Text 2/Packages/User/GoldenRatio.sublime-settings",
-		"/Z/home/test1.ru/www/lesson5/index.html",
-		"/E/programma/project/applephone/js/jquery.main.js",
-		"/E/programma/project/applephone1/js/jquery.gallery.js",
-		"/Z/home/test1.ru/www/lesson5/js/controllers.js",
-		"/Z/home/test1.ru/www/lesson5/css/style.css",
-		"/C/Users/spalah/angular-phonecat/app/index.html",
-		"/C/Users/spalah/angular-phonecat/test/e2e/scenarios.js",
-		"/C/Users/spalah/angular-phonecat/test/unit/controllersSpec.js",
-		"/C/Users/spalah/angular-phonecat/test/karma.conf.js",
-		"/C/Users/spalah/angular-phonecat/test/protractor-conf.js",
-		"/C/Users/spalah/AppData/Roaming/Sublime Text 2/Packages/User/temp.sublime-snippet",
-		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.844/svgdefs.svg",
-		"/C/Users/spalah/Downloads/search109.svg",
-		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.611/style.css",
-		"/C/Users/spalah/Desktop/form/index.html",
-		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.242/SVG/office.svg",
-		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.330/SVG/newspaper.svg",
-		"/C/Users/spalah/Desktop/form/css/all.css",
-		"/C/Users/spalah/AppData/Roaming/Sublime Text 2/Packages/GoldenRatio/GoldenRatio.sublime-settings",
-		"/Z/home/test1.ru/www/lesson3/css/jquery.jscrollpane.css",
-		"/Z/home/test1.ru/www/lesson3/js/main.js",
-		"/Z/home/test1.ru/www/lesson3/css/style.css",
-		"/Z/home/test1.ru/www/lesson3/index.html",
-		"/Z/home/test1.ru/www/lesson3/js/jquery.jscrollpane.min.js",
-		"/C/Users/spalah/Desktop/lesson3/index.html",
-		"/C/Users/spalah/Desktop/lesson3/css/style.css",
-		"/C/Users/spalah/Desktop/lesson4/index.html",
-		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.845/hw5/css/style.css",
-		"/C/Users/spalah/Desktop/Новая папка/css/style.css",
-		"/C/Users/spalah/Desktop/Новая папка/js/main.js",
-		"/C/Users/spalah/Desktop/Новая папка/index.html",
-		"/E/programma/html5/css/all.css",
-		"/C/Users/spalah/Desktop/index.html",
-		"/E/programma/css3/css/all.css",
-		"/E/programma/1/examples/XHTML_1_0_Transitional.html",
-		"/C/Users/Public/Documents/My script",
-		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.194/HomeWork5-Краснобай Елена/index.html",
-		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.108/HomeWork5-Краснобай Елена/js/main.js",
-		"/C/Users/spalah/AppData/Local/Temp/Rar$DIa0.840/styles.css",
-		"/C/Users/spalah/AppData/Local/Temp/Rar$DIa0.942/styles.css",
-		"/E/!!template/src/scss/template/mixins/_buttons.scss",
-		"/E/!!template/src/scss/template/_forms.scss",
-		"/E/!!template/src/scss/template/_buttons.scss",
-		"/E/!!template/src/scss/all.scss",
-		"/E/!!template/dist/forma 1.html",
-		"/E/!!template/src/scss/_template.scss",
-		"/E/!!template/src/scss/template/_variables.scss",
-		"/E/!!template/src/scss/template/mixins/_forms.scss",
-		"/E/18/css/all.css",
-		"/E/17/Резина/css/all.css",
-		"/E/17/Резина/index.html",
-		"/E/project_res/marcup/index.html",
-		"/E/lesson_31_07/markup/index.html",
-		"/E/project_res/marcup/css/all.css",
-		"/E/lesson_31_07/markup/css/all.css",
-		"/E/index.html",
-		"/C/Users/spalah/Desktop/burbank/index.html",
-		"/C/Users/spalah/Desktop/burbank/css/all.css",
-		"/C/Users/spalah/Desktop/burbank/js/jquery.main.js",
-		"/C/Users/spalah/Desktop/burbank/css/748.css",
-		"/C/Users/spalah/Desktop/burbank/css/748",
-		"/Z/home/localhost/www/oskar_php_project/27_07_15.php",
-		"/Z/denwer/www/oskar_php_project/27_07_15.php",
-		"/Z/denwer/www/oskar_php_project/index.php",
-		"/Z/denwer/www/oskar_php_project/конспект.txt",
-		"/E/Html Css S-label/Study-s-label/maket_5_casino/index.html",
-		"/E/Html Css S-label/Study-s-label/maket_5_casino/css/all.css",
-		"/E/for today 25.06/html5/index.html",
-		"/Z/123/css/all.css",
-		"/Z/123/index.html",
-		"/Z/123/js/hscrollarea.js",
-		"/C/Users/spalah/AppData/Local/Temp/Rar$DIa0.454/css.css",
-		"/C/Users/spalah/AppData/Local/Temp/Rar$DRa0.034/examples/XHTML_1_0_Transitional.html",
-		"/C/Users/spalah/Desktop/lesson 19/css/all.css",
-		"/C/Users/spalah/Desktop/lesson 19/index.html",
-		"/C/Users/spalah/Desktop/lesson 19/js/jcarousel.responsive.js",
-		"/E/lesson 19/2 галерея 19 урок/css/all.css",
-		"/E/lesson 19/2 галерея 19 урок/js/jcarousel.responsive.js",
-		"/C/Users/spalah/Desktop/lesson 19/js/main.js",
-		"/C/Users/spalah/Desktop/lesson 19/js/jquery.js",
-		"/C/Users/spalah/Desktop/lesson 19/js/jquery.sidr.min.js",
-		"/E/12/Новая папка/index.html",
-		"/E/12/Новая папка/css/all.css",
-		"/C/Users/spalah/Desktop/ДЗ lesson3/css/style.css",
-		"/C/Users/spalah/Desktop/ДЗ lesson3/index.html",
-		"/E/Lessons/Lesson19/Manual/jsor-jcarousel-60e2338/examples/responsive/index.html",
-		"/E/Lessons/Lesson19/Manual/jsor-jcarousel-60e2338/examples/responsive/jcarousel.responsive.css",
-		"/E/Lessons/Lesson18/Lesson/index.html",
-		"/E/Lessons/Lesson19/Lesson/css/all.css"
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/footer.html",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/_variables.scss",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/font-awesome.scss",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/_stacked.scss",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/_path.scss",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/_bordered-pulled.scss",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/_core.scss",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/_fixed-width.scss",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/_icons.scss",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/_list.scss",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/1/fonts.scss",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/1/_variables.scss",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/1/_path.scss",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/1/_mixins.scss",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/1/_icons.scss",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/fonts.scss",
+		"/C/Users/Andrey/AppData/Local/Temp/_tc/font-awesome-4.4.0/scss/font-awesome.scss",
+		"/C/Users/Andrey/AppData/Local/Temp/_tc/font-awesome-4.4.0/scss/_icons.scss",
+		"/C/Users/Andrey/AppData/Local/Temp/_tc/font-awesome-4.4.0/scss/_larger.scss",
+		"/C/Users/Andrey/AppData/Local/Temp/_tc/font-awesome-4.4.0/scss/_list.scss",
+		"/C/Users/Andrey/AppData/Local/Temp/_tc/font-awesome-4.4.0/scss/_mixins.scss",
+		"/C/Users/Andrey/AppData/Local/Temp/_tc/font-awesome-4.4.0/scss/_path.scss",
+		"/C/Users/Andrey/AppData/Local/Temp/_tc/font-awesome-4.4.0/scss/_rotated-flipped.scss",
+		"/C/Users/Andrey/AppData/Local/Temp/_tc/font-awesome-4.4.0/scss/_stacked.scss",
+		"/C/Users/Andrey/AppData/Local/Temp/_tc/font-awesome-4.4.0/scss/_variables.scss",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/style.css",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/font-awesome.less",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/_animated.scss",
+		"/C/Users/Andrey/AppData/Local/Temp/_tc/demo-files/demo.css",
+		"/D/Dropbox/OpenServer/domains/moduswp/index.php",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/_rotated-flipped.scss",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/_larger.scss",
+		"/D/Dropbox/OpenServer/domains/hunter/hunter/branch0/css/animated.less",
+		"/D/Dropbox/OpenServer/domains/cakes.com/stylesheets/font.scss"
 	],
 	"find":
 	{
@@ -697,7 +759,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
 		]
@@ -707,46 +769,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"person",
-			"<div></div>",
-			">\n",
-			"true",
-			"style.css",
-			"twenty_thirteen",
-			"<!",
-			".tab",
-			"tab",
-			"slider",
-			"scr",
-			";\n",
-			"\">\n",
-			";\n",
-			"home",
-			"nav ul li:last-child{\npadding-right:0;\n}",
-			"=\"#\"><",
-			"sprite",
-			";\n",
-			"\" ",
-			">\n",
-			"FF4500",
-			"1345",
-			"sidebar",
-			"tab-info",
-			"accordion",
-			"whit",
-			"show",
-			"spase",
-			"scaleY",
-			"rotate",
-			"id",
-			"Home\n			ipad apps\n			Demonstrations\n			Leopards media\n			Connect us",
+			".product-content-holder",
+			".08",
+			"self.",
+			"Bender-Italic",
+			"product-price",
+			"product",
+			"scrollto",
+			".page",
+			"details",
+			";",
+			"<td align=\"center\" style=\"color: #666666; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 100%; text-transform: uppercase; text-align: center;\">",
+			"border",
+			"<h4>2-way zip</h4>\n											<p>These are 2-way zippers (they have two sliders) and are sometimes referred to as dual zippers</p>",
+			"font-fa",
+			"-cont",
+			"image-cont",
+			"view",
+			"876px;",
+			"max-width: 876px;",
+			"consider",
+			"bestSe",
+			"align=\"left\" ",
+			"<font",
+			"span",
+			"font style",
+			"span",
+			"height=\"100",
+			"<a",
+			"<font",
+			" style=\"padding:0;",
+			"padding:0;",
+			"padding:0",
+			"vertical-align",
+			"vertival-align",
+			"vali",
 			"100",
-			"activer",
-			"acc",
-			"img",
-			"get",
-			"img[Attribute Style]",
-			"disa"
+			"#top",
+			"}\n",
+			"cart",
+			"(\n													<span",
+			"cart",
+			"src=",
+			"</li>",
+			"<li>",
+			"/bitrix/templates/lk/img/",
+			"главную",
+			"block",
+			"clear",
+			"min-w",
+			"980",
+			"display: block",
+			"display:block",
+			"textinput40 back1",
+			"title",
+			"--small",
+			" $duration $timing $delay",
+			"$transition;",
+			"<div class=\"image-hover\"><i class=\"icon-camera\"></i></div>",
+			"image_hover",
+			"<a",
+			"<div class=\"image_hover\"></div>",
+			"$x",
+			"x",
+			"10px",
+			"'",
+			"cakes",
+			"section",
+			"'#{$fa-font-path}",
+			"fonts",
+			"dn",
+			"#modal",
+			"$",
+			"jQuery",
+			"$",
+			"height",
+			"popup",
+			"popup-contact",
+			"popups",
+			"();\n",
+			"footer-services",
+			".contacts",
+			"products-list",
+			"50%",
+			"contact-block",
+			"product-content",
+			"quick-link-holder",
+			"quic",
+			"box-sha",
+			"transiti",
+			"box-sh",
+			"bx-prev",
+			"border",
+			"555",
+			"94938f",
+			"prev a",
+			"&nbsp;",
+			"self.",
+			"var",
+			"modal",
+			"transform",
+			"modal",
+			"type",
+			"size2",
+			"brand4",
+			"shop-options__list",
+			"brand1",
+			"font",
+			"check",
+			"2FAAC6_4_0",
+			"webfonts",
+			"src",
+			"products-list",
+			".products-list li",
+			".price-container",
+			"<img",
+			"form[name=\"mc-embedded-subscribe-form\"] .wrap_placeholder ins",
+			"add_to_subs_nofixed",
+			"add_to_subs_fixed",
+			"placehol",
+			"add_to_subs",
+			"text-align: left",
+			"tbody",
+			"id=",
+			"font-weight:bold",
+			"font-weight: bold",
+			"<span style=\"margin: 0; padding: 0;",
+			"border:",
+			"text-decora"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -754,8 +904,14 @@
 		"regex": false,
 		"replace_history":
 		[
+			",",
+			"#quick-modal",
+			"font-family: Arial, Helvetica, sans-serif;",
+			"",
+			"font-weight:normal;",
+			""
 		],
-		"reverse": true,
+		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
@@ -767,20 +923,15 @@
 			"sheets":
 			[
 			]
-		},
-		{
-			"sheets":
-			[
-			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 36.0
+		"height": 27.0
 	},
 	"input":
 	{
-		"height": 31.0
+		"height": 35.0
 	},
 	"layout":
 	{
@@ -791,18 +942,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.241744284505,
 			1.0
 		],
 		"rows":
@@ -812,6 +956,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
@@ -819,7 +967,7 @@
 	"project": "hunter.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -846,15 +994,15 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
-	"side_bar_width": 185.0,
+	"side_bar_visible": true,
+	"side_bar_width": 139.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

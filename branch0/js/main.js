@@ -258,7 +258,7 @@ var Homepage = {
 	},
 	bestSellSlider: function(){
 		var self = this;
-		sliderBestSell = jQuery('.products-container').find('.carousel-holder > ul').bxSlider({
+		sliderBestSell = jQuery('.best-sell-block').find('.carousel-holder > ul').bxSlider({
 			controls: true,
 			slideWidth: 272,
 			minSlides: 3,
@@ -268,6 +268,31 @@ var Homepage = {
 			pager: false,
 			prevSelector: '.prev-sell',
 			nextSelector: '.next-sell'
+		});
+	},
+	considerSlider: function(){
+		var self = this;
+		sliderConsider = jQuery('.consider-block').find('.carousel-holder > ul').bxSlider({
+			controls: true,
+			slideWidth: 272,
+			minSlides: 4,
+			maxSlides: 4,
+			moveSlides: 1,
+			slideMargin: 20,
+			pager: false,
+			prevSelector: '.prev-cons',
+			nextSelector: '.next-cons'			
+		});
+	},
+	productSlider: function(){
+		var self = this;
+		sliderProduct = jQuery('.product-photo').find('.carousel-holder > ul').bxSlider({
+				controls: true,
+				minSlides: 1,
+				maxSlides: 1,				
+			    pagerCustom: '.carousel-pager',
+				prevSelector: '.prev-prod',
+				nextSelector: '.next-prod'			    
 		});
 	},
 	formStyler: function(){
@@ -302,7 +327,6 @@ var Homepage = {
 		self.winW = jQuery(window).width(),
 		self.winH = jQuery(window).height();
 		jQuery('.quick-look-btn').click(function(e){
-				// e.preventDefault();
 				self.modal.show();
 			    self.windowBody.addClass('modal-lock');
 				// jQuery(self.modalBg).css({'width':self.winW,'height':self.docH});		    
@@ -319,8 +343,30 @@ var Homepage = {
 			    self.windowBody.removeClass('modal-lock');
 		    });
 
+	},
+	quantityBlock: function(){
+	    jQuery('.quantity-plus').click(function(e){
+		    fieldName = jQuery(this).attr('field');
+	        e.preventDefault();
+	        var currentVal = parseInt(jQuery('input[name='+fieldName+']').val());
+	        if (!isNaN(currentVal)) {
+	            jQuery('input[name='+fieldName+']').val(currentVal + 1);
+	        } else {
+	            jQuery('input[name='+fieldName+']').val(1);
+	        }
+	    });
+	    jQuery('.quantity-minus').click(function(e) {
+	        console.log('1');
+		    fieldName = jQuery(this).attr('field');
+	        e.preventDefault();
+	        var currentVal = parseInt(jQuery('input[name='+fieldName+']').val());
+	        if (!isNaN(currentVal) && currentVal > 1) {
+	            jQuery('input[name='+fieldName+']').val(currentVal - 1);
+	        } else {
+	            jQuery('input[name='+fieldName+']').val(1);
+	        }
+	    });
 	}
-
 };
 jQuery(function(){
 	Mobile.init();
@@ -329,7 +375,8 @@ jQuery(function(){
 	Homepage.customTabs();
 	Homepage.formStyler();
 	Homepage.hideCheckbox();
-	Homepage.modal();	
+	Homepage.modal();
+	Homepage.quantityBlock();
 
 	jQuery(window).on('load', function(){
 		Homepage.mainBanner();
@@ -337,6 +384,8 @@ jQuery(function(){
 		Homepage.tabsSliders();
 		Homepage.postSlider();
 		Homepage.bestSellSlider();
+		Homepage.considerSlider();
+		Homepage.productSlider();		
 		ScrollAnimation.init();		
 	});
 

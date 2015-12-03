@@ -12,128 +12,340 @@
 	<script type="text/javascript" src="js/main.js"></script>
 	<title>Hunter</title>
 </head>
-<body>
+<body class="product">
 	<div class="wrapper">
 		<div class="header-holder" ng-include=" 'header.html' "></div>
 		<div class="main">
-			<div ng-controller="NavCtrl" class="homepage-slider">
-				<ul>
-					<li style="background: url('images/homepage-banner.jpg') no-repeat 50% 50%; background-size: cover;">
-						<div class="category-description-holder">
-							<div class="category-description-wrapper">
-								<div class="category-description">
-									<div class="title">
-										<span>Lightweight suits for active hunting</span>
-									</div>
-									<div class="price">
-										<span>$1215</span>
-									</div>
-									<div class="look-more-holder">
-										<a class href="#">Look</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li style="background: url(images/hunting-wallpaper.jpg) no-repeat 50% 50%; background-size: cover;">
-						<div class="category-description-holder">
-							<div class="category-description-wrapper">
-								<div class="category-description">
-									<div class="title">
-										<span>Sniper rifles</span>
-									</div>
-									<div class="price">
-										<span>$7615</span>
-									</div>
-									<div class="look-more-holder">
-										<a class href="#">Look</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
-				</ul>
-				<div class="welcome-msg-holder">
-					<div class="welcome-msg-container">
-						<h1><span>Welcome to hunter</span></h1>
-						<div class="description">
-							 Active hunters worldwide give their feedback on HUNTER products and comes up with ideas for new details and functionalities.
-						</div>
-					</div>
-				</div>
-			</div>
 			<div class="content">
+				<div class="top-image-holder">
+					<div class="top-image">
+						<div class="text-holder">
+							<h1>Mens</h1>
+							<ul class="breadcrumbs">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Men</a></li>
+								<li><a href="#">Shirts</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="image-tuneup"></div>
+				</div>			
 				<div class="content-holder">
-					<div class="collection-block">
-						<h2 class="slow-show" data-timeline="100">
-							<span>Collezione autunno</span>
-						</h2>
-						<div class="collection">
-							<div class="left-block slow-show"  data-timeline="100">
-								<img src="images/collection-1.jpg" alt="">
-								<div class="title">
-									One hit, one shot, one victory
+					<div class="product-view">
+						<div class="product-photo">
+							<div class="carousel-holder">
+								<div class="controls prod-controls">
+									<div class="prev-prod"></div>
+									<div class="next-prod"></div>
 								</div>
-								<div class="description">
-									Established in 1928, our history and heritage are that of a world-class hunting
+								<ul class="product-carousel">
+								  <li><img src="images/product-slider-1.png" alt="Prod color 1"></li>
+								  <li><img src="images/product-slider-1.png" alt="Prod color 2"></li>
+								  <li><img src="images/product-slider-1.png" alt="Prod color 3" ></li>
+								</ul>
+								  <div class="carousel-pager">
+								    <ul>
+								        <li>
+								        	<div class="tmb-wrap">
+									        	<a data-slide-index="0" href="">
+										        	<img src="images/product-slider-tmb-1.png" alt="tmb-1">
+									        	</a>
+								        	</div>
+								        </li>
+								        <li>
+									        <div class="tmb-wrap">
+									        	<a data-slide-index="1" href="">
+										        	<img src="images/product-slider-tmb-2.png" alt="tmb-2">
+									        	</a>
+								        	</div>
+								        </li>
+								        <li>
+									        <div class="tmb-wrap">
+									        	<a data-slide-index="2" href="">
+										        	<img src="images/product-slider-tmb-3.png" alt="tmb-3">
+									        	</a>
+								        	</div>
+								        </li>
+								    </ul>
 								</div>
 							</div>
-							<div class="right-block slow-show"  data-timeline="100">
-								<div class="first-block">
-									<div class="image-holder">
-										<img src="images/collection-2.jpg" alt="">
+						</div>
+						<div class="product-content-holder">
+								<div class="product-content-bg">
+									<div class="image-content">
+										<img src="images/product-desc-back.jpg" alt="Prod desc back">
+									</div>
+								</div>
+							<div class="product-content">
+								<h3 class="product-title">Knitwear with windstopper</h3>
+								<div class="product-pricebox">
+									<div class="raiting-holder">
+					    				<ul class="raiting-marks">
+					    					<li>
+					    						<span class="fa fa-star-o active"></span>
+					    					</li>
+					    					<li>
+					    						<span class="fa fa-star-o active"></span>
+					    					</li>
+					    					<li>
+					    						<span class="fa fa-star-o active"></span>
+					    					</li>
+					    					<li>
+					    						<span class="fa fa-star-o"></span>
+					    					</li>
+					    					<li>
+					    						<span class="fa fa-star-o"></span>
+					    					</li>
+					    				</ul>
+					    				<p class="product-raiting-push">(256 push)</p>
+				    				</div>
+				    			</div>
+				    			<div class="product-desc-wrap">
+				    				<div class="product-desc">
+				    					<h4 class="product-desc__title">Annaboda jersey</h4>
+				    					<p class="product-desc__text">Hardwearing jersey in 100% wool with windproo
+										breathable WINDSTOPPER® membrane. 
+										Features radio pocket.</p>
+										<p class="product-price"><span class="product-price-old">450$</span>&nbsp;<span class="product-price-count">350$</span></p>
+				    					<h4 class="product-desc__var-title">Size</h4>
+				    					<ul class="product-size var-box">
+				    						<li>XS</li>
+				    						<li>S</li>
+				    						<li>M</li>
+				    						<li>L</li>
+				    						<li>XL</li>
+				    					</ul>
+										<div class="product-desc-box">
+											<div class="box-item">
+						    					<h4 class="product-desc__var-title">Color in stock</h4>
+						    					<ul class="product-color var-box">
+						    						<li><img src="images/product-color-1.jpg" alt="Light Brown"></li>
+						    						<li><img src="images/product-color-2.jpg" alt="Brown"></li>
+						    						<li><img src="images/product-color-3.jpg" alt="Dark Brown"></li>
+						    					</ul>
+					    					</div>
+					    					<div class="box-item">
+						    					<h4 class="product-desc__var-title">Quantity</h4>
+						    					<div class="product-desc__quantity var-box var-">
+									              <button type="button" class="quantity-minus" field="quantity-disp">-</button>
+										          <input type="text" name="quantity-disp" class="form-control input-number" value="1" min="1" max="50">
+									              <button type="button" class="quantity-plus" field="quantity-disp">+</button>
+						    					</div>
+					    					</div>
+				    					</div>
+					    			</div>
+				    			</div>
+				    			<a href="#" class="add-to-cart">Add to cart</a>
+				    			<ul class="share-group var-box">
+				    				<li class="text-box">Share</li>
+				    				<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+				    				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				    				<li><a href="#"><i class="fa fa-instagram"></i></a></a></li>
+				    			</ul>
+			    			</div>
+						</div>
+					</div>
+					<div class="product-view-ext">
+						<div class="text-col-holder">
+							<div class="text-col">
+								<h3>Technology</h3>
+								<ul class="product-view-ext__list">
+									<li>
+										<div class="image-holder">
+											<img src="images/product-details-2zip.png" alt="2-Way Zip">
+										</div>
 										<div class="text-holder">
-											<div class="text-wrapper">
-												<div class="text-container">
-													Collezione
-												</div>
-											</div>
+											<h4>2-way zip</h4>
+											<p>These are 2-way zippers (they have two sliders) and are sometimes referred to as dual zippers</p>
 										</div>
-									</div>
-								</div>
-								<div class="second-block">
-									<div class="top">
+									</li>
+									<li>
 										<div class="image-holder">
-											<div class="image-container">
-												<div class="image">
-													<img src="images/collection-3.jpg" alt="">
-												</div>
-											</div>
+											<img src="images/product-details-2zip.png" alt="2-Way Zip">
 										</div>
-									</div>
-									<div class="bottom">
+										<div class="text-holder">
+											<h4>2-way zip</h4>
+											<p>These are 2-way zippers (they have two sliders) and are sometimes referred to as dual zippers</p>
+										</div>
+									</li>
+									<li>
 										<div class="image-holder">
-											<div class="image-container">
-												<div class="image">
-													<img src="images/gloves.png" height="172" width="163" alt="">
-												</div>
-											</div>
+											<img src="images/product-details-2zip.png" alt="2-Way Zip">
 										</div>
-									</div>	
-								</div>
+										<div class="text-holder">
+											<h4>2-way zip</h4>
+											<p>These are 2-way zippers (they have two sliders) and are sometimes referred to as dual zippers</p>
+										</div>
+									</li>
+								</ul>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="products-block slow-show" data-timeline="100">
-					<div class="products-container">
-						<ul class="tabs-heading">
-						    <li><a class="active" href="#tabs-1">Desktop</a></li>
-						    <li><a href="#tabs-2">Computer part</a></li>
-						    <li><a href="#tabs-3">Electronics</a></li>
-						   	<li><a href="#tabs-4">Apparel</a></li>
-						    <li><a href="#tabs-5">Furniture</a></li>
-						</ul>
-						<div class="tabs-wrapper">
-							<div ng-include=" 'tabs/tab-1.html' " class="tabs active" id="tabs-1"></div>
-							<div ng-include=" 'tabs/tab-2.html' " class="tabs" id="tabs-2"></div>
-							<div ng-include=" 'tabs/tab-3.html' " class="tabs" id="tabs-3"></div>
-							<div ng-include=" 'tabs/tab-4.html' " class="tabs" id="tabs-4"></div>
-							<div ng-include=" 'tabs/tab-5.html' " class="tabs" id="tabs-5"></div>
+						<div class="image-col">
+							<img src="images/product-details-photo.jpg" alt="Knitwear with windstopper photo">
 						</div>
 					</div>
 				</div>
-			</div>
+			<div class="consider-block products-container">
+				<div class="title">
+					More items to consider
+				</div>
+				<div class="carousel-holder">
+					<div class="controls">
+						<div class="prev prev-cons"></div>
+						<div class="next next-cons"></div>
+					</div>
+					<ul class="products-list">
+						<li>
+							<a href="#">
+								<img src="images/prod-2.jpg" alt="">
+								<span class="name">
+									Annaboda Jersey
+								</span>
+								<span class="price">
+									$400
+								</span>
+							</a>
+							<div class="prod-discount">-50%</div>
+							<div class="prod-hover">
+								<div class="image-holder">
+									<a href="#">
+										<img src="images/prod-1-hover.jpg" alt="">
+									</a>
+								</div>
+								<div class="product-info">
+					    			<div class="name">
+					    				Annaboda Jersey
+					    			</div>
+					    			<div class="quick-link-holder">
+					    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+					    			</div>
+					    			<div class="raiting-holder">
+					    				<ul>
+					    					<li>
+					    						<span class="fa fa-star"></span>
+					    					</li>
+					    					<li>
+					    						<span class="fa fa-star"></span>
+					    					</li>
+					    					<li>
+					    						<span class="fa fa-star"></span>
+					    					</li>
+					    					<li>
+					    						<span class="fa fa-star"></span>
+					    					</li>
+					    					<li>
+					    						<span class="fa fa-star-o"></span>
+					    					</li>
+					    				</ul>
+					    			</div>
+					    			<div class="price-container">
+					    				$400.00
+					    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+					    			</div>
+					    		</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/prod-3.jpg" alt="">
+								<span class="name">
+									Annaboda Jersey
+								</span>
+								<span class="price">
+									$400
+								</span>
+							</a>
+							<div class="prod-hover">
+								<div class="image-holder">
+									<a href="#">
+										<img src="images/prod-1-hover.jpg" alt="">
+									</a>
+								</div>
+								<div class="product-info">
+					    			<div class="name">
+					    				Annaboda Jersey
+					    			</div>
+					    			<div class="quick-link-holder">
+					    				<a href="#quick-modal">Quick look</a>
+					    			</div>
+					    			<div class="raiting-holder">
+					    				<ul>
+					    					<li>
+					    						<span class="fa fa-star"></span>
+					    					</li>
+					    					<li>
+					    						<span class="fa fa-star"></span>
+					    					</li>
+					    					<li>
+					    						<span class="fa fa-star"></span>
+					    					</li>
+					    					<li>
+					    						<span class="fa fa-star"></span>
+					    					</li>
+					    					<li>
+					    						<span class="fa fa-star-o"></span>
+					    					</li>
+					    				</ul>
+					    			</div>
+					    			<div class="price-container">
+					    				$400.00
+					    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+					    			</div>
+					    		</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/prod-4.jpg" alt="">
+								<span class="name">
+									Annaboda Jersey
+								</span>
+								<span class="price">
+									$400
+								</span>
+							</a>
+							<div class="prod-hover">
+								<div class="image-holder">
+									<a href="#">
+										<img src="images/prod-1-hover.jpg" alt="">
+									</a>
+								</div>
+								<div class="product-info">
+					    			<div class="name">
+					    				Annaboda Jersey
+					    			</div>
+					    			<div class="quick-link-holder">
+					    				<a href="#quick-modal">Quick look</a>
+					    			</div>
+					    			<div class="raiting-holder">
+					    				<ul>
+					    					<li>
+					    						<span class="fa fa-star"></span>
+					    					</li>
+					    					<li>
+					    						<span class="fa fa-star"></span>
+					    					</li>
+					    					<li>
+					    						<span class="fa fa-star"></span>
+					    					</li>
+					    					<li>
+					    						<span class="fa fa-star"></span>
+					    					</li>
+					    					<li>
+					    						<span class="fa fa-star-o"></span>
+					    					</li>
+					    				</ul>
+					    			</div>
+					    			<div class="price-container">
+					    				$400.00
+					    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+					    			</div>
+					    		</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>					
 			<div class="blog-block-holder">
 				<div class="hp-section blog-block slow-show" data-timeline="100">
 					<div class="carousel-holder">
@@ -240,258 +452,6 @@
 					</div>	
 				</div>
 			</div>
-			<div class="newsletter-block-holder slow-show" data-timeline="100">
-				<div class="newsletter-block hp-section">
-					<div class="newsletter">
-						<img src="images/newsletter.jpg" height="445" width="272" alt="">
-						<div class="text-holder">
-							<div class="text-wrapper">
-								<div class="text-container">
-									<div class="text">
-										<div class="title">
-											<span>Newsletter</span>
-										</div>
-										<div class="short-desc">
-											sign up to get exclusive offers from your favourite brands
-										</div>
-										<form action="#">
-											<div>
-												<input type="email" placeholder="email">
-											</div>
-											<div>
-												<input type="submit" value="send">
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="best-sell-block products-container">
-						<div class="title">
-							Best sellers
-						</div>
-						<div class="carousel-holder">
-							<div class="controls">
-								<div class="prev prev-sell"></div>
-								<div class="next next-sell"></div>
-							</div>
-							<ul class="products-list">
-								<li>
-									<a href="#">
-										<img src="images/prod-2.jpg" alt="">
-										<span class="name">
-											Annaboda Jersey
-										</span>
-										<span class="price">
-											$400
-										</span>
-									</a>
-									<div class="prod-discount">-50%</div>
-									<div class="prod-hover">
-										<div class="image-holder">
-											<a href="#">
-												<img src="images/prod-1-hover.jpg" alt="">
-											</a>
-										</div>
-										<div class="product-info">
-							    			<div class="name">
-							    				Annaboda Jersey
-							    			</div>
-							    			<div class="quick-link-holder">
-							    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
-							    			</div>
-							    			<div class="raiting-holder">
-							    				<ul>
-							    					<li>
-							    						<span class="fa fa-star"></span>
-							    					</li>
-							    					<li>
-							    						<span class="fa fa-star"></span>
-							    					</li>
-							    					<li>
-							    						<span class="fa fa-star"></span>
-							    					</li>
-							    					<li>
-							    						<span class="fa fa-star"></span>
-							    					</li>
-							    					<li>
-							    						<span class="fa fa-star-o"></span>
-							    					</li>
-							    				</ul>
-							    			</div>
-							    			<div class="price-container">
-							    				$400.00
-							    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
-							    			</div>
-							    		</div>
-									</div>
-								</li>
-								<li>
-									<a href="#">
-										<img src="images/prod-3.jpg" alt="">
-										<span class="name">
-											Annaboda Jersey
-										</span>
-										<span class="price">
-											$400
-										</span>
-									</a>
-									<div class="prod-hover">
-										<div class="image-holder">
-											<a href="#">
-												<img src="images/prod-1-hover.jpg" alt="">
-											</a>
-										</div>
-										<div class="product-info">
-							    			<div class="name">
-							    				Annaboda Jersey
-							    			</div>
-							    			<div class="quick-link-holder">
-							    				<a href="#quick-modal">Quick look</a>
-							    			</div>
-							    			<div class="raiting-holder">
-							    				<ul>
-							    					<li>
-							    						<span class="fa fa-star"></span>
-							    					</li>
-							    					<li>
-							    						<span class="fa fa-star"></span>
-							    					</li>
-							    					<li>
-							    						<span class="fa fa-star"></span>
-							    					</li>
-							    					<li>
-							    						<span class="fa fa-star"></span>
-							    					</li>
-							    					<li>
-							    						<span class="fa fa-star-o"></span>
-							    					</li>
-							    				</ul>
-							    			</div>
-							    			<div class="price-container">
-							    				$400.00
-							    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
-							    			</div>
-							    		</div>
-									</div>
-								</li>
-								<li>
-									<a href="#">
-										<img src="images/prod-4.jpg" alt="">
-										<span class="name">
-											Annaboda Jersey
-										</span>
-										<span class="price">
-											$400
-										</span>
-									</a>
-									<div class="prod-hover">
-										<div class="image-holder">
-											<a href="#">
-												<img src="images/prod-1-hover.jpg" alt="">
-											</a>
-										</div>
-										<div class="product-info">
-							    			<div class="name">
-							    				Annaboda Jersey
-							    			</div>
-							    			<div class="quick-link-holder">
-							    				<a href="#quick-modal">Quick look</a>
-							    			</div>
-							    			<div class="raiting-holder">
-							    				<ul>
-							    					<li>
-							    						<span class="fa fa-star"></span>
-							    					</li>
-							    					<li>
-							    						<span class="fa fa-star"></span>
-							    					</li>
-							    					<li>
-							    						<span class="fa fa-star"></span>
-							    					</li>
-							    					<li>
-							    						<span class="fa fa-star"></span>
-							    					</li>
-							    					<li>
-							    						<span class="fa fa-star-o"></span>
-							    					</li>
-							    				</ul>
-							    			</div>
-							    			<div class="price-container">
-							    				$400.00
-							    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
-							    			</div>
-							    		</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="contacs-block-holder slow-show" data-timeline="100">
-				<div class="contacts-block">
-					<div class="title">
-						Contact us
-					</div>
-					<div class="contacts-wrapper">
-						<ul class="contacts">
-							<li class="fa fa-map-marker">
-								<div class="caption">
-									Address
-								</div>
-								<div class="info">
-									Drem Airfield, North Berwick EH39 5AW, United Kingdom
-								</div>
-							</li>
-							<li class="fa fa-mobile">
-								<div class="caption">
-									Phone
-								</div>
-								<div class="info">
-									<a href="tel:+39-393-33-26-294">+39 393 33 26 294</a>
-								</div>
-							</li>
-							<li class="fa fa-envelope">
-								<div class="caption">
-									Mail
-								</div>
-								<div class="info">
-									<span><a href="mailto:hello@hunter.com">hello@hunter.com</a></span>
-									<span><a href="mailto:hello@hunter.com">info@hunter.com</a></span>
-								</div>
-							</li>
-							<li class="fa fa-skype">
-								<div class="caption">
-									Skype
-								</div>
-								<div class="info">
-									<span>Hunter</span>
-									<span>Oytheme</span>
-								</div>
-							</li>
-						</ul>
-						<form action="#">
-							<div class="caption">Send message</div>
-							<div class="input-block">
-								<div class="input-holder">
-									<label for="name02">Your name</label>
-									<input type="text" id="name02" placeholder="name">
-								</div>
-								<div class="input-holder">
-									<label for="mail02">Email</label>
-									<input type="email" id="mail02" placeholder="info@hunter.com">
-								</div>
-							</div>
-							<label for="txt01">Message</label>
-							<textarea id="txt01">message</textarea>
-							<input type="submit" value="Submit">
-						</form>
-					</div>
-					<div id="homepage_map"></div>
-				</div>
-			</div>
 		</div>	
 		<footer class="slow-show" ng-include=" 'footer.html' " data-timeline="100"></footer>
 		<div class="quick-look modal" id="quick-modal">
@@ -513,7 +473,7 @@
 							<div class="product-content-holder">
 								<div class="product-content">
 									<h3 class="product-title">Knitwear with windstopper</h3>
-									<div class="product-ratebox">
+									<div class="product-pricebox">
 										<div class="raiting-holder">
 						    				<ul class="raiting-marks">
 						    					<li>
@@ -568,7 +528,8 @@
 				    			</div>
 							</div>
 						</div>
-					</div>
+				</div>
+
 			</div>
 		</div>
 	</div>

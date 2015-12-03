@@ -2,13 +2,8 @@
 	"folders":
 	[
 		{
-			"path": "/C/Users/spalah/Desktop/form"
-		},
-		{
-			"path": "/E/Hunter"
-		},
-		{
-			"path": "/Z/home/test1.ru/www/hunter"
+			"follow_symlinks": true,
+			"path": "D:\\Dropbox\\OpenServer\\domains\\hunter\\hunter\\branch0"
 		}
 	]
 }
