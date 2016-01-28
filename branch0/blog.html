@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/controllers.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<title>Hunter</title>
+</head>
+<body class="blog">
+	<div class="wrapper">
+		<div class="header-holder" ng-include=" 'header.html' "></div>
+		<div class="main">
+			<div class="content">
+				<div class="top-image-holder">
+					<div class="top-image">
+						<div class="text-holder">
+							<h1>Blog</h1>
+							<ul class="breadcrumbs">
+								<li><a href="#">Home</a></li>
+								<li>Blog</li>
+							</ul>
+						</div>
+					</div>
+					<div class="image-tuneup"></div>
+				</div>
+				<div class="content-holder">
+					<div class="side-col">
+						<div class="side-search">
+							<form action="post" class="side-search__form">
+								<input id="searchform" type="text" placeholder="search">
+								<button type="submit">
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+										<g>
+											<g>
+												<path d="M1.7,1.9c2.2-2.2,5.9-2.2,8.1,0c2.2,2.2,2.2,5.7,0,7.9C7.5,12,3.9,12,1.7,9.8C-0.6,7.6-0.6,4.1,1.7,1.9z M8.6,8.6
+													c1.6-1.5,1.6-4,0-5.5C7,1.6,4.5,1.6,2.9,3.1c-1.6,1.5-1.6,4,0,5.5C4.5,10.1,7,10.1,8.6,8.6z"/>
+											</g>
+											<g>
+												<path d="M10.5,10.5c0.5-0.4,1.2-0.4,1.6,0l0.1,0.1l-1.6,1.6l-0.1-0.1C10.1,11.6,10.1,10.9,10.5,10.5z M17.7,15.8
+													c0.5,0.4,0.5,1.2,0,1.6c-0.5,0.4-1.2,0.4-1.6,0l-4.9-4.8l1.6-1.6L17.7,15.8z"/>
+											</g>
+										</g>
+									</svg>
+								</button>								
+							</form>
+						</div>
+						<div class="side-col-container">
+							<div class="category-menu">
+								<div class="title">Categories</div>
+								<ul class="category-menu__list">
+									<li><a href="#">Hunting</a></li>
+									<li><a href="#">Weapons</a></li>
+									<li><a href="#">Equipment</a></li>
+									<li><a href="#">Ammunition</a></li>
+									<li><a href="#">Kennel</a></li>
+								</ul>
+							</div>
+							<div class="archives-menu">
+								<div class="title">Archives</div>
+								<ul class="archives-menu__list">
+									<li><a href="#">January 2016</a></li>
+									<li><a href="#">December 2015</a></li>
+									<li><a href="#">November 2015</a></li>
+									<li><a href="#">October 2015</a></li>
+									<li><a href="#">September 2015</a></li>
+									<li><a href="#">August 2015</a></li>
+									<li><a href="#">July 2015</a></li>
+									<li><a href="#">June 2015</a></li>
+									<li><a href="#">May 2015</a></li>
+									<li><a href="#">April 2015</a></li>
+									<li><a href="#">March 2015</a></li>
+									<li><a href="#">February 2015</a></li>
+									<li><a href="#">January 2015</a></li>
+									<li><a href="#">December 2014</a></li>
+									<li><a href="#">November 2014</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="main-col">
+						<div class="container">
+							<ul class="blog__list">
+								<li>
+									<div class="blog__header">
+										<span class="blog__user">admin</span> / <span class="blog__date">15.01.2015</span>
+									</div>
+									<div class="blog__image-holder">
+										<div class="blog__image-text-wrap">
+											<div class="blog__image-text">
+												Scandinavian<br> and international
+											</div>
+										</div>
+										<img src="images/blog-1.jpg" alt="blog">
+									</div>
+									<div class="blog__text">
+										The demand for high quality hunting clothes turned out to be enormous. Hunters could now benefit from garments that would keep them warm during hours of strenuous moose hunting in freezing cold. Clothing that would keep them dry and comfortable even after a hectic hog chase. And clothing that would keep them silent to ensure a successful stalking. <a href="#" class="more-btn">[more]</a>
+									</div>
+								</li>
+								<li>
+									<div class="blog__header">
+										<span class="blog__user">admin</span> / <span class="blog__date">15.01.2015</span>
+									</div>
+									<div class="blog__image-holder">
+										<div class="blog__image-text-wrap">
+											<div class="blog__image-text">
+												All hail the<br> greyhound
+											</div>
+										</div>
+										<img src="images/blog-2.jpg" alt="blog">
+									</div>
+									<div class="blog__text">
+										The demand for high quality hunting clothes turned out to be enormous. Hunters could now benefit from garments that would keep them warm during hours of strenuous moose hunting in freezing cold. Clothing that would keep them dry and comfortable even after a hectic hog chase. And clothing that would keep them silent to ensure a successful stalking. <a href="#" class="more-btn">[more]</a>
+									</div>
+								</li>
+								<li>
+									<div class="blog__header">
+										<span class="blog__user">admin</span> / <span class="blog__date">15.01.2015</span>
+									</div>
+									<div class="blog__image-holder">
+										<div class="blog__image-text-wrap">
+											<div class="blog__image-text">
+												Scandinavian<br> and international
+											</div>
+										</div>
+										<img src="images/blog-3.jpg" alt="blog">
+									</div>
+									<div class="blog__text">
+										The demand for high quality hunting clothes turned out to be enormous. Hunters could now benefit from garments that would keep them warm during hours of strenuous moose hunting in freezing cold. Clothing that would keep them dry and comfortable even after a hectic hog chase. And clothing that would keep them silent to ensure a successful stalking. <a href="#" class="more-btn">[more]</a>
+									</div>
+								</li>
+							</ul>
+							<div class="catalog-set">
+								<div class="catalog-set__page">
+									<span>Page:</span>
+									<ul class="catalog-set__page-list">
+										<li class="prev-page"><a href="#" class="fa fa-chevron-left"></a></li>
+										<li class="active"><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li class="next-page"><a href="#" class="fa fa-chevron-right"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>				
+					</div>
+				</div>
+			</div>
+			<div class="blog-block-holder">
+				<div class="hp-section blog-block slow-show" data-timeline="100">
+					<div class="carousel-holder">
+						<div class="title">Recent post</div>
+						<div class="controls-holder">
+							<div class="prev-post"></div>
+							<div class="next-post"></div>
+						</div>
+						<ul class="blog-carousel">
+							<li>
+								<div class="post-title">
+									Expedition gloves
+								</div>
+								<div class="post-description">
+									Lightweight mittens with PrimaLoft&reg;
+									insulation, waterproof, breathable
+									GORE&reg; membrane and reinforce
+									ments in CORDURA&reg;.
+									Features an inner fleece glove.
+									Opens with a zipper along the 
+									indexfinger for weapon handling
+									even with the mittens on weapon 
+									handling even with the 
+								</div>
+								<a href="#">Read more</a>
+							</li>
+							<li>
+								<div class="post-title">
+									Expedition gloves
+								</div>
+								<div class="post-description">
+									Lightweight mittens with PrimaLoft&reg;
+									insulation, waterproof, breathable
+									GORE&reg; membrane and reinforce
+									ments in CORDURA&reg;.
+									Features an inner fleece glove.
+									Opens with a zipper along the 
+									indexfinger for weapon handling
+									even with the mittens on weapon 
+									handling even with the 
+								</div>
+								<a href="#">Read more</a>
+							</li>
+							<li>
+								<div class="post-title">
+									Expedition gloves
+								</div>
+								<div class="post-description">
+									Lightweight mittens with PrimaLoft&reg;
+									insulation, waterproof, breathable
+									GORE&reg; membrane and reinforce
+									ments in CORDURA&reg;.
+									Features an inner fleece glove.
+									Opens with a zipper along the 
+									indexfinger for weapon handling
+									even with the mittens on weapon 
+									handling even with the 
+								</div>
+								<a href="#">Read more</a>
+							</li>
+							<li>
+								<div class="post-title">
+									Expedition gloves
+								</div>
+								<div class="post-description">
+									Lightweight mittens with PrimaLoft&reg;
+									insulation, waterproof, breathable
+									GORE&reg; membrane and reinforce
+									ments in CORDURA&reg;.
+									Features an inner fleece glove.
+									Opens with a zipper along the 
+									indexfinger for weapon handling
+									even with the mittens on weapon 
+									handling even with the 
+								</div>
+								<a href="#">Read more</a>
+							</li>
+						</ul>
+					</div>
+					<div class="sign-up-block">
+						<img src="images/posts-image.jpg" height="333" width="572" alt="">
+						<div class="text-holder">
+							<div class="text-wrapper">
+								<div class="text-container">
+									<div class="text">
+										<div class="title">
+											<span>New post</span>
+										</div>
+										<div class="short-desc">
+											sign up to get exclusive offers from your favourite brands
+										</div>
+										<form action="#">
+											<div>
+												<input type="email" placeholder="email">
+											</div>
+											<div>
+												<input type="submit" value="send">
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>	
+		<footer class="slow-show" ng-include=" 'footer.html' " data-timeline="100"></footer>
+	</div>
+</body>
+</html>

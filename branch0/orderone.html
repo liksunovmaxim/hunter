@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/controllers.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<title>Hunter</title>
+</head>
+<body class="account-page">
+	<div class="wrapper">
+		<div class="header-holder" ng-include=" 'header.html' "></div>
+		<div class="main">
+			<div class="content">
+				<div class="top-image-holder">
+					<div class="top-image">
+						<div class="text-holder">
+							<h1>My account</h1>
+							<ul class="breadcrumbs">
+								<li><a href="#">Home</a></li>
+								<li>Account</li>
+							</ul>
+						</div>
+					</div>
+					<div class="image-tuneup"></div>
+				</div>
+				<div class="content-holder">
+					<div class="side-col">
+						<div class="side-col-container">
+							<div class="account-menu">
+								<ul class="account-menu__list">
+									<li><a href="#" class="active">My Orders <i class="fa fa-angle-right"></i></a></li>
+									<li><a href="#">My Details <i class="fa fa-angle-right"></i></a></li>
+									<li><a href="#">Store Credit <i class="fa fa-angle-right"></i></a></li>
+									<li><a href="#">My Reserved Items <i class="fa fa-angle-right"></i></a></li>
+									<li><a href="#">Gift Card <i class="fa fa-angle-right"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="main-col">
+						<div class="container">
+							<div class="orders">
+								<h2>My orders</h2>
+								<div class="orders__num-holder">
+									<span class="orders__title">order</span> <span class="orders__num">#14033302</span> <span class="orders__date">(30.12.2015)</span>
+									<a href="#" class="orders__num-btn">Print</a>
+								</div>
+								<div class="orders__details">
+									<div class="orders__adr">
+										<span class="orders__title">Address</span>
+										<p>
+											Alexander Armstrong<br>
+											Address 21<br>
+											London 61130<br>
+											+442073797452
+										</p>
+									</div>
+									<div class="orders__pay">
+										<span class="orders__title">Payment method</span>
+										<p>
+											No information
+										</p>										
+									</div>
+								</div>
+								<div class="s-cart">
+									<div class="s-cart__goods">
+										<ul class="s-cart__list">
+											<li>
+												<div class="image-holder">
+													<a href="#"><img src="images/cart-image-1.png" alt="Roebuck"></a></div>
+												<div class="text-holder">
+													<a href="#">Kamko fleece</a>
+													<p class="s-cart__caption">Shoes H754LLK Black <span>Qty 3</span></p>
+												</div>
+												<div class="price-holder">
+													<span class="s-cart__price">295.00$</span>
+												</div>
+											</li>
+											<li>
+												<div class="image-holder">
+													<a href="#"><img src="images/cart-image-2.png" alt="Roebuck"></a></div>
+												<div class="text-holder">
+													<a href="#">Tweed breeks</a>
+													<p class="s-cart__caption">Jacket Red <span>Qty 3</span></p>
+												</div>
+												<div class="price-holder">
+													<span class="s-cart__price">35.50$</span>
+												</div>
+											</li>
+										</ul>
+										<div class="s-cart__footer">
+											<div class="s-cart__comments">
+												<span class="comments-title">Order Comments:</span>
+												<form action="" class="comments-form">
+													<textarea name="comments"></textarea>
+													<div class="btn-wrap">
+														<input type="submit" value="save">
+													</div>
+												</form>
+											</div>
+											<ul class="s-cart__total">
+												<li>Subtotal <span class="s-cart__subtotal">295.00$</span></li>
+												<li>Tax <span class="s-cart__tax">35.50$</span></li>
+												<li>Gift Cards <span class="s-cart__gift-c">0.00$</span></li>
+												<li>Grand total <span class="s-cart_g-total">330.50$</span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>				
+					</div>
+				</div>
+			</div>
+			<div class="blog-block-holder">
+				<div class="hp-section blog-block slow-show" data-timeline="100">
+					<div class="carousel-holder">
+						<div class="title">Recent post</div>
+						<div class="controls-holder">
+							<div class="prev-post"></div>
+							<div class="next-post"></div>
+						</div>
+						<ul class="blog-carousel">
+							<li>
+								<div class="post-title">
+									Expedition gloves
+								</div>
+								<div class="post-description">
+									Lightweight mittens with PrimaLoft&reg;
+									insulation, waterproof, breathable
+									GORE&reg; membrane and reinforce
+									ments in CORDURA&reg;.
+									Features an inner fleece glove.
+									Opens with a zipper along the 
+									indexfinger for weapon handling
+									even with the mittens on weapon 
+									handling even with the 
+								</div>
+								<a href="#">Read more</a>
+							</li>
+							<li>
+								<div class="post-title">
+									Expedition gloves
+								</div>
+								<div class="post-description">
+									Lightweight mittens with PrimaLoft&reg;
+									insulation, waterproof, breathable
+									GORE&reg; membrane and reinforce
+									ments in CORDURA&reg;.
+									Features an inner fleece glove.
+									Opens with a zipper along the 
+									indexfinger for weapon handling
+									even with the mittens on weapon 
+									handling even with the 
+								</div>
+								<a href="#">Read more</a>
+							</li>
+							<li>
+								<div class="post-title">
+									Expedition gloves
+								</div>
+								<div class="post-description">
+									Lightweight mittens with PrimaLoft&reg;
+									insulation, waterproof, breathable
+									GORE&reg; membrane and reinforce
+									ments in CORDURA&reg;.
+									Features an inner fleece glove.
+									Opens with a zipper along the 
+									indexfinger for weapon handling
+									even with the mittens on weapon 
+									handling even with the 
+								</div>
+								<a href="#">Read more</a>
+							</li>
+							<li>
+								<div class="post-title">
+									Expedition gloves
+								</div>
+								<div class="post-description">
+									Lightweight mittens with PrimaLoft&reg;
+									insulation, waterproof, breathable
+									GORE&reg; membrane and reinforce
+									ments in CORDURA&reg;.
+									Features an inner fleece glove.
+									Opens with a zipper along the 
+									indexfinger for weapon handling
+									even with the mittens on weapon 
+									handling even with the 
+								</div>
+								<a href="#">Read more</a>
+							</li>
+						</ul>
+					</div>
+					<div class="sign-up-block">
+						<img src="images/posts-image.jpg" height="333" width="572" alt="">
+						<div class="text-holder">
+							<div class="text-wrapper">
+								<div class="text-container">
+									<div class="text">
+										<div class="title">
+											<span>New post</span>
+										</div>
+										<div class="short-desc">
+											sign up to get exclusive offers from your favourite brands
+										</div>
+										<form action="#">
+											<div>
+												<input type="email" placeholder="email">
+											</div>
+											<div>
+												<input type="submit" value="send">
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>	
+		<footer class="slow-show" ng-include=" 'footer.html' " data-timeline="100"></footer>
+	</div>
+</body>
+</html>

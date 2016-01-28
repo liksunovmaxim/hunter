@@ -115,6 +115,10 @@
 	font: @size 'MyriadPro-Regular', arial, sans-serif;
 }
 
+.simple-font(@size:14px){
+	font: @size Arial, sans-serif;
+}
+
 .rel{position: relative;}
 .abs{position: absolute;}
 .transition(@transition){
@@ -191,6 +195,22 @@
 	}
 }
 
+.small-btn {
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px 15px;
+	border: 0;
+	background-color: @second-color;
+	color: #fff;
+	font-size: 15px;
+	text-transform: uppercase;	
+	text-decoration: none;
+	cursor: pointer;
+	.transition(~"background .3s ease-in-out");
+	&:hover {
+		background: darken(@second-color, 20%);
+	}
+}
 
 .big-text-shadow(@color: @third-color){
 	text-shadow: 1px 1px 0 darken(@color, 10%),
@@ -257,4 +277,13 @@
     0%   {color: @second-color;}
     50%  {color: lighten(@second-color, 20%);}
     100% {color: @second-color;}
+}
+
+.gradient (@startColor: #eee, @endColor: white) {
+	background-color: @startColor;
+	background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+	background: -webkit-linear-gradient(top, @startColor, @endColor);
+	background: -moz-linear-gradient(top, @startColor, @endColor);
+	background: -ms-linear-gradient(top, @startColor, @endColor);
+	background: -o-linear-gradient(top, @startColor, @endColor);
 }

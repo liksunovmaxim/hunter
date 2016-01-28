@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/controllers.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<title>Hunter</title>
+</head>
+<body class="account-page">
+	<div class="wrapper">
+		<div class="header-holder" ng-include=" 'header.html' "></div>
+		<div class="main">
+			<div class="content">
+				<div class="top-image-holder">
+					<div class="top-image">
+						<div class="text-holder">
+							<h1>My account</h1>
+							<ul class="breadcrumbs">
+								<li><a href="#">Home</a></li>
+								<li>Account</li>
+							</ul>
+						</div>
+					</div>
+					<div class="image-tuneup"></div>
+				</div>
+				<div class="content-holder">
+					<div class="side-col">
+						<div class="side-col-container">
+							<div class="account-menu">
+								<ul class="account-menu__list">
+									<li><a href="#">My Orders <i class="fa fa-angle-right"></i></a></li>
+									<li><a href="#" class="active">My Details <i class="fa fa-angle-right"></i></a></li>
+									<li><a href="#">Store Credit <i class="fa fa-angle-right"></i></a></li>
+									<li><a href="#">My Reserved Items <i class="fa fa-angle-right"></i></a></li>
+									<li><a href="#">Gift Card <i class="fa fa-angle-right"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="main-col">
+						<div class="container">
+							<div class="orders">
+								<h2>My Details</h2>
+								<form action="post" class="details-form">
+									<label>Full Name
+										<input type="text" name="name" placeholder="Alexander Armstrong">
+									</label>
+									<label>Email address
+										<input type="email" name="email" placeholder="Alexanderarm@gmail.com">
+									</label>
+									<label>Telephone
+										<input type="tel" name="phone" placeholder="+442073797452">
+									</label>
+									<label>Promotional Code
+										<input type="text" name="promo" placeholder="UK-999221">
+									</label>
+									<label>Password
+										<input type="password" name="psw">
+									</label>
+									<label>Confirm password
+										<input type="password" name="pswre">
+									</label>
+									<div class="btn-wrap">
+										<input type="submit" value="save"></input>
+									</div>
+								</form>						
+							</div>
+						</div>				
+					</div>
+				</div>
+			</div>
+			<div class="blog-block-holder">
+				<div class="hp-section blog-block slow-show" data-timeline="100">
+					<div class="carousel-holder">
+						<div class="title">Recent post</div>
+						<div class="controls-holder">
+							<div class="prev-post"></div>
+							<div class="next-post"></div>
+						</div>
+						<ul class="blog-carousel">
+							<li>
+								<div class="post-title">
+									Expedition gloves
+								</div>
+								<div class="post-description">
+									Lightweight mittens with PrimaLoft&reg;
+									insulation, waterproof, breathable
+									GORE&reg; membrane and reinforce
+									ments in CORDURA&reg;.
+									Features an inner fleece glove.
+									Opens with a zipper along the 
+									indexfinger for weapon handling
+									even with the mittens on weapon 
+									handling even with the 
+								</div>
+								<a href="#">Read more</a>
+							</li>
+							<li>
+								<div class="post-title">
+									Expedition gloves
+								</div>
+								<div class="post-description">
+									Lightweight mittens with PrimaLoft&reg;
+									insulation, waterproof, breathable
+									GORE&reg; membrane and reinforce
+									ments in CORDURA&reg;.
+									Features an inner fleece glove.
+									Opens with a zipper along the 
+									indexfinger for weapon handling
+									even with the mittens on weapon 
+									handling even with the 
+								</div>
+								<a href="#">Read more</a>
+							</li>
+							<li>
+								<div class="post-title">
+									Expedition gloves
+								</div>
+								<div class="post-description">
+									Lightweight mittens with PrimaLoft&reg;
+									insulation, waterproof, breathable
+									GORE&reg; membrane and reinforce
+									ments in CORDURA&reg;.
+									Features an inner fleece glove.
+									Opens with a zipper along the 
+									indexfinger for weapon handling
+									even with the mittens on weapon 
+									handling even with the 
+								</div>
+								<a href="#">Read more</a>
+							</li>
+							<li>
+								<div class="post-title">
+									Expedition gloves
+								</div>
+								<div class="post-description">
+									Lightweight mittens with PrimaLoft&reg;
+									insulation, waterproof, breathable
+									GORE&reg; membrane and reinforce
+									ments in CORDURA&reg;.
+									Features an inner fleece glove.
+									Opens with a zipper along the 
+									indexfinger for weapon handling
+									even with the mittens on weapon 
+									handling even with the 
+								</div>
+								<a href="#">Read more</a>
+							</li>
+						</ul>
+					</div>
+					<div class="sign-up-block">
+						<img src="images/posts-image.jpg" height="333" width="572" alt="">
+						<div class="text-holder">
+							<div class="text-wrapper">
+								<div class="text-container">
+									<div class="text">
+										<div class="title">
+											<span>New post</span>
+										</div>
+										<div class="short-desc">
+											sign up to get exclusive offers from your favourite brands
+										</div>
+										<form action="#">
+											<div>
+												<input type="email" placeholder="email">
+											</div>
+											<div>
+												<input type="submit" value="send">
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>	
+		<footer class="slow-show" ng-include=" 'footer.html' " data-timeline="100"></footer>
+	</div>
+</body>
+</html>
