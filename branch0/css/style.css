@@ -2367,12 +2367,11 @@ img {
 }
 header {
   position: relative;
-  overflow: hidden;
   margin-bottom: -55px;
 }
 header:after {
   position: absolute;
-  top: 0;
+  top: -14px;
   left: 0;
   content: '';
   width: 100%;
@@ -2385,12 +2384,19 @@ header:after {
   margin: 14px auto 0;
   max-width: 1170px;
 }
+.header-wrapper:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 .header-wrapper .logo {
   float: left;
+  width: 200px;
   font-size: 42px;
+  line-height: 109px;
+  text-align: center;
   overflow: hidden;
   text-shadow: 1px 1px 0 #2f3627, 2px 2px 0 #2f3627, 3px 3px 0 #2f3627, 4px 4px 0 #2f3627, 5px 5px 0 #2f3627, 6px 6px 0 #2f3627, 7px 7px 0 #2f3627, 8px 8px 0 #2f3627, 9px 9px 0 #2f3627, 10px 10px 0 #2f3627, 11px 11px 0 #2f3627, 12px 12px 0 #2f3627, 13px 13px 0 #2f3627, 14px 14px 0 #2f3627, 15px 15px 0 #2f3627, 16px 16px 0 #2f3627, 17px 17px 0 #2f3627, 18px 18px 0 #2f3627, 19px 19px 0 #2f3627, 20px 20px 0 #2f3627, 21px 21px 0 #2f3627, 22px 22px 0 #2f3627, 23px 23px 0 #2f3627, 24px 24px 0 #2f3627, 25px 25px 0 #2f3627, 26px 26px 0 #2f3627, 27px 27px 0 #2f3627, 28px 28px 0 #2f3627, 29px 29px 0 #2f3627, 30px 30px 0 #2f3627, 31px 31px 0 #2f3627, 32px 32px 0 #2f3627, 33px 33px 0 #2f3627, 34px 34px 0 #2f3627, 35px 35px 0 #2f3627, 36px 36px 0 #2f3627, 37px 37px 0 #2f3627, 38px 38px 0 #2f3627, 39px 39px 0 #2f3627, 40px 40px 0 #2f3627, 41px 41px 0 #2f3627, 42px 42px 0 #2f3627, 43px 43px 0 #2f3627, 44px 44px 0 #2f3627, 45px 45px 0 #2f3627, 46px 46px 0 #2f3627, 47px 47px 0 #2f3627, 48px 48px 0 #2f3627, 49px 49px 0 #2f3627, 50px 50px 0 #2f3627, 51px 51px 0 #2f3627, 52px 52px 0 #2f3627, 53px 53px 0 #2f3627, 54px 54px 0 #2f3627, 55px 55px 0 #2f3627, 56px 56px 0 #2f3627, 57px 57px 0 #2f3627, 58px 58px 0 #2f3627, 59px 59px 0 #2f3627;
-  padding: 35px 22px 29px;
   color: #bfb575;
   text-decoration: none;
   display: inline-block;
@@ -2514,15 +2520,17 @@ header:after {
   background: #2a2a2a;
 }
 .header-wrapper .nav {
-  padding: 18px 0 18px 11px;
+  position: relative;
+  padding: 0 0 0 11px;
   background: #2d2d2d;
 }
-.header-wrapper .nav li {
+.header-wrapper .nav > li {
   display: inline-block;
   vertical-align: top;
-  margin: 0 17px;
 }
-.header-wrapper .nav li a {
+.header-wrapper .nav > li > a {
+  display: block;
+  padding: 18px 17px;
   color: #fff;
   text-decoration: none;
   font-size: 14px;
@@ -2533,8 +2541,79 @@ header:after {
   -o-transition: color .2s ease-out;
   transition: color .2s ease-out;
 }
-.header-wrapper .nav li a:hover {
+.header-wrapper .nav > li > a:hover {
   color: #bfb575;
+}
+.header-wrapper .submenu {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  top: 120%;
+  z-index: 100;
+  background-color: #2e2e2e;
+}
+.header-wrapper .submenu--full {
+  left: 0;
+  width: 100%;
+}
+.header-wrapper .submenu__column {
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+  width: 210px;
+}
+.header-wrapper .submenu__title {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #fff;
+}
+.header-wrapper .submenu li a {
+  display: block;
+  padding: 3px 0;
+  color: #999;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  text-decoration: none;
+  -webkit-transition: color .2s ease-out;
+  -moz-transition: color .2s ease-out;
+  -ms-transition: color .2s ease-out;
+  -o-transition: color .2s ease-out;
+  transition: color .2s ease-out;
+}
+.header-wrapper .submenu li a:hover {
+  color: #bfb575;
+}
+.header-wrapper .submenu .image-holder {
+  position: relative;
+  float: right;
+  max-width: 180px;
+  width: 180px;
+  height: 100%;
+}
+.header-wrapper .submenu .image-holder img {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  height: 100%;
+}
+.header-wrapper .submenu .image-holder a {
+  position: relative;
+  display: block;
+}
+.header-wrapper .submenu .image-holder .tag-sale {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background-color: #bfb575;
+  color: #fff;
+  font: 14px 'MyriadPro-Regular', arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+.header-wrapper .submenu .image-holder .tag-sale i {
+  display: block;
 }
 .header-wrapper .top-links li a {
   color: #fff;

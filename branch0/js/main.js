@@ -109,6 +109,20 @@ var Mobile = {
 };
 
 var Homepage = {
+	mainMenu: function() {
+		var self = this;
+		self.navLink = jQuery('.nav').children('li');
+		jQuery(self.navLink).hover(function() {
+	       jQuery(this).find('.submenu').stop()
+	       .addClass('active')
+	       .fadeIn('slow');
+	    }, 
+	    function () {
+	       jQuery(this).find('.submenu').stop()
+	       .removeClass('active')
+	       .fadeOut('slow');
+	    });
+	},
 	mainBanner: function(){
 		var self = this;
 		self.resize();
@@ -379,6 +393,7 @@ jQuery(function(){
 	Homepage.quantityBlock();
 
 	jQuery(window).on('load', function(){
+		Homepage.mainMenu();
 		Homepage.mainBanner();
 		Homepage.slider();
 		Homepage.tabsSliders();

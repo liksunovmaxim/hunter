@@ -158,11 +158,11 @@ img{max-width: 100%;height: auto;}
 
 header{
 	.rel;
-	overflow: hidden;
+	// overflow: hidden;
 	margin-bottom: -55px;
 	&:after{
 		.abs;
-		top: 0;
+		top: -14px;
 		left: 0;
 		content: '';
 		width: 100%;
@@ -171,16 +171,19 @@ header{
 	}
 }
 .header-wrapper{
+	.clr;
 	.rel;
 	z-index: 50;
 	margin: 14px auto 0;
 	max-width: 1170px;
 	.logo{
 		float: left;
+		width: 200px;		
 		font-size: 42px;
+		line-height: 109px;
+		text-align: center;
 		overflow: hidden;
 		.big-text-shadow;
-		padding: 35px 22px 29px;
 		color: @second-color;
 		text-decoration: none;
 		display: inline-block;
@@ -287,13 +290,16 @@ header{
 		background: darken(@base-color, 1.5%);
 	}
 	.nav{
-		padding: 18px 0 18px 11px;
+		position: relative;			
+		padding: 0 0 0 11px;
 		background: darken(@base-color, 0.5%);
-		li {
+		&>li {
+			// position: relative;			
 			display: inline-block;
 			vertical-align: top;
-			margin: 0 17px;
-			a{
+			&>a{
+				display: block;				
+				padding: 18px 17px;
 				color: #fff;
 				text-decoration: none;
 				font-size: 14px;
@@ -301,6 +307,76 @@ header{
 				.transition(~"color .2s ease-out");
 				&:hover{
 					color: @second-color;
+				}
+			}
+		}
+	}
+	.submenu {
+		display: none;
+		overflow: hidden;		
+		position: absolute;
+		top: 120%;
+		z-index: 100;
+		background-color: @base-color;
+		&--full {
+			left: 0;
+			width: 100%;			
+		}
+		&__column {
+			display: inline-block;
+			vertical-align: top;			
+			padding: 20px;			
+			width: 210px;
+		}
+		&__title {
+			margin: 0 0 10px;
+			font-size: 18px;
+			color: #fff;
+		}
+		li { 
+			a {
+				display: block;
+				padding: 3px 0;
+				color: @text-color-dark-light;
+				font-size: 14px;
+				line-height: 1.2;
+				text-transform: capitalize;
+				text-decoration: none;
+				.transition(~"color .2s ease-out");
+				&:hover {
+					color: @second-color;
+				}
+			}
+		}
+		.image-holder {
+			position: relative;			
+			float: right;
+			max-width: 180px;
+			width: 180px;
+			height: 100%;
+			img {
+				display: inline-block;
+				vertical-align: top;
+				width: auto;
+				height: 100%;
+			}
+			a {
+				position: relative;
+				display: block;
+			}
+			.tag-sale {
+				position: absolute;
+				top: 0;
+				left: 0;
+				padding: 10px;
+				background-color: @second-color;
+				color: #fff;
+				.secondary-font(@size:14px);
+				text-transform: uppercase;				
+				text-align: center;				
+				i {
+					display: block;
+					
 				}
 			}
 		}
