@@ -9,6 +9,7 @@
 	<script type="text/javascript" src="js/controllers.js"></script>
 	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
 	<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<title>Hunter</title>
 </head>
@@ -146,6 +147,9 @@
 						</div>
 					</div>
 					<div class="product-view-ext">
+						<div class="image-col">
+							<img src="images/product-details-photo.jpg" alt="Knitwear with windstopper photo">
+						</div>
 						<div class="text-col-holder">
 							<div class="text-col">
 								<h3>Technology</h3>
@@ -179,9 +183,6 @@
 									</li>
 								</ul>
 							</div>
-						</div>
-						<div class="image-col">
-							<img src="images/product-details-photo.jpg" alt="Knitwear with windstopper photo">
 						</div>
 					</div>
 				</div>
@@ -217,7 +218,7 @@
 					    				Annaboda Jersey
 					    			</div>
 					    			<div class="quick-link-holder">
-					    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+						    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
 					    			</div>
 					    			<div class="raiting-holder">
 					    				<ul>
@@ -266,7 +267,7 @@
 					    				Annaboda Jersey
 					    			</div>
 					    			<div class="quick-link-holder">
-					    				<a href="#quick-modal">Quick look</a>
+					    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
 					    			</div>
 					    			<div class="raiting-holder">
 					    				<ul>
@@ -315,7 +316,7 @@
 					    				Annaboda Jersey
 					    			</div>
 					    			<div class="quick-link-holder">
-					    				<a href="#quick-modal">Quick look</a>
+					    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
 					    			</div>
 					    			<div class="raiting-holder">
 					    				<ul>
@@ -454,10 +455,8 @@
 			</div>
 		</div>	
 		<footer class="slow-show" ng-include=" 'footer.html' " data-timeline="100"></footer>
-		<div class="quick-look modal" id="quick-modal">
-			<div class="modal-bg"></div>
-			<div class="modal-window">
-					<a href="#close" title="close" class="modal-close-btn"></a>
+		<div class="quick-look modal mfp-hide" id="quick-modal">
+			<div class="quick-look-window">
 					<div class="image-holder">
 						<img src="images/modal-image.jpg" alt="Modal image">
 					</div>
@@ -529,7 +528,6 @@
 							</div>
 						</div>
 				</div>
-
 			</div>
 		</div>
 	</div>

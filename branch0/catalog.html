@@ -9,6 +9,7 @@
 	<script type="text/javascript" src="js/controllers.js"></script>
 	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
 	<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<title>Hunter</title>
 </head>
@@ -80,124 +81,135 @@
 								</ul>
 							</div>
 							<div class="shop-options">
-								<div class="shop-options__item">
-									<div class="shop-options__title">Brands</div>		
-									<ul class="shop-options__list">
-										<li>
-											<div class="option">			
-												<input name="" value="" type="checkbox" id="brand1" class="option_check">
-												<label for="brand1">
-													<span class="option-name">Dell</span>
-													<span class="option-count">0</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<div class="option">
-												<input name="" value="" type="checkbox" id="brand2" class="option_check">
-												<label for="brand2">
-													<span class="option-name">Fujitsu</span>
-													<span class="option-count">10</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<div class="option">
-												<input name="" value="" type="checkbox" id="brand3" class="option_check">
-												<label for="brand3">
-													<span class="option-name">Dell</span>
-													<span class="option-count">30</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<div class="option">
-												<input name="" value="" type="checkbox" id="brand4" class="option_check">
-												<label for="brand4">
-													<span class="option-name">Fujitsu</span>
-													<span class="option-count">30</span>
-												</label>
-											</div>
-										</li>
-									</ul>
+								<div class="title shop-options__header">Filters<i class="fa fa-angle-right"></i>
 								</div>
-								<div class="shop-options__item">
-									<div class="shop-options__title">Size</div>
-									<ul class="shop-options__list">
-										<li>
-											<div class="option">
-												<input name="" value="" type="checkbox" id="size1" class="option_check">
-												<label for="size1">
-													<span class="option-name">Small</span>
-													<span class="option-count">1930</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<div class="option">
-												<input name="" value="" type="checkbox" id="size2" class="option_check">
-												<label for="size2">
-													<span class="option-name">Medium</span>
-													<span class="option-count">4098</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<div class="option">
-												<input name="" value="" type="checkbox" id="size3" class="option_check">
-												<label for="size3">
-													<span class="option-name">Large</span>
-													<span class="option-count">809</span>
-												</label>
-											</div>
-										</li>
-										<li>
-											<div class="option">
-												<input name="" value="" type="checkbox" id="size4" class="option_check">
-												<label for="size4">
-													<span class="option-name">One Size</span>
-													<span class="option-count">100</span>
-												</label>
-											</div>
-										</li>
-									</ul>
-								</div>									
+								<div class="shop-options__filters">
+									<div class="shop-options__item">
+										<div class="shop-options__title">Brands</div>		
+										<ul class="shop-options__list">
+											<li>
+												<div class="option">			
+													<input name="" value="" type="checkbox" id="brand1" class="option_check">
+													<label for="brand1">
+														<span class="option-name">Dell</span>
+														<span class="option-count">0</span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="option">
+													<input name="" value="" type="checkbox" id="brand2" class="option_check">
+													<label for="brand2">
+														<span class="option-name">Fujitsu</span>
+														<span class="option-count">10</span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="option">
+													<input name="" value="" type="checkbox" id="brand3" class="option_check">
+													<label for="brand3">
+														<span class="option-name">Dell</span>
+														<span class="option-count">30</span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="option">
+													<input name="" value="" type="checkbox" id="brand4" class="option_check">
+													<label for="brand4">
+														<span class="option-name">Fujitsu</span>
+														<span class="option-count">30</span>
+													</label>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="shop-options__item">
+										<div class="shop-options__title">Size</div>
+										<ul class="shop-options__list">
+											<li>
+												<div class="option">
+													<input name="" value="" type="checkbox" id="size1" class="option_check">
+													<label for="size1">
+														<span class="option-name">Small</span>
+														<span class="option-count">1930</span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="option">
+													<input name="" value="" type="checkbox" id="size2" class="option_check">
+													<label for="size2">
+														<span class="option-name">Medium</span>
+														<span class="option-count">4098</span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="option">
+													<input name="" value="" type="checkbox" id="size3" class="option_check">
+													<label for="size3">
+														<span class="option-name">Large</span>
+														<span class="option-count">809</span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="option">
+													<input name="" value="" type="checkbox" id="size4" class="option_check">
+													<label for="size4">
+														<span class="option-name">One Size</span>
+														<span class="option-count">100</span>
+													</label>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="btn-wrap">
+										<button class="shop-options__btn">Apply</button>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="main-col">
 						<div class="container">
 							<div class="catalog-set">
-								<ul class="catalog-set__view">
-									<li class="active"><a href="#" class="fa fa-th"></a></li>
-									<li><a href="#" class="fa fa-list"></a></li>
-								</ul>
-								<div class="catalog-set__sort">
-									<span>Sort</span>
-									<select name="catalog-sort" id="catalog-sort">
-										<option>price</option>
-										<option>sells</option>
-									</select>
-								</div>
-								<div class="catalog-set__show">
-									<span>Show</span>
-									<select name="catalog-show" id="catalog-show">
-										<option>5</option>
-										<option>10</option>
-										<option>15</option>
-										<option>20</option>
-									</select>
-									<span>per</span>
-								</div>
-								<div class="catalog-set__page">
-									<span>Page:</span>
-									<ul class="catalog-set__page-list">
-										<li class="prev-page"><a href="#" class="fa fa-chevron-left"></a></li>
-										<li class="active"><a href="#">1</a></li>
-										<li><a href="#">2</a></li>
-										<li><a href="#">3</a></li>
-										<li class="next-page"><a href="#" class="fa fa-chevron-right"></a></li>
+								<div class="left-set">
+									<ul class="catalog-set__view">
+										<li class="active"><a href="#" class="fa fa-th"></a></li>
+										<li><a href="#" class="fa fa-list"></a></li>
 									</ul>
+									<div class="catalog-set__sort">
+										<span>Sort</span>
+										<select name="catalog-sort" id="catalog-sort">
+											<option>price</option>
+											<option>sells</option>
+										</select>
+									</div>
+								</div>
+								<div class="right-set">
+									<div class="catalog-set__show">
+										<span>Show</span>
+										<select name="catalog-show" id="catalog-show">
+											<option>5</option>
+											<option>10</option>
+											<option>15</option>
+											<option>20</option>
+										</select>
+										<span>per</span>
+									</div>
+									<div class="catalog-set__page">
+										<span>Page:</span>
+										<ul class="catalog-set__page-list">
+											<li class="prev-page"><a href="#" class="fa fa-chevron-left"></a></li>
+											<li class="active"><a href="#">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li class="next-page"><a href="#" class="fa fa-chevron-right"></a></li>
+										</ul>
+									</div>
 								</div>
 							</div>
 							<div class="page-intro">
@@ -227,7 +239,7 @@
 								    				Annaboda Jersey
 								    			</div>
 								    			<div class="quick-link-holder">
-								    				<a href="#">Quick look</a>
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
 								    			</div>
 								    			<div class="raiting-holder">
 								    				<ul>
@@ -276,7 +288,7 @@
 								    				Annaboda Jersey
 								    			</div>
 								    			<div class="quick-link-holder">
-								    				<a href="#">Quick look</a>
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
 								    			</div>
 								    			<div class="raiting-holder">
 								    				<ul>
@@ -325,7 +337,7 @@
 								    				Annaboda Jersey
 								    			</div>
 								    			<div class="quick-link-holder">
-								    				<a href="#">Quick look</a>
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
 								    			</div>
 								    			<div class="raiting-holder">
 								    				<ul>
@@ -374,7 +386,7 @@
 								    				Annaboda Jersey
 								    			</div>
 								    			<div class="quick-link-holder">
-								    				<a href="#">Quick look</a>
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
 								    			</div>
 								    			<div class="raiting-holder">
 								    				<ul>
@@ -423,7 +435,7 @@
 								    				Annaboda Jersey
 								    			</div>
 								    			<div class="quick-link-holder">
-								    				<a href="#">Quick look</a>
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
 								    			</div>
 								    			<div class="raiting-holder">
 								    				<ul>
@@ -472,7 +484,7 @@
 								    				Annaboda Jersey
 								    			</div>
 								    			<div class="quick-link-holder">
-								    				<a href="#">Quick look</a>
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
 								    			</div>
 								    			<div class="raiting-holder">
 								    				<ul>
@@ -503,38 +515,42 @@
 								</ul>
 							</div>
 							<div class="catalog-set">
-								<ul class="catalog-set__view">
-									<li class="active"><a href="#" class="fa fa-th"></a></li>
-									<li><a href="#" class="fa fa-list"></a></li>
-								</ul>
-								<div class="catalog-set__sort">
-									<span>Sort</span>
-									<select name="catalog-sort" id="catalog-sort">
-										<option>price</option>
-										<option>sells</option>
-									</select>
-								</div>
-								<div class="catalog-set__show">
-									<span>Show</span>
-									<select name="catalog-show" id="catalog-show">
-										<option>5</option>
-										<option>10</option>
-										<option>15</option>
-										<option>20</option>
-									</select>
-									<span>per</span>
-								</div>
-								<div class="catalog-set__page">
-									<span>Page:</span>
-									<ul class="catalog-set__page-list">
-										<li class="prev-page"><a href="#" class="fa fa-chevron-left"></a></li>
-										<li class="active"><a href="#">1</a></li>
-										<li><a href="#">2</a></li>
-										<li><a href="#">3</a></li>
-										<li class="next-page"><a href="#" class="fa fa-chevron-right"></a></li>
+								<div class="left-set">
+									<ul class="catalog-set__view">
+										<li class="active"><a href="#" class="fa fa-th"></a></li>
+										<li><a href="#" class="fa fa-list"></a></li>
 									</ul>
+									<div class="catalog-set__sort">
+										<span>Sort</span>
+										<select name="catalog-sort" id="catalog-sort">
+											<option>price</option>
+											<option>sells</option>
+										</select>
+									</div>
 								</div>
-							</div>	
+								<div class="right-set">
+									<div class="catalog-set__show">
+										<span>Show</span>
+										<select name="catalog-show" id="catalog-show">
+											<option>5</option>
+											<option>10</option>
+											<option>15</option>
+											<option>20</option>
+										</select>
+										<span>per</span>
+									</div>
+									<div class="catalog-set__page">
+										<span>Page:</span>
+										<ul class="catalog-set__page-list">
+											<li class="prev-page"><a href="#" class="fa fa-chevron-left"></a></li>
+											<li class="active"><a href="#">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li class="next-page"><a href="#" class="fa fa-chevron-right"></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
 						</div>				
 					</div>
 				</div>
@@ -647,6 +663,81 @@
 			</div>
 		</div>	
 		<footer class="slow-show" ng-include=" 'footer.html' " data-timeline="100"></footer>
+		<div class="quick-look modal mfp-hide" id="quick-modal">
+			<div class="quick-look-window">
+					<div class="image-holder">
+						<img src="images/modal-image.jpg" alt="Modal image">
+					</div>
+					<div class="product-modal-holder">
+						<div class="product-modal">
+							<div class="product-prew">
+								<ul class="product-prew__list">
+									<li><img src="images/modal-item-var-1.jpg" alt="Item 1"></li>
+									<li><img src="images/modal-item-var-2.jpg" alt="Item 1"></li>
+									<li><img src="images/modal-item-var-3.jpg" alt="Item 1"></li>
+								</ul>
+							</div>
+							<div class="product-content-holder">
+								<div class="product-content">
+									<h3 class="product-title">Knitwear with windstopper</h3>
+									<div class="product-pricebox">
+										<div class="raiting-holder">
+						    				<ul class="raiting-marks">
+						    					<li>
+						    						<span class="fa fa-star-o active"></span>
+						    					</li>
+						    					<li>
+						    						<span class="fa fa-star-o active"></span>
+						    					</li>
+						    					<li>
+						    						<span class="fa fa-star-o active"></span>
+						    					</li>
+						    					<li>
+						    						<span class="fa fa-star-o"></span>
+						    					</li>
+						    					<li>
+						    						<span class="fa fa-star-o"></span>
+						    					</li>
+						    				</ul>
+						    				<p class="product-raiting-push">(256 push)</p>
+					    				</div>
+					    				<p class="product-price">350$</p>
+					    			</div>
+					    			<div class="product-desc-wrap">
+					    				<div class="product-desc">
+					    					<h4 class="product-desc__title">Annaboda jersey</h4>
+					    					<p class="product-desc__text">Hardwearing jersey in 100% wool with windproo
+											breathable WINDSTOPPER® membrane. 
+											Features radio pocket.</p>
+					    					<h4 class="product-desc__var-title">Size</h4>
+					    					<ul class="product-size var-box">
+					    						<li>XS</li>
+					    						<li>S</li>
+					    						<li>M</li>
+					    						<li>L</li>
+					    						<li>XL</li>
+					    					</ul>
+					    					<h4 class="product-desc__var-title">Color in stock</h4>
+					    					<ul class="product-color var-box">
+					    						<li><img src="images/product-color-1.jpg" alt="Light Brown"></li>
+					    						<li><img src="images/product-color-2.jpg" alt="Brown"></li>
+					    						<li><img src="images/product-color-3.jpg" alt="Dark Brown"></li>
+					    					</ul>
+					    				</div>
+					    			</div>
+					    			<a href="#" class="add-to-cart">Add to cart</a>
+					    			<ul class="share-group var-box">
+					    				<li class="text-box">Share</li>
+					    				<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+					    				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					    				<li><a href="#"><i class="fa fa-instagram"></i></a></a></li>
+					    			</ul>
+				    			</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>		
 	</div>
 </body>
 </html>

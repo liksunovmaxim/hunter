@@ -200,11 +200,22 @@ var Homepage = {
 	},
 	tabsSliders: function(){
 		var self = this;
+		var maxSlides,
+		    winWidth = jQuery(window).width();
+		if (winWidth < 684) {
+		    maxSlides = 1;
+		} else if ((winWidth >= 684)&&(winWidth < 986)) {
+		    maxSlides = 2;
+		} else if ((winWidth >= 986)&&(winWidth < 1288)) {
+		    maxSlides = 3;
+		} else {
+				maxSlides = 4;
+		}
 		slider1 = jQuery('#tabs-1 > ul').bxSlider({
 			controls: true,
 			slideWidth: 272,
-			minSlides: 4,
-			maxSlides: 4,
+			minSlides: 1,
+			maxSlides: maxSlides,
 			moveSlides: 1,
 			slideMargin: 30,
 			pager: false,
@@ -214,8 +225,8 @@ var Homepage = {
 		slider2 = jQuery('#tabs-2 > ul').bxSlider({
 			controls: true,
 			slideWidth: 272,
-			minSlides: 4,
-			maxSlides: 4,
+			minSlides: 1,
+			maxSlides: maxSlides,
 			moveSlides: 1,
 			slideMargin: 30,
 			pager: false,
@@ -225,8 +236,8 @@ var Homepage = {
 		slider3 = jQuery('#tabs-3 > ul').bxSlider({
 			controls: true,
 			slideWidth: 272,
-			minSlides: 4,
-			maxSlides: 4,
+			minSlides: 1,
+			maxSlides: maxSlides,
 			moveSlides: 1,
 			slideMargin: 30,
 			pager: false,
@@ -236,8 +247,8 @@ var Homepage = {
 		slider4 = jQuery('#tabs-4 > ul').bxSlider({
 			controls: true,
 			slideWidth: 272,
-			minSlides: 4,
-			maxSlides: 4,
+			minSlides: 1,
+			maxSlides: maxSlides,
 			moveSlides: 1,
 			slideMargin: 30,
 			pager: false,
@@ -247,8 +258,8 @@ var Homepage = {
 		slider5 = jQuery('#tabs-5 > ul').bxSlider({
 			controls: true,
 			slideWidth: 272,
-			minSlides: 4,
-			maxSlides: 4,
+			minSlides: 1,
+			maxSlides: maxSlides,
 			moveSlides: 1,
 			slideMargin: 30,
 			pager: false,
@@ -258,11 +269,21 @@ var Homepage = {
 	},
 	postSlider: function(){
 		var self = this;
+		var maxSlides,
+				slideWidth,
+		    winWidth = jQuery(window).width();
+		if (winWidth < 684) {
+		    maxSlides = 1;
+		    slideWidth = 560;
+		} else {
+				maxSlides = 2;
+				slideWidth = 238;
+		}		
 		sliderBlog = jQuery('.blog-carousel').bxSlider({
 			controls: true,
-			slideWidth: 238,
-			minSlides: 2,
-			maxSlides: 2,
+			slideWidth: slideWidth,
+			minSlides: 1,
+			maxSlides: maxSlides,
 			moveSlides: 1,
 			slideMargin: 60,
 			pager: false,
@@ -272,11 +293,20 @@ var Homepage = {
 	},
 	bestSellSlider: function(){
 		var self = this;
+		var maxSlides,
+		    winWidth = jQuery(window).width();
+		if (winWidth < 684) {
+		    maxSlides = 1;
+		} else if ((winWidth >= 684)&&(winWidth < 986)) {
+		    maxSlides = 2;
+		} else {
+				maxSlides = 3;
+		}			
 		sliderBestSell = jQuery('.best-sell-block').find('.carousel-holder > ul').bxSlider({
 			controls: true,
 			slideWidth: 272,
-			minSlides: 3,
-			maxSlides: 3,
+			minSlides: 1,
+			maxSlides: maxSlides,
 			moveSlides: 1,
 			slideMargin: 30,
 			pager: false,
@@ -286,13 +316,24 @@ var Homepage = {
 	},
 	considerSlider: function(){
 		var self = this;
+		var maxSlides,
+		    winWidth = jQuery(window).width();
+		if (winWidth < 684) {
+		    maxSlides = 1;
+		} else if ((winWidth >= 684)&&(winWidth < 986)) {
+		    maxSlides = 2;
+		} else if ((winWidth >= 986)&&(winWidth < 1160)) {
+		    maxSlides = 3;
+		} else {
+				maxSlides = 4;
+		}
 		sliderConsider = jQuery('.consider-block').find('.carousel-holder > ul').bxSlider({
 			controls: true,
 			slideWidth: 272,
-			minSlides: 4,
-			maxSlides: 4,
+			minSlides: 1,
+			maxSlides: maxSlides,
 			moveSlides: 1,
-			slideMargin: 20,
+			slideMargin: 30,
 			pager: false,
 			prevSelector: '.prev-cons',
 			nextSelector: '.next-cons'			
@@ -304,7 +345,7 @@ var Homepage = {
 				controls: true,
 				minSlides: 1,
 				maxSlides: 1,				
-			    pagerCustom: '.carousel-pager',
+			  pagerCustom: '.carousel-pager',
 				prevSelector: '.prev-prod',
 				nextSelector: '.next-prod'			    
 		});
@@ -332,35 +373,47 @@ var Homepage = {
 			}
 		});
 	},
-	modal: function(){
-		var self = this;
-		self.windowBody = jQuery('body');
-		self.modal = jQuery('.modal');
-	    self.modalBg = jQuery('.modal-bg');
-		self.docH = jQuery(document).height(),
-		self.winW = jQuery(window).width(),
-		self.winH = jQuery(window).height();
-		jQuery('.quick-look-btn').click(function(e){
-				self.modal.show();
-			    self.windowBody.addClass('modal-lock');
-				// jQuery(self.modalBg).css({'width':self.winW,'height':self.docH});		    
-				// var idModal = jQuery(this).attr('href');
-				// var modalWindow = jQuery(idModal).children('.modal-window');
-				// jQuery(modalWindow).css('top',  self.winH/2-jQuery(modalWindow).height()/2);
-				// jQuery(modalWindow).css('left', self.winW/2-jQuery(modalWindow).width()/2);			    
-		    });
-		jQuery('.modal-close-btn, .modal-bg').click(function(){
-				self.modal.hide();
-			    self.windowBody.removeClass('modal-lock');
-		    });
-		jQuery('.modal a').click(function(){
-			    self.windowBody.removeClass('modal-lock');
-		    });
+	// modal: function(){
+	// 	var self = this;
+	// 	self.windowBody = jQuery('body');
+	// 	self.modal = jQuery('.modal');
+	//     self.modalBg = jQuery('.modal-bg');
+	// 	self.docH = jQuery(document).height(),
+	// 	self.winW = jQuery(window).width(),
+	// 	self.winH = jQuery(window).height();
+	// 	jQuery('.quick-look-btn').click(function(e){
+	// 			self.modal.show();
+	// 		    self.windowBody.addClass('modal-lock');
+	// 			// jQuery(self.modalBg).css({'width':self.winW,'height':self.docH});		    
+	// 			// var idModal = jQuery(this).attr('href');
+	// 			// var modalWindow = jQuery(idModal).children('.modal-window');
+	// 			// jQuery(modalWindow).css('top',  self.winH/2-jQuery(modalWindow).height()/2);
+	// 			// jQuery(modalWindow).css('left', self.winW/2-jQuery(modalWindow).width()/2);			    
+	// 	    });
+	// 	jQuery('.modal-close-btn, .modal-bg').click(function(){
+	// 			self.modal.hide();
+	// 		    self.windowBody.removeClass('modal-lock');
+	// 	    });
+	// 	jQuery('.modal a').click(function(){
+	// 		    self.windowBody.removeClass('modal-lock');
+	// 	    });
 
+	// },
+	modal: function(){
+		jQuery('.login-btn').magnificPopup({			
+			type: 'inline',
+			showClsBtn: true,
+			closeMarkup: '<button title="%title%" class="mfp-close"></button>'
+		});	
+		jQuery('.quick-look-btn').magnificPopup({			
+			type: 'inline',
+			showClsBtn: true,
+			closeMarkup: '<button title="%title%" class="mfp-close"></button>'
+		});		
 	},
 	quantityBlock: function(){
 	    jQuery('.quantity-plus').click(function(e){
-		    fieldName = jQuery(this).attr('field');
+			    var fieldName = jQuery(this).attr('field');
 	        e.preventDefault();
 	        var currentVal = parseInt(jQuery('input[name='+fieldName+']').val());
 	        if (!isNaN(currentVal)) {
@@ -370,8 +423,7 @@ var Homepage = {
 	        }
 	    });
 	    jQuery('.quantity-minus').click(function(e) {
-	        console.log('1');
-		    fieldName = jQuery(this).attr('field');
+			    var fieldName = jQuery(this).attr('field');
 	        e.preventDefault();
 	        var currentVal = parseInt(jQuery('input[name='+fieldName+']').val());
 	        if (!isNaN(currentVal) && currentVal > 1) {
@@ -380,6 +432,32 @@ var Homepage = {
 	            jQuery('input[name='+fieldName+']').val(1);
 	        }
 	    });
+	},
+	blockUp: function() {
+		var self = this;
+		var winWidth = jQuery(window).width(),
+				pageIntro = jQuery('.page-intro'),
+				contentHolder = jQuery('.catalog').find('.content-holder');
+		if (winWidth < 768) {
+				contentHolder.prepend(pageIntro);
+		} else {
+				maxSlides = 4;
+		}	
+	},
+	showFilter: function() {
+		var self = this;
+		var filterBtn = jQuery('.shop-options__header'),
+				filterBox = jQuery('.shop-options__filters');
+		filterBtn.on('click', function() {
+			if (!(filterBtn).hasClass('active')) {
+				jQuery(this).removeClass('active');
+				filterBox.slideDown('slow');
+				jQuery(this).addClass('active');
+			} else {
+				filterBox.slideUp('slow');
+				jQuery(this).removeClass('active');
+			}
+		})		
 	}
 };
 jQuery(function(){
@@ -389,28 +467,31 @@ jQuery(function(){
 	Homepage.customTabs();
 	Homepage.formStyler();
 	Homepage.hideCheckbox();
-	Homepage.modal();
 	Homepage.quantityBlock();
-
+	Homepage.showFilter();
 	jQuery(window).on('load', function(){
 		Homepage.mainMenu();
 		Homepage.mainBanner();
 		Homepage.slider();
-		Homepage.tabsSliders();
 		Homepage.postSlider();
 		Homepage.bestSellSlider();
-		Homepage.considerSlider();
 		Homepage.productSlider();		
-		ScrollAnimation.init();		
+		Homepage.tabsSliders();
+		Homepage.considerSlider();
+		ScrollAnimation.init();	
+		Homepage.modal();
+		Homepage.blockUp();
 	});
 
 	jQuery(window).on('resize', function(){
 		Mobile.resize();
 		Homepage.resize();
 		ScrollAnimation.resize();
+		Homepage.tabsSliders();
 	});
 
 	jQuery(window).on('scroll', function(){
 		ScrollAnimation.onScroll();
 	});
 });
+
