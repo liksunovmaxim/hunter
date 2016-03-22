@@ -123,6 +123,14 @@ var Homepage = {
 	       .fadeOut('slow');
 	    });
 	},
+	menuBtn: function() {
+		var self = this;
+		self.navBtn = jQuery('.nav-btn');
+		self.navBtn.on('click', function() {
+			console.log('1');
+		  jQuery(this).toggleClass("active");
+		});		
+	},
 	mainBanner: function(){
 		var self = this;
 		self.resize();
@@ -343,6 +351,7 @@ var Homepage = {
 		var self = this;
 		sliderProduct = jQuery('.product-photo').find('.carousel-holder > ul').bxSlider({
 				controls: true,
+				slideWidth: 502,
 				minSlides: 1,
 				maxSlides: 1,				
 			  pagerCustom: '.carousel-pager',
@@ -481,6 +490,7 @@ jQuery(function(){
 		ScrollAnimation.init();	
 		Homepage.modal();
 		Homepage.blockUp();
+		Homepage.menuBtn();
 	});
 
 	jQuery(window).on('resize', function(){
