@@ -115,12 +115,12 @@ var Homepage = {
 		jQuery(self.navLink).hover(function() {
 	       jQuery(this).find('.submenu').stop()
 	       .addClass('active')
-	       .fadeIn('slow');
+	       .slideDown('fast');
 	    }, 
 	    function () {
 	       jQuery(this).find('.submenu').stop()
 	       .removeClass('active')
-	       .fadeOut('slow');
+	       .slideUp('fast');
 	    });
 	},
 	menuBtn: function() {
@@ -225,7 +225,7 @@ var Homepage = {
 			minSlides: 1,
 			maxSlides: maxSlides,
 			moveSlides: 1,
-			slideMargin: 30,
+			slideMargin: 25,
 			pager: false,
 			prevSelector: '.prev-1',
 			nextSelector: '.next-1'
@@ -236,7 +236,7 @@ var Homepage = {
 			minSlides: 1,
 			maxSlides: maxSlides,
 			moveSlides: 1,
-			slideMargin: 30,
+			slideMargin: 25,
 			pager: false,
 			prevSelector: '.prev-2',
 			nextSelector: '.next-2'
@@ -247,7 +247,7 @@ var Homepage = {
 			minSlides: 1,
 			maxSlides: maxSlides,
 			moveSlides: 1,
-			slideMargin: 30,
+			slideMargin: 25,
 			pager: false,
 			prevSelector: '.prev-3',
 			nextSelector: '.next-3'
@@ -258,7 +258,7 @@ var Homepage = {
 			minSlides: 1,
 			maxSlides: maxSlides,
 			moveSlides: 1,
-			slideMargin: 30,
+			slideMargin: 25,
 			pager: false,
 			prevSelector: '.prev-4',
 			nextSelector: '.next-4'
@@ -269,11 +269,18 @@ var Homepage = {
 			minSlides: 1,
 			maxSlides: maxSlides,
 			moveSlides: 1,
-			slideMargin: 30,
+			slideMargin: 25,
 			pager: false,
 			prevSelector: '.prev-5',
 			nextSelector: '.next-5'
 		});
+		/*   Tabs start indetns correct */
+		tabsTransFirst = jQuery('.tabs-wrapper .tabs:first-child')
+												.find('.products-list')
+												.css('transform');
+		tabsTransformAll = jQuery('.tabs-wrapper .tabs')
+												.find('.products-list')
+												.css('transform', tabsTransFirst);			
 	},
 	postSlider: function(){
 		var self = this;
@@ -316,7 +323,7 @@ var Homepage = {
 			minSlides: 1,
 			maxSlides: maxSlides,
 			moveSlides: 1,
-			slideMargin: 30,
+			slideMargin: 25,
 			pager: false,
 			prevSelector: '.prev-sell',
 			nextSelector: '.next-sell'
@@ -341,7 +348,7 @@ var Homepage = {
 			minSlides: 1,
 			maxSlides: maxSlides,
 			moveSlides: 1,
-			slideMargin: 30,
+			slideMargin: 25,
 			pager: false,
 			prevSelector: '.prev-cons',
 			nextSelector: '.next-cons'			
@@ -418,6 +425,20 @@ var Homepage = {
 			type: 'inline',
 			showClsBtn: true,
 			closeMarkup: '<button title="%title%" class="mfp-close"></button>'
+		});
+		jQuery('.image-zoom').magnificPopup({
+				type: 'image',
+				showClsBtn: true,
+				closeOnContentClick: true,
+				mainClass: 'mfp-img-mobile',
+				closeMarkup: '<button title="%title%" class="mfp-close"></button>',
+				image: {
+					verticalFit: true
+				},
+				zoom: {
+					enabled: true,
+					duration: 300 // don't foget to change the duration also in CSS
+				}				
 		});		
 	},
 	quantityBlock: function(){
@@ -467,6 +488,9 @@ var Homepage = {
 				jQuery(this).removeClass('active');
 			}
 		})		
+	},
+	removeHomeLink: function() {
+		jQuery('.home').find('.logo').removeAttr('href');		
 	}
 };
 jQuery(function(){
@@ -491,6 +515,7 @@ jQuery(function(){
 		Homepage.modal();
 		Homepage.blockUp();
 		Homepage.menuBtn();
+		Homepage.removeHomeLink();
 	});
 
 	jQuery(window).on('resize', function(){
