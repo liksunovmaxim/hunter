@@ -13,10 +13,18 @@
 				</ul>
 				<ul class="lang-cur-switch">
 					<li>
-						<a href="#">language</a>
+						<select name="lang-switch" id="lang-switch">
+							<option>eng</option>
+							<option>fra</option>
+							<option>ger</option>
+						</select>						
 					</li>
 					<li>
-						<a href="#">currency</a>
+						<select name="cur-switch" id="cur-switch">
+							<option>usd</option>
+							<option>eur</option>
+							<option>pnd</option>
+						</select>	
 					</li>
 				</ul>
 			</div>
@@ -240,14 +248,13 @@
 			<span>$250</span>
 		</div>
 	</div>
-</header>
-<div class="ajax-cart-holder">
-	<div class="ajax-cart-container">
-		<div class="ajax-cart-wrapper">
-			
+	<div class="ajax-cart-holder">
+		<div class="ajax-cart-container">
+			<div class="ajax-cart-wrapper">			
+			</div>
 		</div>
 	</div>
-</div>
+</header>
 <script>
 	jQuery('.cart-holder a').on('click', function(e){
 		var self = this;
@@ -262,7 +269,12 @@
         });
         self.container.slideDown('fast');
         e.preventDefault();
-      }
+    } else {
+    	self.container.removeClass('entered');
+			self.container.removeClass('opened');
+			self.container.slideUp('fast');
+			self.container.find('.ajax-cart-wrapper').html('');    	
+    }
 	});
 	jQuery('.ajax-cart-holder').on('mouseenter', function(){
 		if(!jQuery(this).hasClass('entered')){
@@ -278,7 +290,7 @@
 				self.container.removeClass('opened');
 				self.container.slideUp('fast');
 				self.container.find('.ajax-cart-wrapper').html('');
-			}, 500);			
+			}, 100);			
 		}
 	});
 </script>

@@ -112,23 +112,58 @@ var Homepage = {
 	mainMenu: function() {
 		var self = this;
 		self.navLink = jQuery('.nav').children('li');
-		jQuery(self.navLink).hover(function() {
-	       jQuery(this).find('.submenu').stop()
-	       .addClass('active')
-	       .slideDown('fast');
+		self.navMenu = jQuery('.nav');
+		if (jQuery(window).width() >= 1200) {
+			jQuery(self.navLink).hover(function() {
+       jQuery(this).find('.submenu').stop()
+       .addClass('active')
+       .slideDown('fast');
 	    }, 
 	    function () {
-	       jQuery(this).find('.submenu').stop()
-	       .removeClass('active')
-	       .slideUp('fast');
+       jQuery(this).find('.submenu').stop()
+       .removeClass('active')
+       .slideUp('fast');
 	    });
+
+	  	self.navMenu.css("display", "");
+		}
+	},
+	mainMenuMob: function() {
+		self.navLink = jQuery('.nav').children('li');
+		self.submenu = jQuery('.submenu');
+		jQuery(self.navLink)
+			.has('.submenu')
+			.addClass('has-submenu')
+			.append('<i class="submenu__toggle"></i>');
+
+		jQuery('.submenu__toggle').on('click', function() {
+			if (!jQuery(this).siblings(self.submenu).hasClass('submenu--show')) {
+				self.submenu.slideUp('fast');
+				self.submenu.removeClass('submenu--show');				
+				jQuery(this).siblings('.submenu').slideDown('fast');
+				jQuery(this).siblings('.submenu').addClass('submenu--show');
+
+				self.navLink.removeClass('open');
+				jQuery(this).parent().addClass('open');
+
+				jQuery('.submenu__toggle').removeClass('active');
+				jQuery(this).addClass('active');				
+			} else {
+				jQuery(this).siblings('.submenu').slideUp('fast');
+				jQuery(this).siblings('.submenu').removeClass('submenu--show')
+
+				jQuery(this).parent().removeClass('open');
+
+				jQuery(this).removeClass('active');
+			}
+		})			
 	},
 	menuBtn: function() {
 		var self = this;
 		self.navBtn = jQuery('.nav-btn');
 		self.navBtn.on('click', function() {
-			console.log('1');
-		  jQuery(this).toggleClass("active");
+		  jQuery(this).toggleClass('active');
+		  jQuery(this).next().slideToggle('fast');
 		});		
 	},
 	mainBanner: function(){
@@ -367,7 +402,8 @@ var Homepage = {
 		});
 	},
 	formStyler: function(){
-		$('#catalog-sort, #catalog-show').styler();
+		jQuery('#catalog-sort, #catalog-show').styler();
+		jQuery('#lang-switch, #cur-switch').styler();
 	},
 	hideCheckbox: function(){
 		var optionCount = jQuery('.option').find('.option-count');
@@ -494,16 +530,18 @@ var Homepage = {
 	}
 };
 jQuery(function(){
+		Homepage.formStyler();			
 	Mobile.init();
 	Homepage.mainBanner();
 	Homepage.welcomeMsg();
 	Homepage.customTabs();
-	Homepage.formStyler();
 	Homepage.hideCheckbox();
 	Homepage.quantityBlock();
 	Homepage.showFilter();
 	jQuery(window).on('load', function(){
+		Homepage.formStyler();		
 		Homepage.mainMenu();
+		Homepage.mainMenuMob();
 		Homepage.mainBanner();
 		Homepage.slider();
 		Homepage.postSlider();
@@ -519,6 +557,7 @@ jQuery(function(){
 	});
 
 	jQuery(window).on('resize', function(){
+		Homepage.mainMenu();		
 		Mobile.resize();
 		Homepage.resize();
 		ScrollAnimation.resize();
