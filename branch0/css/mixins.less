@@ -186,6 +186,7 @@
 	background: @second-color;
 	color: #fff;
 	border: 0;
+	border-radius: 0;
 	padding: 0 20px;
 	text-align: center;
 	.base-font(@size:16px);
@@ -201,6 +202,7 @@
 	vertical-align: top;
 	padding: 5px 15px;
 	border: 0;
+	border-radius: 0;
 	background-color: @second-color;
 	color: #fff;
 	font-size: 15px;
@@ -210,6 +212,25 @@
 	.transition(~"background .3s ease-in-out");
 	&:hover {
 		background: darken(@second-color, 20%);
+	}
+}
+
+.text-decoration-hover(@color:#3d5a99;){
+	.rel;
+	&:before{
+		content: '';
+		.abs;
+		width: 0;
+		height: 1px;
+		bottom: 0;
+		left: 0;
+		background: @color;
+		.transition(~"width .2s ease-out");	
+	}
+	&:hover{
+		&:before{
+			width: 100%;
+		}
 	}
 }
 

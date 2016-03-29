@@ -26,10 +26,13 @@ var ScrollAnimation = {
         jQuery.each(self.animatedBlocks, function(index, block){
             var $block = jQuery(block);
             $block.data('top',$block.offset().top).addClass('animate');
+
         });
         self.windowHeight = jQuery(window).height();
         if(!Mobile.isMobileDevice){
             self.blocksAnimation();
+        } else {
+        	self.animatedBlocks.css('opacity','1');
         }
     },
 
@@ -96,6 +99,7 @@ var Mobile = {
         }
         self.resize();
     },
+
     resize: function(){
         var self = this;
         if(screen.width <= 780){
@@ -173,6 +177,7 @@ var Homepage = {
 	resize: function(){
 		var self = this;
 		self.slide = jQuery('.homepage-slider').find('li');
+		self.welcomeMsgHolder = jQuery('.welcome-msg-holder').innerHeight()
 		self.slide.height(
 			jQuery(window).height() - jQuery('header').height() + Math.abs(parseInt(jQuery('header').css('marginBottom')))
 		);
@@ -183,7 +188,9 @@ var Homepage = {
 	slider: function(){
 		var self = this;
 		jQuery('.homepage-slider').find('ul').bxSlider({
-			pager:false
+			pager:false,
+			auto: true,
+			pause: 4000
 		});
 	},
 	welcomeMsg: function(){
@@ -264,7 +271,7 @@ var Homepage = {
 			pager: false,
 			prevSelector: '.prev-1',
 			nextSelector: '.next-1'
-		});
+		});  		
 		slider2 = jQuery('#tabs-2 > ul').bxSlider({
 			controls: true,
 			slideWidth: 272,
@@ -308,8 +315,8 @@ var Homepage = {
 			pager: false,
 			prevSelector: '.prev-5',
 			nextSelector: '.next-5'
-		});
-		/*   Tabs start indetns correct */
+		});    
+		/*   Tabs indents correct at start  */
 		tabsTransFirst = jQuery('.tabs-wrapper .tabs:first-child')
 												.find('.products-list')
 												.css('transform');
@@ -329,7 +336,7 @@ var Homepage = {
 				maxSlides = 2;
 				slideWidth = 238;
 		}		
-		sliderBlog = jQuery('.blog-carousel').bxSlider({
+		self.sliderBlog = jQuery('.blog-carousel').bxSlider({
 			controls: true,
 			slideWidth: slideWidth,
 			minSlides: 1,
@@ -403,7 +410,6 @@ var Homepage = {
 	},
 	formStyler: function(){
 		jQuery('#catalog-sort, #catalog-show').styler();
-		jQuery('#lang-switch, #cur-switch').styler();
 	},
 	hideCheckbox: function(){
 		var optionCount = jQuery('.option').find('.option-count');
@@ -425,32 +431,6 @@ var Homepage = {
 			}
 		});
 	},
-	// modal: function(){
-	// 	var self = this;
-	// 	self.windowBody = jQuery('body');
-	// 	self.modal = jQuery('.modal');
-	//     self.modalBg = jQuery('.modal-bg');
-	// 	self.docH = jQuery(document).height(),
-	// 	self.winW = jQuery(window).width(),
-	// 	self.winH = jQuery(window).height();
-	// 	jQuery('.quick-look-btn').click(function(e){
-	// 			self.modal.show();
-	// 		    self.windowBody.addClass('modal-lock');
-	// 			// jQuery(self.modalBg).css({'width':self.winW,'height':self.docH});		    
-	// 			// var idModal = jQuery(this).attr('href');
-	// 			// var modalWindow = jQuery(idModal).children('.modal-window');
-	// 			// jQuery(modalWindow).css('top',  self.winH/2-jQuery(modalWindow).height()/2);
-	// 			// jQuery(modalWindow).css('left', self.winW/2-jQuery(modalWindow).width()/2);			    
-	// 	    });
-	// 	jQuery('.modal-close-btn, .modal-bg').click(function(){
-	// 			self.modal.hide();
-	// 		    self.windowBody.removeClass('modal-lock');
-	// 	    });
-	// 	jQuery('.modal a').click(function(){
-	// 		    self.windowBody.removeClass('modal-lock');
-	// 	    });
-
-	// },
 	modal: function(){
 		jQuery('.login-btn').magnificPopup({			
 			type: 'inline',
@@ -499,7 +479,7 @@ var Homepage = {
 	        }
 	    });
 	},
-	blockUp: function() {
+	introBlockUp: function() {
 		var self = this;
 		var winWidth = jQuery(window).width(),
 				pageIntro = jQuery('.page-intro'),
@@ -529,39 +509,36 @@ var Homepage = {
 		jQuery('.home').find('.logo').removeAttr('href');		
 	}
 };
-jQuery(function(){
-		Homepage.formStyler();			
+jQuery(function(){	
 	Mobile.init();
-	Homepage.mainBanner();
-	Homepage.welcomeMsg();
-	Homepage.customTabs();
 	Homepage.hideCheckbox();
 	Homepage.quantityBlock();
 	Homepage.showFilter();
+	Homepage.bestSellSlider();
+	Homepage.considerSlider();
+	Homepage.productSlider();		
+	Homepage.modal();
+	Homepage.introBlockUp();
 	jQuery(window).on('load', function(){
-		Homepage.formStyler();		
-		Homepage.mainMenu();
-		Homepage.mainMenuMob();
+		Homepage.welcomeMsg();		
+		Homepage.formStyler();
 		Homepage.mainBanner();
 		Homepage.slider();
-		Homepage.postSlider();
-		Homepage.bestSellSlider();
-		Homepage.productSlider();		
-		Homepage.tabsSliders();
-		Homepage.considerSlider();
-		ScrollAnimation.init();	
-		Homepage.modal();
-		Homepage.blockUp();
+		Homepage.mainMenu();
+		Homepage.mainMenuMob();
 		Homepage.menuBtn();
+		Homepage.tabsSliders();
+		Homepage.customTabs();		
+		ScrollAnimation.init();	
 		Homepage.removeHomeLink();
+		Homepage.postSlider();
 	});
 
-	jQuery(window).on('resize', function(){
+	jQuery(window).on('orientationchange resize', function(){
 		Homepage.mainMenu();		
 		Mobile.resize();
 		Homepage.resize();
 		ScrollAnimation.resize();
-		Homepage.tabsSliders();
 	});
 
 	jQuery(window).on('scroll', function(){
