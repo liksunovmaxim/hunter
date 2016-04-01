@@ -15,10 +15,13 @@
 </head>
 <body class="shopping-cart">
 	<div class="wrapper">
+		<!-- Header -->	
 		<div class="header-holder" ng-include=" 'header.html' "></div>
+		<!-- Main -->		
 		<div class="main">
 			<div class="content">
 				<div class="top-image-holder">
+				<!-- Top Image -->
 					<div class="top-image">
 						<div class="text-holder">
 							<h1>Shopping cart</h1>
@@ -30,42 +33,50 @@
 					</div>
 					<div class="image-tuneup"></div>
 				</div>
+				<!-- Content -->
 				<div class="content-holder">
+					<!-- Shopping Cart Block -->
 					<div class="s-cart">
+						<!-- Shopping Cart Products -->
 						<div class="s-cart__goods">
 							<ul class="s-cart__list">
 								<li>
 									<div class="image-holder">
 										<a href="product.html"><img src="images/cart-image-1.png" alt="Roebuck"></a></div>
-									<div class="text-holder">
-										<a href="product.html">Kamko fleece</a>
-										<p class="s-cart__caption">Shoes H754LLK Black</p>
-									</div>
-									<div class="price-holder">
-										<span class="s-cart__price">295.00$</span>
-										<div class="quantity var-box">
-								              <button type="button" class="quantity-minus" field="quantity-disp-1">-</button>
-									          <input type="text" name="quantity-disp-1" class="form-control input-number" value="1" min="1" max="50">
-								              <button type="button" class="quantity-plus" field="quantity-disp-1">+</button>
-				    					</div>
-				    					<span class="del-btn"></span>
+									<div class="r-side">
+										<div class="text-holder">
+											<a href="product.html">Kamko fleece</a>
+											<p class="s-cart__caption">Shoes H754LLK Black</p>
+										</div>
+										<div class="price-holder">
+											<span class="s-cart__price">295.00$</span>
+											<div class="quantity var-box">
+									              <button type="button" class="quantity-minus" field="quantity-disp-1">-</button>
+										          <input type="text" name="quantity-disp-1" class="form-control input-number" value="1" min="1" max="50">
+									              <button type="button" class="quantity-plus" field="quantity-disp-1">+</button>
+					    					</div>
+					    					<span class="del-btn"></span>
+										</div>
 									</div>
 								</li>
 								<li>
 									<div class="image-holder">
-										<a href="product.html"><img src="images/cart-image-2.png" alt="Roebuck"></a></div>
-									<div class="text-holder">
-										<a href="product.html">Tweed breeks</a>
-										<p class="s-cart__caption">Jacket Red</p>
+										<a href="product.html"><img src="images/cart-image-2.png" alt="Roebuck"></a>
 									</div>
-									<div class="price-holder">
-										<span class="s-cart__price">35.50$</span>
-										<div class="quantity var-box">
-								              <button type="button" class="quantity-minus" field="quantity-disp-2">-</button>
-									          <input type="text" name="quantity-disp-2" class="form-control input-number" value="1" min="1" max="50">
-								              <button type="button" class="quantity-plus" field="quantity-disp-2">+</button>
-				    					</div>
-				    					<span class="del-btn"></span>
+									<div class="r-side">
+										<div class="text-holder">
+											<a href="product.html">Tweed breeks</a>
+											<p class="s-cart__caption">Jacket Red</p>
+										</div>
+										<div class="price-holder">
+											<span class="s-cart__price">35.50$</span>
+											<div class="quantity var-box">
+									              <button type="button" class="quantity-minus" field="quantity-disp-2">-</button>
+										          <input type="text" name="quantity-disp-2" class="form-control input-number" value="1" min="1" max="50">
+									              <button type="button" class="quantity-plus" field="quantity-disp-2">+</button>
+					    					</div>
+					    					<span class="del-btn"></span>
+										</div>
 									</div>
 								</li>
 							</ul>
@@ -76,6 +87,7 @@
 								<li>Grand total <span class="s-cart_g-total">330.50$</span></li>
 							</ul>
 						</div>
+						<!-- Payment and Delivery Benefits -->
 						<div class="s-cart__benefits">
 							<ul class="benefits-list">
 								<li>
@@ -93,6 +105,7 @@
 							</ul>
 						</div>
 					</div>
+					<!-- Checkout -->
 					<div class="checkout">
 						<div class="checkout-details">
 							<h2>Checkout</h2>
@@ -128,7 +141,7 @@
 													<label for="f-reguser__email">Email address</label>
 													<input type="email" id="f-reguser__email" name="Email">
 													<label for="f-reguser__psw">Password</label>
-													<input type="text" id="<f-regus></f-regus>er__psw" name="Password">
+													<input type="text" id="f-reguser__psw" name="Password">
 													<div class="btn-wrapper">
 														<button type="submit" class="form-btn">Enter</button>
 														<a href="#" class="f-forgot-btn">I forgot password</a>
@@ -143,7 +156,7 @@
 												<ul class="share-group var-box">
 								    				<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
 								    				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								    				<li><a href="#"><i class="fa fa-instagram"></i></a></a></li>
+								    				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 								    			</ul>
 											</div>
 										</div>
@@ -160,8 +173,10 @@
 					</div>
 				</div>
 			</div>
+			<!-- New Posts Block -->
 			<div class="blog-block-holder">
 				<div class="hp-section blog-block slow-show" data-timeline="100">
+				<!-- Posts Slider -->
 					<div class="carousel-holder">
 						<div class="title">Recent post</div>
 						<div class="controls-holder">
@@ -239,6 +254,7 @@
 							</li>
 						</ul>
 					</div>
+					<!-- New Post Signup -->
 					<div class="sign-up-block">
 						<img src="images/posts-image.jpg" height="333" width="572" alt="">
 						<div class="text-holder">
@@ -267,6 +283,7 @@
 				</div>
 			</div>
 		</div>	
+		<!-- Footer -->
 		<footer class="slow-show" ng-include=" 'footer.html' " data-timeline="100"></footer>
 	</div>
 </body>

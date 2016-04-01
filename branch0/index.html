@@ -15,9 +15,11 @@
 </head>
 <body class="home">
 	<div class="wrapper">
+		<!-- Header	-->
 		<div class="header-holder" ng-include=" 'header.html' "></div>
-		<div class="main">
-		<!-- <div ng-controller="NavCtrl" class="homepage-slider"> -->
+		<!-- Main -->
+		<div class="main">		
+			<!-- Main Slider -->
 			<div class="homepage-slider">
 				<ul>
 					<li style="background: url('images/homepage-banner.jpg') no-repeat 50% 50%; background-size: cover;">
@@ -55,6 +57,7 @@
 						</div>
 					</li>
 				</ul>
+				<!-- Welcome Msg -->
 				<div class="welcome-msg-holder">
 					<div class="welcome-msg-container">
 						<h1><span>Welcome to hunter</span></h1>
@@ -66,6 +69,7 @@
 			</div>
 			<div class="content">
 				<div class="content-holder">
+				<!-- Collection Block -->
 					<div class="collection-block">
 						<h2 class="slow-show" data-timeline="100">
 							<span>Collezione autunno</span>
@@ -117,6 +121,7 @@
 						</div>
 					</div>
 				</div>
+				<!-- Products Tabs -->
 				<div class="products-block slow-show" data-timeline="100">
 					<div class="products-container">
 						<ul class="tabs-heading">
@@ -136,8 +141,10 @@
 					</div>
 				</div>
 			</div>
+			<!-- New Posts Block -->
 			<div class="blog-block-holder">
 				<div class="hp-section blog-block slow-show" data-timeline="100">
+				<!-- Posts Slider-->
 					<div class="carousel-holder">
 						<div class="title">Recent post</div>
 						<div class="controls-holder">
@@ -181,6 +188,7 @@
 							</li>
 						</ul>
 					</div>
+					<!-- New Post Signup -->
 					<div class="sign-up-block">
 						<img src="images/posts-image.jpg" alt="">
 						<div class="text-holder">
@@ -210,6 +218,7 @@
 			</div>
 			<div class="newsletter-block-holder slow-show" data-timeline="100">
 				<div class="newsletter-block hp-section">
+				<!-- Newsletter Signup -->
 					<div class="newsletter">
 						<img src="images/newsletter.jpg" height="445" width="272" alt="">
 						<div class="text-holder">
@@ -235,6 +244,7 @@
 							</div>
 						</div>
 					</div>
+					<!-- Best Sell Slider -->
 					<div class="best-sell-block products-container">
 						<div class="title">
 							Best sellers
@@ -264,10 +274,10 @@
 										</div>
 										<div class="product-info">
 							    			<div class="name">
-							    				Annaboda Jersey
+							    				<a href="product.html">Annaboda Jersey</a>
 							    			</div>
 							    			<div class="quick-link-holder">
-							    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+							    				<a href="quick-look.html" class="quick-look-btn-ajax">Quick look</a>
 							    			</div>
 							    			<div class="raiting-holder">
 							    				<ul>
@@ -313,7 +323,7 @@
 										</div>
 										<div class="product-info">
 							    			<div class="name">
-							    				Annaboda Jersey
+							    				<a href="product.html">Annaboda Jersey</a>
 							    			</div>
 							    			<div class="quick-link-holder">
 							    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
@@ -362,7 +372,7 @@
 										</div>
 										<div class="product-info">
 							    			<div class="name">
-							    				Annaboda Jersey
+							    				<a href="product.html">Annaboda Jersey</a>
 							    			</div>
 							    			<div class="quick-link-holder">
 							    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
@@ -398,6 +408,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- Contacts -->
 			<div class="contacs-block-holder slow-show" data-timeline="100">
 				<div class="contacts-block">
 					<div class="title">
@@ -457,11 +468,14 @@
 							<div class="btn-wrap"><input type="submit" value="Submit"></div>
 						</form>
 					</div>
+					<!-- Map -->
 					<div id="homepage_map"></div>
 				</div>
 			</div>
-		</div>	
+		</div>
+		<!-- Footer -->
 		<footer class="slow-show" ng-include=" 'footer.html' " data-timeline="100"></footer>
+		<!-- Quick Look modal -->
 		<div class="quick-look modal mfp-hide" id="quick-modal">
 			<div class="quick-look-window">
 					<div class="image-holder">
@@ -499,8 +513,7 @@
 						    					</li>
 						    				</ul>
 						    				<p class="product-raiting-push">(256 push)</p>
-					    				</div>
-					    				<p class="product-price">350$</p>
+					    				</div>					    				
 					    			</div>
 					    			<div class="product-desc-wrap">
 					    				<div class="product-desc">
@@ -524,12 +537,13 @@
 					    					</ul>
 					    				</div>
 					    			</div>
+					    			<p class="product-price"><span class="product-price-old">450$</span> <span class="product-price-count">350$</span></p>
 					    			<a href="#" class="add-to-cart">Add to cart</a>
 					    			<ul class="share-group var-box">
 					    				<li class="text-box">Share</li>
 					    				<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
 					    				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-					    				<li><a href="#"><i class="fa fa-instagram"></i></a></a></li>
+					    				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 					    			</ul>
 				    			</div>
 							</div>
@@ -540,6 +554,7 @@
 	</div>
 
 </body>
+<!-- Maps script -->
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&callback=initMap"
  async defer></script>
 <script>

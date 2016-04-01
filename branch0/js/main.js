@@ -2,6 +2,7 @@
 if (!window.console) window.console = {};
 if (!window.console.log) window.console.log = function () { };
 
+/*  Scroll Animation  */
 var ScrollAnimation = {
     timeLine: 250,
     windowHeight: 0,
@@ -82,6 +83,7 @@ var ScrollAnimation = {
     }
 };
 
+/* Mobile scripts */
 var Mobile = {
     yes: false,
     isIpad: false,
@@ -113,6 +115,7 @@ var Mobile = {
 };
 
 var Homepage = {
+	/* Submenu PC dropdown */
 	mainMenu: function() {
 		var self = this;
 		self.navLink = jQuery('.nav').children('li');
@@ -132,6 +135,7 @@ var Homepage = {
 	  	self.navMenu.css("display", "");
 		}
 	},
+	/* Submenu Mobile */
 	mainMenuMob: function() {
 		self.navLink = jQuery('.nav').children('li');
 		self.submenu = jQuery('.submenu');
@@ -162,18 +166,21 @@ var Homepage = {
 			}
 		})			
 	},
+	/* Mobile Menu Button Toggle */
 	menuBtn: function() {
 		var self = this;
 		self.navBtn = jQuery('.nav-btn');
+		self.navMain = jQuery('.nav');
 		self.navBtn.on('click', function() {
 		  jQuery(this).toggleClass('active');
-		  jQuery(this).next().slideToggle('fast');
+		  self.navMain.slideToggle('fast');
 		});		
 	},
 	mainBanner: function(){
 		var self = this;
 		self.resize();
 	},
+	/* Main Slider Resize */
 	resize: function(){
 		var self = this;
 		self.slide = jQuery('.homepage-slider').find('li');
@@ -185,24 +192,27 @@ var Homepage = {
 			self.slide.height() - jQuery('.welcome-msg-holder').innerHeight()
 		);
 	},
+	/* Main Slider */	
 	slider: function(){
 		var self = this;
 		jQuery('.homepage-slider').find('ul').bxSlider({
 			pager:false,
-			auto: true,
+			// auto: true,
 			pause: 4000
 		});
 	},
+	/* Welcome Message */
 	welcomeMsg: function(){
 		var self = this;
 		self.welcomeContainer = jQuery('.welcome-msg-holder');
 		self.sliderHolder = jQuery('.homepage-slider');
-		setTimeout(function(){
+		setTimeout(function(){			
 			self.welcomeContainer.addClass('showed');
 			self.sliderHolder.addClass('showed');
 			jQuery('.bx-controls-direction').addClass('showed');
 		}, 500);
 	},
+	/* Main Products Tabs */	
 	customTabs: function(){
 		var self = this;
 		self.tabsContainer = jQuery('.tabs-wrapper');
@@ -248,6 +258,7 @@ var Homepage = {
 			} e.preventDefault();
 		});
 	},
+		/* Main Products Tabs Sliders */
 	tabsSliders: function(){
 		var self = this;
 		var maxSlides,
@@ -315,15 +326,18 @@ var Homepage = {
 			pager: false,
 			prevSelector: '.prev-5',
 			nextSelector: '.next-5'
-		});    
-		/*   Tabs indents correct at start  */
+		});    		
+	},
+	/*   Tabs indents correct at start  */
+	tabsSliderCorrect: function (){
 		tabsTransFirst = jQuery('.tabs-wrapper .tabs:first-child')
 												.find('.products-list')
 												.css('transform');
 		tabsTransformAll = jQuery('.tabs-wrapper .tabs')
 												.find('.products-list')
-												.css('transform', tabsTransFirst);			
+												.css('transform', tabsTransFirst);	
 	},
+	/* Recent Posts Slider */
 	postSlider: function(){
 		var self = this;
 		var maxSlides,
@@ -348,6 +362,7 @@ var Homepage = {
 			nextSelector: '.next-post'
 		});
 	},
+	/* Best Sell Slider */
 	bestSellSlider: function(){
 		var self = this;
 		var maxSlides,
@@ -371,6 +386,7 @@ var Homepage = {
 			nextSelector: '.next-sell'
 		});
 	},
+	/* Consider Slider */
 	considerSlider: function(){
 		var self = this;
 		var maxSlides,
@@ -396,6 +412,7 @@ var Homepage = {
 			nextSelector: '.next-cons'			
 		});
 	},
+	/* Product Page Slider */
 	productSlider: function(){
 		var self = this;
 		sliderProduct = jQuery('.product-photo').find('.carousel-holder > ul').bxSlider({
@@ -408,9 +425,11 @@ var Homepage = {
 				nextSelector: '.next-prod'			    
 		});
 	},
+	/* Pages number & products priority show select stylize */
 	formStyler: function(){
-		jQuery('#catalog-sort, #catalog-show').styler();
+		jQuery('#catalog-sort, #catalog-sort-sec, #catalog-show, #catalog-show-sec').styler();
 	},
+	/* Filter Checkboxes Hide when number of goods equal 0 */
 	hideCheckbox: function(){
 		var optionCount = jQuery('.option').find('.option-count');
 		for(i = 0; i < optionCount.length; i++) {
@@ -431,6 +450,7 @@ var Homepage = {
 			}
 		});
 	},
+	/* All modals */
 	modal: function(){
 		jQuery('.login-btn').magnificPopup({			
 			type: 'inline',
@@ -455,8 +475,14 @@ var Homepage = {
 					enabled: true,
 					duration: 300 // don't foget to change the duration also in CSS
 				}				
-		});		
+		});
+		jQuery('.quick-look-btn-ajax').magnificPopup({
+			type: 'ajax',
+			showClsBtn: true,
+			closeMarkup: '<button title="%title%" class="mfp-close"></button>'			
+		});	
 	},
+	/* Goods amount buttons */
 	quantityBlock: function(){
 	    jQuery('.quantity-plus').click(function(e){
 			    var fieldName = jQuery(this).attr('field');
@@ -479,6 +505,7 @@ var Homepage = {
 	        }
 	    });
 	},
+	/* The collection banner is thrown up to the top of the catalog page (Mobile) */
 	introBlockUp: function() {
 		var self = this;
 		var winWidth = jQuery(window).width(),
@@ -490,6 +517,7 @@ var Homepage = {
 				maxSlides = 4;
 		}	
 	},
+	/* Filter menu toggle (Mobile) */
 	showFilter: function() {
 		var self = this;
 		var filterBtn = jQuery('.shop-options__header'),
@@ -505,12 +533,14 @@ var Homepage = {
 			}
 		})		
 	},
+	/* Remove home link on main page */
 	removeHomeLink: function() {
 		jQuery('.home').find('.logo').removeAttr('href');		
 	}
 };
 jQuery(function(){	
 	Mobile.init();
+	Homepage.formStyler();	
 	Homepage.hideCheckbox();
 	Homepage.quantityBlock();
 	Homepage.showFilter();
@@ -519,26 +549,26 @@ jQuery(function(){
 	Homepage.productSlider();		
 	Homepage.modal();
 	Homepage.introBlockUp();
-	jQuery(window).on('load', function(){
+	Homepage.customTabs();
+	Homepage.postSlider();
+	jQuery(window).on('load', function(){			
+		Homepage.mainBanner();		
 		Homepage.welcomeMsg();		
-		Homepage.formStyler();
-		Homepage.mainBanner();
 		Homepage.slider();
+		Homepage.menuBtn();			
 		Homepage.mainMenu();
 		Homepage.mainMenuMob();
-		Homepage.menuBtn();
 		Homepage.tabsSliders();
-		Homepage.customTabs();		
 		ScrollAnimation.init();	
-		Homepage.removeHomeLink();
-		Homepage.postSlider();
+		Homepage.removeHomeLink();		
+		Homepage.tabsSliderCorrect();
 	});
 
 	jQuery(window).on('orientationchange resize', function(){
 		Homepage.mainMenu();		
 		Mobile.resize();
-		Homepage.resize();
-		ScrollAnimation.resize();
+		// Homepage.resize();
+		// ScrollAnimation.resize();
 	});
 
 	jQuery(window).on('scroll', function(){

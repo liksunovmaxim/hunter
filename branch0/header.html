@@ -1,7 +1,10 @@
 <header>
 	<div class="header-wrapper">
+	<!-- Logo -->
 		<a class="logo" href="index.html">Hunter</a>
+		<!-- Header Center  -->
 		<div class="header-center">
+		<!-- Header Top -->
 			<div class="header-top">
 				<div class="quick-search">
 					<input id="searchform" type="text" placeholder="search">
@@ -29,6 +32,7 @@
 					</li>
 				</ul>
 			</div>
+			<!-- Header Nav -->
 			<div class="nav-holder">
 				<button class="nav-btn"><span></span>Menu</button>
 				<ul class="nav">
@@ -98,25 +102,31 @@
 						</div>
 					</li>
 					<li>
-						<a href="catalog.html">handguns</a>
+						<a href="catalog.html">pages</a>
 						<div class="submenu">
 							<div class="submenu__column">
-								<div class="submenu__title">Accessories</div>
+								<div class="submenu__title">All pages</div>
 								<ul class="submenu__list">
 									<li>
-										<a href="catalog.html">All</a>
+										<a href="blog.html">Blog List</a>
 									</li>
 									<li>
-										<a href="catalog.html">Cellphones</a>
+										<a href="blog-in.html">Blog page</a>
 									</li>
 									<li>
-										<a href="catalog.html">Laptops</a>
+										<a href="catalog.html">Catalog</a>
 									</li>
 									<li>
-										<a href="catalog.html">Cameras</a>
+										<a href="myaccount.html">My orders</a>
 									</li>
 									<li>
-										<a href="catalog.html">Desktops</a>
+										<a href="mydetails.html">My details</a>
+									</li>
+									<li>
+										<a href="orderone.html">My orders</a>
+									</li>
+									<li>
+										<a href="shopping-cart.html">Shopping cart</a>
 									</li>
 								</ul>
 							</div>
@@ -244,11 +254,13 @@
 				</ul>
 			</div>
 		</div>
+		<!-- Header Cart -->
 		<div class="cart-holder">
 			<a class="fa fa-shopping-cart" href="#"><span class="count">2</span></a>
 			<span>$250</span>
 		</div>
 	</div>
+	<!-- Cart Dropdown -->
 	<div class="ajax-cart-holder">
 		<div class="ajax-cart-container">
 			<div class="ajax-cart-wrapper">			
@@ -256,6 +268,7 @@
 		</div>
 	</div>
 </header>
+<!-- Cart dropdown script -->
 <script>
 	jQuery('.cart-holder a').on('click', function(e){
 		var self = this;

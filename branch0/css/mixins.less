@@ -47,7 +47,6 @@
 	font-style: normal;
 }
 
-
 @font-face {
 	font-family: 'icomoon';
 	src:url('../fonts/icomoon.eot?xwoeeo');
@@ -135,6 +134,13 @@
 	-ms-transform: @transform;
 	-o-transform: @transform;
 	transform: @transform;
+}
+.transform-origin(@x, @y){
+	-webkit-transform-origin: @x @y;
+	-moz-transform-origin: @x @y;
+	-ms-transform-origin: @x @y;
+	-o-transform-origin: @x @y;
+	transform-origin: @x @y;
 }
 
 .down-line() {

@@ -15,9 +15,12 @@
 </head>
 <body class="account-page">
 	<div class="wrapper">
+		<!-- Header -->	
 		<div class="header-holder" ng-include=" 'header.html' "></div>
+		<!-- Main -->		
 		<div class="main">
 			<div class="content">
+			<!-- Top Image -->
 				<div class="top-image-holder">
 					<div class="top-image">
 						<div class="text-holder">
@@ -30,9 +33,12 @@
 					</div>
 					<div class="image-tuneup"></div>
 				</div>
+				<!-- Content -->
 				<div class="content-holder">
+				<!-- Side Col-->
 					<div class="side-col">
 						<div class="side-col-container">
+						<!-- Account Menu -->
 							<div class="account-menu">
 								<ul class="account-menu__list">
 									<li><a href="myaccount.html">My Orders <i class="fa fa-angle-right"></i></a></li>
@@ -44,8 +50,10 @@
 							</div>
 						</div>
 					</div>
+					<!-- Main Col -->
 					<div class="main-col">
 						<div class="container">
+							<!-- My Details Form -->
 							<div class="orders">
 								<h2>My Details</h2>
 								<form action="post" class="details-form">
@@ -68,7 +76,7 @@
 										<input type="password" name="pswre">
 									</label>
 									<div class="btn-wrap">
-										<input type="submit" value="save"></input>
+										<input type="submit" value="save">
 									</div>
 								</form>						
 							</div>
@@ -76,8 +84,10 @@
 					</div>
 				</div>
 			</div>
+			<!-- New Posts Block -->
 			<div class="blog-block-holder">
 				<div class="hp-section blog-block slow-show" data-timeline="100">
+				<!-- Posts Slider -->
 					<div class="carousel-holder">
 						<div class="title">Recent post</div>
 						<div class="controls-holder">
@@ -155,6 +165,7 @@
 							</li>
 						</ul>
 					</div>
+					<!-- New Post Signup -->
 					<div class="sign-up-block">
 						<img src="images/posts-image.jpg" height="333" width="572" alt="">
 						<div class="text-holder">
@@ -183,6 +194,7 @@
 				</div>
 			</div>
 		</div>	
+		<!-- Footer -->
 		<footer class="slow-show" ng-include=" 'footer.html' " data-timeline="100"></footer>
 	</div>
 </body>
