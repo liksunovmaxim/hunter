@@ -16,14 +16,287 @@
 <body class="home">
 	<div class="wrapper">
 		<!-- Header	-->
-		<div class="header-holder" ng-include=" 'header.html' "></div>
+		<!-- <div class="header-holder" ng-include=" 'header.html' "></div> -->
+		<div class="header-holder">
+			<header>
+				<div class="header-wrapper">
+				<!-- Logo -->
+					<a class="logo" href="index.html">Hunter</a>
+					<!-- Header Center  -->
+					<div class="header-center">
+					<!-- Header Top -->
+						<div class="header-top">
+							<div class="quick-search">
+								<input id="searchform" type="text" placeholder="search">
+								<label class="fa fa-search" for="searchform"></label>
+							</div>
+							<ul class="top-links">
+								<li><a href="#login-modal" class="login-btn">log in</a></li>
+								<li><a href="mydetails.html">register</a></li>
+							</ul>
+							<ul class="lang-cur-switch">								
+								<li>
+									<select name="lang-switch" id="lang-switch">
+										<option>eng</option>
+										<option>fra</option>
+										<option>ger</option>
+									</select>						
+								</li>
+								<li>
+									<select name="cur-switch" id="cur-switch">
+										<option>usd</option>
+										<option>eur</option>
+										<option>pnd</option>
+									</select>	
+								</li>
+							</ul>
+						</div>
+						<script>jQuery('#lang-switch, #cur-switch').styler();</script>
+						<!-- Header Nav -->
+						<div class="nav-holder">
+							<button class="nav-btn"><span></span>Menu</button>
+							<ul class="nav">
+								<li>
+									<a href="catalog.html">rifles</a>
+									<div class="submenu submenu--full">
+										<div class="submenu__column">
+											<div class="submenu__title">Accessories</div>
+											<ul class="submenu__list">
+												<li>
+													<a href="catalog.html">All</a>
+												</li>
+												<li>
+													<a href="catalog.html">Cellphones</a>
+												</li>
+												<li>
+													<a href="catalog.html">Laptops</a>
+												</li>
+												<li>
+													<a href="catalog.html">Cameras</a>
+												</li>
+												<li>
+													<a href="catalog.html">Desktops</a>
+												</li>
+											</ul>
+										</div>
+										<div class="submenu__column">
+											<div class="submenu__title">Bags</div>
+											<ul class="submenu__list">
+												<li>
+													<a href="catalog.html">Jewelry</a>
+												</li>
+												<li>
+													<a href="catalog.html">Shoes</a>
+												</li>
+												<li>
+													<a href="catalog.html">Sweaters</a>
+												</li>
+												<li>
+													<a href="catalog.html">Shirts &amp; Tops</a>
+												</li>
+												<li>
+													<a href="catalog.html">Leather</a>
+												</li>
+											</ul>
+										</div>
+										<div class="submenu__column">
+											<div class="submenu__title">Jewerly</div>
+											<ul class="submenu__list">
+												<li>
+													<a href="catalog.html">Bags</a>
+												</li>
+												<li>
+													<a href="catalog.html">Shoes</a>
+												</li>
+												<li>
+													<a href="catalog.html">Suite</a>
+												</li>
+											</ul>
+										</div>
+										<div class="image-holder">
+											<a href="product.html">
+												<span class="tag-sale">sale <i>50%</i></span>
+												<img src="images/menu-1.jpg" alt="Rifles">
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="catalog.html">pages</a>
+									<div class="submenu">
+										<div class="submenu__column">
+											<div class="submenu__title">All pages</div>
+											<ul class="submenu__list">
+												<li>
+													<a href="blog.html">Blog List</a>
+												</li>
+												<li>
+													<a href="blog-in.html">Blog page</a>
+												</li>
+												<li>
+													<a href="catalog.html">Catalog</a>
+												</li>
+												<li>
+													<a href="myaccount.html">My orders</a>
+												</li>
+												<li>
+													<a href="mydetails.html">My details</a>
+												</li>
+												<li>
+													<a href="orderone.html">My orders</a>
+												</li>
+												<li>
+													<a href="shopping-cart.html">Shopping cart</a>
+												</li>
+											</ul>
+										</div>
+									</div>				
+								</li>
+								<li>
+									<a href="catalog.html">bullets</a>
+									<div class="submenu submenu--full">
+										<div class="submenu__column">
+											<div class="submenu__title">Accessories</div>
+											<ul class="submenu__list">
+												<li>
+													<a href="catalog.html">All</a>
+												</li>
+												<li>
+													<a href="catalog.html">Cellphones</a>
+												</li>
+												<li>
+													<a href="catalog.html">Laptops</a>
+												</li>
+												<li>
+													<a href="catalog.html">Cameras</a>
+												</li>
+												<li>
+													<a href="catalog.html">Desktops</a>
+												</li>
+											</ul>
+										</div>
+										<div class="submenu__column">
+											<div class="submenu__title">Bags</div>
+											<ul class="submenu__list">
+												<li>
+													<a href="catalog.html">Jewelry</a>
+												</li>
+												<li>
+													<a href="catalog.html">Shoes</a>
+												</li>
+												<li>
+													<a href="catalog.html">Sweaters</a>
+												</li>
+												<li>
+													<a href="catalog.html">Shirts &amp; Tops</a>
+												</li>
+												<li>
+													<a href="catalog.html">Leather</a>
+												</li>
+											</ul>
+										</div>
+										<div class="submenu__column">
+											<div class="submenu__title">Jewerly</div>
+											<ul class="submenu__list">
+												<li>
+													<a href="catalog.html">Bags</a>
+												</li>
+												<li>
+													<a href="catalog.html">Shoes</a>
+												</li>
+												<li>
+													<a href="catalog.html">Suite</a>
+												</li>
+											</ul>
+										</div>
+										<div class="image-holder">
+											<a href="product.html">
+												<span class="tag-sale">sale <i>50%</i></span>
+												<img src="images/menu-1.jpg" alt="Rifles">
+											</a>
+										</div>
+									</div>				
+								</li>
+								<li>
+									<a href="catalog.html">sights</a>
+								</li>
+								<li>
+									<a href="catalog.html">holsters and cases</a>
+								</li>
+								<li>
+									<a href="catalog.html">crossbows</a>
+								</li>
+								<li>
+									<a href="catalog.html">pistols</a>
+									<div class="submenu">
+										<div class="submenu__column">
+											<div class="submenu__title">Accessories</div>
+											<ul class="submenu__list">
+												<li>
+													<a href="catalog.html">All</a>
+												</li>
+												<li>
+													<a href="catalog.html">Cellphones</a>
+												</li>
+												<li>
+													<a href="catalog.html">Laptops</a>
+												</li>
+												<li>
+													<a href="catalog.html">Cameras</a>
+												</li>
+												<li>
+													<a href="catalog.html">Desktops</a>
+												</li>
+											</ul>
+										</div>
+										<div class="submenu__column">
+											<div class="submenu__title">Accessories</div>
+											<ul class="submenu__list">
+												<li>
+													<a href="catalog.html">All</a>
+												</li>
+												<li>
+													<a href="catalog.html">Cellphones</a>
+												</li>
+												<li>
+													<a href="catalog.html">Laptops</a>
+												</li>
+												<li>
+													<a href="catalog.html">Cameras</a>
+												</li>
+												<li>
+													<a href="catalog.html">Desktops</a>
+												</li>
+											</ul>
+										</div>
+									</div>				
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Header Cart -->
+					<div class="cart-holder">
+						<a class="fa fa-shopping-cart" href="#"><span class="count">2</span></a>
+						<span>$250</span>
+					</div>
+				</div>
+				<!-- Cart Dropdown -->
+				<div class="ajax-cart-holder">
+					<div class="ajax-cart-container">
+						<div class="ajax-cart-wrapper">			
+						</div>
+					</div>
+				</div>
+			</header>
+	
+		</div>
 		<!-- Main -->
 		<div class="main">		
 			<!-- Main Slider -->
-			<div class="homepage-slider">
+			<div class="homepage-slider">			
 				<ul>
 					<li style="background: url('images/homepage-banner.jpg') no-repeat 50% 50%; background-size: cover;">
-						<div class="category-description-holder">
+						<div class="category-description-holder">							
 							<div class="category-description-wrapper">
 								<div class="category-description">
 									<div class="title">
@@ -37,8 +310,8 @@
 									</div>
 								</div>
 							</div>
-						</div>
-					</li>
+						</div>						
+					</li>					
 					<li style="background: url(images/hunting-wallpaper.jpg) no-repeat 50% 50%; background-size: cover;">
 						<div class="category-description-holder">
 							<div class="category-description-wrapper">
@@ -66,7 +339,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>	
 			<div class="content">
 				<div class="content-holder">
 				<!-- Collection Block -->
@@ -132,11 +405,1129 @@
 						    <li><a href="#tabs-5">Furniture</a></li>
 						</ul>
 						<div class="tabs-wrapper">
-							<div ng-include=" 'tabs/tab-1.html' " class="tabs active" id="tabs-1"></div>
+<!-- 							<div ng-include=" 'tabs/tab-1.html' " class="tabs active" id="tabs-1"></div>
 							<div ng-include=" 'tabs/tab-2.html' " class="tabs" id="tabs-2"></div>
 							<div ng-include=" 'tabs/tab-3.html' " class="tabs" id="tabs-3"></div>
 							<div ng-include=" 'tabs/tab-4.html' " class="tabs" id="tabs-4"></div>
-							<div ng-include=" 'tabs/tab-5.html' " class="tabs" id="tabs-5"></div>
+							<div ng-include=" 'tabs/tab-5.html' " class="tabs" id="tabs-5"></div> -->
+							<div class="tabs active" id="tabs-1">
+								<div class="controls">
+									<div class="prev-1 prev"></div>
+									<div class="next-1 next"></div>
+								</div>
+								<ul class="carousel products-list">
+									<li>
+										<a href="product.html">
+											<img src="images/prod-1.jpg" alt="">
+											<span class="name">
+												Annaboda Jersey
+											</span>
+											<span class="price">
+												$400
+											</span>
+										</a>
+										<div class="prod-hover">
+											<div class="image-holder">
+												<a href="product.html">
+													<img src="images/prod-1-hover.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-info">
+								    			<div class="name">
+								    				<a href="product.html">Annaboda Jersey</a>
+								    			</div>
+								    			<div class="quick-link-holder">
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+								    			</div>
+								    			<div class="raiting-holder">
+								    				<ul>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    				</ul>
+								    			</div>
+								    			<div class="price-container">
+								    				$400.00
+								    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+								    			</div>
+								    		</div>
+										</div>
+									</li>
+									<li>
+										<a href="product.html">
+											<img src="images/prod-2.jpg" alt="">
+											<span class="name">
+												Annabersey
+											</span>
+											<span class="price">
+												$578
+											</span>
+										</a>
+										<div class="prod-hover">
+											<div class="image-holder">
+												<a href="product.html">
+													<img src="images/prod-1-hover.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-info">
+								    			<div class="name">
+								    				<a href="product.html">Annaboda Jersey</a>
+								    			</div>
+								    			<div class="quick-link-holder">
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+								    			</div>
+								    			<div class="raiting-holder">
+								    				<ul>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star-half-o"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star-o"></span>
+								    					</li>
+								    				</ul>
+								    			</div>
+								    			<div class="price-container">
+								    				$400.00
+								    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+								    			</div>
+								    		</div>
+										</div>
+									</li>
+									<li>
+										<a href="product.html">
+											<img src="images/prod-3.jpg" alt="">
+											<span class="name">
+												Ann abersey
+											</span>
+											<span class="price">
+												$378
+											</span>
+										</a>
+										<div class="prod-hover">
+											<div class="image-holder">
+												<a href="product.html">
+													<img src="images/prod-1-hover.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-info">
+								    			<div class="name">
+								    				<a href="product.html">Annaboda Jersey</a>
+								    			</div>
+								    			<div class="quick-link-holder">
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+								    			</div>
+								    			<div class="raiting-holder">
+								    				<ul>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star-half-o"></span>
+								    					</li>
+								    				</ul>
+								    			</div>
+								    			<div class="price-container">
+								    				$400.00
+								    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+								    			</div>
+								    		</div>
+										</div>
+									</li>
+									<li>
+										<a href="product.html">
+											<img src="images/prod-4.jpg" alt="">
+											<span class="name">
+												nabersey
+											</span>
+											<span class="price">
+												$562
+											</span>
+										</a>
+										<div class="prod-hover">
+											<div class="image-holder">
+												<a href="product.html">
+													<img src="images/prod-1-hover.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-info">
+								    			<div class="name">
+								    				<a href="product.html">Annaboda Jersey</a>
+								    			</div>
+								    			<div class="quick-link-holder">
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+								    			</div>
+								    			<div class="raiting-holder">
+								    				<ul>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star-o"></span>
+								    					</li>
+								    				</ul>
+								    			</div>
+								    			<div class="price-container">
+								    				$400.00
+								    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+								    			</div>
+								    		</div>
+										</div>
+									</li>
+									<li>
+										<a href="product.html">
+											<img src="images/prod-4.jpg" alt="">
+											<span class="name">
+												nabersey
+											</span>
+											<span class="price">
+												$562
+											</span>
+										</a>
+										<div class="prod-hover">
+											<div class="image-holder">
+												<a href="product.html">
+													<img src="images/prod-1-hover.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-info">
+								    			<div class="name">
+								    				<a href="product.html">Annaboda Jersey</a>
+								    			</div>
+								    			<div class="quick-link-holder">
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+								    			</div>
+								    			<div class="raiting-holder">
+								    				<ul>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star-o"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star-o"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star-o"></span>
+								    					</li>
+								    				</ul>
+								    			</div>
+								    			<div class="price-container">
+								    				$400.00
+								    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+								    			</div>
+								    		</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="tabs" id="tabs-2">
+								<div class="controls">
+									<div class="prev-2 prev"></div>
+									<div class="next-2 next"></div>
+								</div>
+								<ul class="carousel products-list">
+								    <li>
+								        <a href="product.html">
+								            <img src="images/prod-1.jpg" alt="">
+								            <span class="name">
+								                Annaboda Jersey
+								            </span>
+								            <span class="price">
+								                $400
+								            </span>
+								        </a>
+								        <div class="prod-hover">
+								            <div class="image-holder">
+								                <a href="product.html">
+								                    <img src="images/prod-1-hover.jpg" alt="">
+								                </a>
+								            </div>
+								            <div class="product-info">
+								                <div class="name">
+								                    <a href="product.html">Annaboda Jersey</a>
+								                </div>
+								                <div class="quick-link-holder">
+								                    <a href="#quick-modal" class="quick-look-btn">Quick look</a>
+								                </div>
+								                <div class="raiting-holder">
+								                    <ul>
+								                        <li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star-o"></span>
+								                        </li>
+								                    </ul>
+								                </div>
+								                <div class="price-container">
+								                    $400.00
+								                    <a class="fa fa-shopping-cart" href="#">add to bag</a>
+								                </div>
+								            </div>
+								        </div>
+								    </li>
+									<li>
+										<a href="product.html">
+											<img src="images/prod-1.jpg" alt="">
+											<span class="name">
+												Annaboda Jersey
+											</span>
+											<span class="price">
+												$400
+											</span>
+										</a>
+										<div class="prod-hover">
+											<div class="image-holder">
+												<a href="product.html">
+													<img src="images/prod-1-hover.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-info">
+								    			<div class="name">
+								    				<a href="product.html">Annaboda Jersey</a>
+								    			</div>
+								    			<div class="quick-link-holder">
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+								    			</div>
+								    			<div class="raiting-holder">
+								    				<ul>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star-o"></span>
+								    					</li>
+								    				</ul>
+								    			</div>
+								    			<div class="price-container">
+								    				$400.00
+								    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+								    			</div>
+								    		</div>
+										</div>
+									</li>
+									<li>
+										<a href="product.html">
+											<img src="images/prod-2.jpg" alt="">
+											<span class="name">
+												Annabersey
+											</span>
+											<span class="price">
+												$578
+											</span>
+										</a>
+										<div class="prod-hover">
+											<div class="image-holder">
+												<a href="product.html">
+													<img src="images/prod-1-hover.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-info">
+								    			<div class="name">
+								    				<a href="product.html">Annaboda Jersey</a>
+								    			</div>
+								    			<div class="quick-link-holder">
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+								    			</div>
+								    			<div class="raiting-holder">
+								    				<ul>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star-o"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star-o"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star-o"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star-o"></span>
+								    					</li>
+								    				</ul>
+								    			</div>
+								    			<div class="price-container">
+								    				$400.00
+								    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+								    			</div>
+								    		</div>
+										</div>
+									</li>
+									<li>
+										<a href="product.html">
+											<img src="images/prod-3.jpg" alt="">
+											<span class="name">
+												Ann abersey
+											</span>
+											<span class="price">
+												$378
+											</span>
+										</a>
+										<div class="prod-hover">
+											<div class="image-holder">
+												<a href="product.html">
+													<img src="images/prod-1-hover.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-info">
+								    			<div class="name">
+								    				<a href="product.html">Annaboda Jersey</a>
+								    			</div>
+								    			<div class="quick-link-holder">
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+								    			</div>
+								    			<div class="raiting-holder">
+								    				<ul>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    				</ul>
+								    			</div>
+								    			<div class="price-container">
+								    				$400.00
+								    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+								    			</div>
+								    		</div>
+										</div>
+									</li>
+									<li>
+										<a href="product.html">
+											<img src="images/prod-4.jpg" alt="">
+											<span class="name">
+												nabersey
+											</span>
+											<span class="price">
+												$562
+											</span>
+										</a>
+										<div class="prod-hover">
+											<div class="image-holder">
+												<a href="product.html">
+													<img src="images/prod-1-hover.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-info">
+								    			<div class="name">
+								    				<a href="product.html">Annaboda Jersey</a>
+								    			</div>
+								    			<div class="quick-link-holder">
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+								    			</div>
+								    			<div class="raiting-holder">
+								    				<ul>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    				</ul>
+								    			</div>
+								    			<div class="price-container">
+								    				$400.00
+								    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+								    			</div>
+								    		</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="tabs" id="tabs-3">
+								<div class="controls">
+									<div class="prev-3 prev"></div>
+									<div class="next-3 next"></div>
+								</div>
+								<ul class="carousel products-list">
+									<li>
+										<a href="product.html">
+											<img src="images/prod-1.jpg" alt="">
+											<span class="name">
+												Annaboda Jersey
+											</span>
+											<span class="price">
+												$400
+											</span>
+										</a>
+										<div class="prod-hover">
+											<div class="image-holder">
+												<a href="product.html">
+													<img src="images/prod-1-hover.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-info">
+								    			<div class="name">
+								    				<a href="product.html">Annaboda Jersey</a>
+								    			</div>
+								    			<div class="quick-link-holder">
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+								    			</div>
+								    			<div class="raiting-holder">
+								    				<ul>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    				</ul>
+								    			</div>
+								    			<div class="price-container">
+								    				$400.00
+								    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+								    			</div>
+								    		</div>
+										</div>
+									</li>
+									<li>
+										<a href="product.html">
+											<img src="images/prod-2.jpg" alt="">
+											<span class="name">
+												Annabersey
+											</span>
+											<span class="price">
+												$578
+											</span>
+										</a>
+										<div class="prod-hover">
+											<div class="image-holder">
+												<a href="product.html">
+													<img src="images/prod-1-hover.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-info">
+								    			<div class="name">
+								    				<a href="product.html">Annaboda Jersey</a>
+								    			</div>
+								    			<div class="quick-link-holder">
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+								    			</div>
+								    			<div class="raiting-holder">
+								    				<ul>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    				</ul>
+								    			</div>
+								    			<div class="price-container">
+								    				$400.00
+								    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+								    			</div>
+								    		</div>
+										</div>
+									</li>
+									<li>
+										<a href="product.html">
+											<img src="images/prod-3.jpg" alt="">
+											<span class="name">
+												Ann abersey
+											</span>
+											<span class="price">
+												$378
+											</span>
+										</a>
+										<div class="prod-hover">
+											<div class="image-holder">
+												<a href="product.html">
+													<img src="images/prod-1-hover.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-info">
+								    			<div class="name">
+								    				<a href="product.html">Annaboda Jersey</a>
+								    			</div>
+								    			<div class="quick-link-holder">
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+								    			</div>
+								    			<div class="raiting-holder">
+								    				<ul>
+								    					<li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star-half-o"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star-o"></span>
+								                        </li>
+								    				</ul>
+								    			</div>
+								    			<div class="price-container">
+								    				$400.00
+								    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+								    			</div>
+								    		</div>
+										</div>
+									</li>
+									<li>
+										<a href="product.html">
+											<img src="images/prod-4.jpg" alt="">
+											<span class="name">
+												nabersey
+											</span>
+											<span class="price">
+												$562
+											</span>
+										</a>
+										<div class="prod-hover">
+											<div class="image-holder">
+												<a href="product.html">
+													<img src="images/prod-1-hover.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-info">
+								    			<div class="name">
+								    				<a href="product.html">Annaboda Jersey</a>
+								    			</div>
+								    			<div class="quick-link-holder">
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+								    			</div>
+								    			<div class="raiting-holder">
+								    				<ul>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    				</ul>
+								    			</div>
+								    			<div class="price-container">
+								    				$400.00
+								    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+								    			</div>
+								    		</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="tabs" id="tabs-4">
+								<div class="controls">
+									<div class="prev-4 prev"></div>
+									<div class="next-4 next"></div>
+								</div>
+								<ul class="carousel products-list">
+									<li>
+										<a href="product.html">
+											<img src="images/prod-1.jpg" alt="">
+											<span class="name">
+												Annaboda Jersey
+											</span>
+											<span class="price">
+												$400
+											</span>
+										</a>
+										<div class="prod-hover">
+											<div class="image-holder">
+												<a href="product.html">
+													<img src="images/prod-1-hover.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-info">
+								    			<div class="name">
+								    				<a href="product.html">Annaboda Jersey</a>
+								    			</div>
+								    			<div class="quick-link-holder">
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+								    			</div>
+								    			<div class="raiting-holder">
+								    				<ul>
+								    					<li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star-half-o"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star-o"></span>
+								                        </li>
+								    				</ul>
+								    			</div>
+								    			<div class="price-container">
+								    				$400.00
+								    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+								    			</div>
+								    		</div>
+										</div>
+									</li>
+									<li>
+										<a href="product.html">
+											<img src="images/prod-2.jpg" alt="">
+											<span class="name">
+												Annabersey
+											</span>
+											<span class="price">
+												$578
+											</span>
+										</a>
+										<div class="prod-hover">
+											<div class="image-holder">
+												<a href="product.html">
+													<img src="images/prod-1-hover.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-info">
+								    			<div class="name">
+								    				<a href="product.html">Annaboda Jersey</a>
+								    			</div>
+								    			<div class="quick-link-holder">
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+								    			</div>
+								    			<div class="raiting-holder">
+								    				<ul>
+								    					<li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star-half-o"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star-o"></span>
+								                        </li>
+								    				</ul>
+								    			</div>
+								    			<div class="price-container">
+								    				$400.00
+								    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+								    			</div>
+								    		</div>
+										</div>
+									</li>
+									<li>
+										<a href="product.html">
+											<img src="images/prod-3.jpg" alt="">
+											<span class="name">
+												Ann abersey
+											</span>
+											<span class="price">
+												$378
+											</span>
+										</a>
+										<div class="prod-hover">
+											<div class="image-holder">
+												<a href="product.html">
+													<img src="images/prod-1-hover.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-info">
+								    			<div class="name">
+								    				<a href="product.html">Annaboda Jersey</a>
+								    			</div>
+								    			<div class="quick-link-holder">
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+								    			</div>
+								    			<div class="raiting-holder">
+								    				<ul>
+								    					<li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star-half-o"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star-o"></span>
+								                        </li>
+								    				</ul>
+								    			</div>
+								    			<div class="price-container">
+								    				$400.00
+								    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+								    			</div>
+								    		</div>
+										</div>
+									</li>
+									<li>
+										<a href="product.html">
+											<img src="images/prod-4.jpg" alt="">
+											<span class="name">
+												nabersey
+											</span>
+											<span class="price">
+												$562
+											</span>
+										</a>
+										<div class="prod-hover">
+											<div class="image-holder">
+												<a href="product.html">
+													<img src="images/prod-1-hover.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-info">
+								    			<div class="name">
+								    				<a href="product.html">Annaboda Jersey</a>
+								    			</div>
+								    			<div class="quick-link-holder">
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+								    			</div>
+								    			<div class="raiting-holder">
+								    				<ul>
+								    					<li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star-half-o"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star-o"></span>
+								                        </li>
+								    				</ul>
+								    			</div>
+								    			<div class="price-container">
+								    				$400.00
+								    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+								    			</div>
+								    		</div>
+										</div>
+									</li>
+								</ul>								
+							</div>
+							<div class="tabs" id="tabs-5">
+								<div class="controls">
+									<div class="prev-5 prev"></div>
+									<div class="next-5 next"></div>
+								</div>
+								<ul class="carousel products-list">
+									<li>
+										<a href="product.html">
+											<img src="images/prod-1.jpg" alt="">
+											<span class="name">
+												Annaboba Jersey
+											</span>
+											<span class="price">
+												$400
+											</span>
+										</a>
+										<div class="prod-hover">
+											<div class="image-holder">
+												<a href="product.html">
+													<img src="images/prod-1-hover.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-info">
+								    			<div class="name">
+								    				<a href="product.html">Annaboda Jersey</a>
+								    			</div>
+								    			<div class="quick-link-holder">
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+								    			</div>
+								    			<div class="raiting-holder">
+								    				<ul>
+								    					<li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star-half-o"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star-o"></span>
+								                        </li>
+								    				</ul>
+								    			</div>
+								    			<div class="price-container">
+								    				$400.00
+								    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+								    			</div>
+								    		</div>
+										</div>
+									</li>
+									<li>
+										<a href="product.html">
+											<img src="images/prod-2.jpg" alt="">
+											<span class="name">
+												Annabersey
+											</span>
+											<span class="price">
+												$578
+											</span>
+										</a>
+										<div class="prod-hover">
+											<div class="image-holder">
+												<a href="product.html">
+													<img src="images/prod-1-hover.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-info">
+								    			<div class="name">
+								    				<a href="product.html">Annaboda Jersey</a>
+								    			</div>
+								    			<div class="quick-link-holder">
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+								    			</div>
+								    			<div class="raiting-holder">
+								    				<ul>
+								    					<li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star-half-o"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star-o"></span>
+								                        </li>
+								    				</ul>
+								    			</div>
+								    			<div class="price-container">
+								    				$400.00
+								    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+								    			</div>
+								    		</div>
+										</div>
+									</li>
+									<li>
+										<a href="product.html">
+											<img src="images/prod-3.jpg" alt="">
+											<span class="name">
+												Ann abersey
+											</span>
+											<span class="price">
+												$378
+											</span>
+										</a>
+										<div class="prod-hover">
+											<div class="image-holder">
+												<a href="product.html">
+													<img src="images/prod-1-hover.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-info">
+								    			<div class="name">
+								    				<a href="product.html">Annaboda Jersey</a>
+								    			</div>
+								    			<div class="quick-link-holder">
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+								    			</div>
+								    			<div class="raiting-holder">
+								    				<ul>
+								    					<li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star-half-o"></span>
+								                        </li>
+								                        <li>
+								                            <span class="fa fa-star-o"></span>
+								                        </li>
+								    				</ul>
+								    			</div>
+								    			<div class="price-container">
+								    				$400.00
+								    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+								    			</div>
+								    		</div>
+										</div>
+									</li>
+									<li>
+										<a href="product.html">
+											<img src="images/prod-4.jpg" alt="">
+											<span class="name">
+												nabersey
+											</span>
+											<span class="price">
+												$562
+											</span>
+										</a>
+										<div class="prod-hover">
+											<div class="image-holder">
+												<a href="product.html">
+													<img src="images/prod-1-hover.jpg" alt="">
+												</a>
+											</div>
+											<div class="product-info">
+								    			<div class="name">
+								    				<a href="product.html">Annaboda Jersey</a>
+								    			</div>
+								    			<div class="quick-link-holder">
+								    				<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+								    			</div>
+								    			<div class="raiting-holder">
+								    				<ul>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star"></span>
+								    					</li>
+								    					<li>
+								    						<span class="fa fa-star-half-o"></span>
+								    					</li>
+								                        <li>
+								                            <span class="fa fa-star-o"></span>
+								                        </li>
+								    				</ul>
+								    			</div>
+								    			<div class="price-container">
+								    				$400.00
+								    				<a class="fa fa-shopping-cart" href="#">add to bag</a>
+								    			</div>
+								    		</div>
+										</div>
+									</li>
+								</ul>
+							</div>							
 						</div>
 					</div>
 				</div>
@@ -277,7 +1668,8 @@
 							    				<a href="product.html">Annaboda Jersey</a>
 							    			</div>
 							    			<div class="quick-link-holder">
-							    				<a href="quick-look.html" class="quick-look-btn-ajax">Quick look</a>
+								    			<a href="#quick-modal" class="quick-look-btn">Quick look</a>
+							    				<!-- <a href="quick-look.html" class="quick-look-btn-ajax">Quick look</a> -->
 							    			</div>
 							    			<div class="raiting-holder">
 							    				<ul>
@@ -476,83 +1868,7 @@
 		<!-- Footer -->
 		<footer class="slow-show" ng-include=" 'footer.html' " data-timeline="100"></footer>
 		<!-- Quick Look modal -->
-		<div class="quick-look modal mfp-hide" id="quick-modal">
-			<div class="quick-look-window">
-					<div class="image-holder">
-						<img src="images/modal-image.jpg" alt="Modal image">
-					</div>
-					<div class="product-modal-holder">
-						<div class="product-modal">
-							<div class="product-prew">
-								<ul class="product-prew__list">
-									<li><img src="images/modal-item-var-1.jpg" alt="Item 1"></li>
-									<li><img src="images/modal-item-var-2.jpg" alt="Item 1"></li>
-									<li><img src="images/modal-item-var-3.jpg" alt="Item 1"></li>
-								</ul>
-							</div>
-							<div class="product-content-holder">
-								<div class="product-content">
-									<h3 class="product-title">Knitwear with windstopper</h3>
-									<div class="product-pricebox">
-										<div class="raiting-holder">
-						    				<ul class="raiting-marks">
-						    					<li>
-						    						<span class="fa fa-star-o active"></span>
-						    					</li>
-						    					<li>
-						    						<span class="fa fa-star-o active"></span>
-						    					</li>
-						    					<li>
-						    						<span class="fa fa-star-o active"></span>
-						    					</li>
-						    					<li>
-						    						<span class="fa fa-star-o"></span>
-						    					</li>
-						    					<li>
-						    						<span class="fa fa-star-o"></span>
-						    					</li>
-						    				</ul>
-						    				<p class="product-raiting-push">(256 push)</p>
-					    				</div>					    				
-					    			</div>
-					    			<div class="product-desc-wrap">
-					    				<div class="product-desc">
-					    					<h4 class="product-desc__title">Annaboda jersey</h4>
-					    					<p class="product-desc__text">Hardwearing jersey in 100% wool with windproo
-											breathable WINDSTOPPER® membrane. 
-											Features radio pocket.</p>
-					    					<h4 class="product-desc__var-title">Size</h4>
-					    					<ul class="product-size var-box">
-					    						<li>XS</li>
-					    						<li>S</li>
-					    						<li>M</li>
-					    						<li>L</li>
-					    						<li>XL</li>
-					    					</ul>
-					    					<h4 class="product-desc__var-title">Color in stock</h4>
-					    					<ul class="product-color var-box">
-					    						<li><img src="images/product-color-1.jpg" alt="Light Brown"></li>
-					    						<li><img src="images/product-color-2.jpg" alt="Brown"></li>
-					    						<li><img src="images/product-color-3.jpg" alt="Dark Brown"></li>
-					    					</ul>
-					    				</div>
-					    			</div>
-					    			<p class="product-price"><span class="product-price-old">450$</span> <span class="product-price-count">350$</span></p>
-					    			<a href="#" class="add-to-cart">Add to cart</a>
-					    			<ul class="share-group var-box">
-					    				<li class="text-box">Share</li>
-					    				<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-					    				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-					    				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-					    			</ul>
-				    			</div>
-							</div>
-						</div>
-				</div>
-			</div>
-		</div>
 	</div>
-
 </body>
 <!-- Maps script -->
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&callback=initMap"

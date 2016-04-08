@@ -16,7 +16,280 @@
 <body class="account-page">
 	<div class="wrapper">
 		<!-- Header -->	
-		<div class="header-holder" ng-include=" 'header.html' "></div>
+		<!-- <div class="header-holder" ng-include=" 'header.html' "></div> -->
+		<div class="header-holder">
+			<header>
+				<div class="header-wrapper">
+				<!-- Logo -->
+					<a class="logo" href="index.html">Hunter</a>
+					<!-- Header Center  -->
+					<div class="header-center">
+					<!-- Header Top -->
+						<div class="header-top">
+							<div class="quick-search">
+								<input id="searchform" type="text" placeholder="search">
+								<label class="fa fa-search" for="searchform"></label>
+							</div>
+							<ul class="top-links">
+								<li><a href="#login-modal" class="login-btn">log in</a></li>
+								<li><a href="mydetails.html">register</a></li>
+							</ul>
+							<ul class="lang-cur-switch">								
+								<li>
+									<select name="lang-switch" id="lang-switch">
+										<option>eng</option>
+										<option>fra</option>
+										<option>ger</option>
+									</select>						
+								</li>
+								<li>
+									<select name="cur-switch" id="cur-switch">
+										<option>usd</option>
+										<option>eur</option>
+										<option>pnd</option>
+									</select>	
+								</li>
+							</ul>
+						</div>
+						<script>jQuery('#lang-switch, #cur-switch').styler();</script>						
+						<!-- Header Nav -->
+						<div class="nav-holder">
+							<button class="nav-btn"><span></span>Menu</button>
+							<ul class="nav">
+								<li>
+									<a href="catalog.html">rifles</a>
+									<div class="submenu submenu--full">
+										<div class="submenu__column">
+											<div class="submenu__title">Accessories</div>
+											<ul class="submenu__list">
+												<li>
+													<a href="catalog.html">All</a>
+												</li>
+												<li>
+													<a href="catalog.html">Cellphones</a>
+												</li>
+												<li>
+													<a href="catalog.html">Laptops</a>
+												</li>
+												<li>
+													<a href="catalog.html">Cameras</a>
+												</li>
+												<li>
+													<a href="catalog.html">Desktops</a>
+												</li>
+											</ul>
+										</div>
+										<div class="submenu__column">
+											<div class="submenu__title">Bags</div>
+											<ul class="submenu__list">
+												<li>
+													<a href="catalog.html">Jewelry</a>
+												</li>
+												<li>
+													<a href="catalog.html">Shoes</a>
+												</li>
+												<li>
+													<a href="catalog.html">Sweaters</a>
+												</li>
+												<li>
+													<a href="catalog.html">Shirts &amp; Tops</a>
+												</li>
+												<li>
+													<a href="catalog.html">Leather</a>
+												</li>
+											</ul>
+										</div>
+										<div class="submenu__column">
+											<div class="submenu__title">Jewerly</div>
+											<ul class="submenu__list">
+												<li>
+													<a href="catalog.html">Bags</a>
+												</li>
+												<li>
+													<a href="catalog.html">Shoes</a>
+												</li>
+												<li>
+													<a href="catalog.html">Suite</a>
+												</li>
+											</ul>
+										</div>
+										<div class="image-holder">
+											<a href="product.html">
+												<span class="tag-sale">sale <i>50%</i></span>
+												<img src="images/menu-1.jpg" alt="Rifles">
+											</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="catalog.html">pages</a>
+									<div class="submenu">
+										<div class="submenu__column">
+											<div class="submenu__title">All pages</div>
+											<ul class="submenu__list">
+												<li>
+													<a href="blog.html">Blog List</a>
+												</li>
+												<li>
+													<a href="blog-in.html">Blog page</a>
+												</li>
+												<li>
+													<a href="catalog.html">Catalog</a>
+												</li>
+												<li>
+													<a href="myaccount.html">My orders</a>
+												</li>
+												<li>
+													<a href="mydetails.html">My details</a>
+												</li>
+												<li>
+													<a href="orderone.html">My orders</a>
+												</li>
+												<li>
+													<a href="shopping-cart.html">Shopping cart</a>
+												</li>
+											</ul>
+										</div>
+									</div>				
+								</li>
+								<li>
+									<a href="catalog.html">bullets</a>
+									<div class="submenu submenu--full">
+										<div class="submenu__column">
+											<div class="submenu__title">Accessories</div>
+											<ul class="submenu__list">
+												<li>
+													<a href="catalog.html">All</a>
+												</li>
+												<li>
+													<a href="catalog.html">Cellphones</a>
+												</li>
+												<li>
+													<a href="catalog.html">Laptops</a>
+												</li>
+												<li>
+													<a href="catalog.html">Cameras</a>
+												</li>
+												<li>
+													<a href="catalog.html">Desktops</a>
+												</li>
+											</ul>
+										</div>
+										<div class="submenu__column">
+											<div class="submenu__title">Bags</div>
+											<ul class="submenu__list">
+												<li>
+													<a href="catalog.html">Jewelry</a>
+												</li>
+												<li>
+													<a href="catalog.html">Shoes</a>
+												</li>
+												<li>
+													<a href="catalog.html">Sweaters</a>
+												</li>
+												<li>
+													<a href="catalog.html">Shirts &amp; Tops</a>
+												</li>
+												<li>
+													<a href="catalog.html">Leather</a>
+												</li>
+											</ul>
+										</div>
+										<div class="submenu__column">
+											<div class="submenu__title">Jewerly</div>
+											<ul class="submenu__list">
+												<li>
+													<a href="catalog.html">Bags</a>
+												</li>
+												<li>
+													<a href="catalog.html">Shoes</a>
+												</li>
+												<li>
+													<a href="catalog.html">Suite</a>
+												</li>
+											</ul>
+										</div>
+										<div class="image-holder">
+											<a href="product.html">
+												<span class="tag-sale">sale <i>50%</i></span>
+												<img src="images/menu-1.jpg" alt="Rifles">
+											</a>
+										</div>
+									</div>				
+								</li>
+								<li>
+									<a href="catalog.html">sights</a>
+								</li>
+								<li>
+									<a href="catalog.html">holsters and cases</a>
+								</li>
+								<li>
+									<a href="catalog.html">crossbows</a>
+								</li>
+								<li>
+									<a href="catalog.html">pistols</a>
+									<div class="submenu">
+										<div class="submenu__column">
+											<div class="submenu__title">Accessories</div>
+											<ul class="submenu__list">
+												<li>
+													<a href="catalog.html">All</a>
+												</li>
+												<li>
+													<a href="catalog.html">Cellphones</a>
+												</li>
+												<li>
+													<a href="catalog.html">Laptops</a>
+												</li>
+												<li>
+													<a href="catalog.html">Cameras</a>
+												</li>
+												<li>
+													<a href="catalog.html">Desktops</a>
+												</li>
+											</ul>
+										</div>
+										<div class="submenu__column">
+											<div class="submenu__title">Accessories</div>
+											<ul class="submenu__list">
+												<li>
+													<a href="catalog.html">All</a>
+												</li>
+												<li>
+													<a href="catalog.html">Cellphones</a>
+												</li>
+												<li>
+													<a href="catalog.html">Laptops</a>
+												</li>
+												<li>
+													<a href="catalog.html">Cameras</a>
+												</li>
+												<li>
+													<a href="catalog.html">Desktops</a>
+												</li>
+											</ul>
+										</div>
+									</div>				
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Header Cart -->
+					<div class="cart-holder">
+						<a class="fa fa-shopping-cart" href="#"><span class="count">2</span></a>
+						<span>$250</span>
+					</div>
+				</div>
+				<!-- Cart Dropdown -->
+				<div class="ajax-cart-holder">
+					<div class="ajax-cart-container">
+						<div class="ajax-cart-wrapper">			
+						</div>
+					</div>
+				</div>
+			</header>
+	
+		</div>
 		<!-- Main -->		
 		<div class="main">
 			<div class="content">
