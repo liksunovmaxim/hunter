@@ -2987,7 +2987,7 @@ img.mfp-img {
 			text-align: right;
 			.s-cart__price {
 				font-size: 15px;
-				line-height: 1.2;
+				line-height: 45px;
 				color: #333;
 			}
 			.quantity {
@@ -3568,7 +3568,16 @@ form.f-user {
 				width: 66%;
 				height: 1px;
 				background-color: @second-color;
-			}			
+			}
+			.price-holder {
+				.quantity {
+			    float: left;
+			    padding: 0;
+				}
+				.s-cart__price {
+					padding-left: 40px;
+				}
+			}					
 		}
 		&__total {
 			padding-bottom: 0;
@@ -4235,6 +4244,18 @@ form.add-comments-form {
 		}
 	}
 
+	.orders {
+		.s-cart {
+			&__list {
+				.price-holder {
+					.quantity {
+						float: none;
+					}			
+				}
+			}
+		}
+	}
+
 	.orders__details>* {
     float: none;
 	}
@@ -4452,7 +4473,10 @@ form.add-comments-form {
 				padding-top: 40px;
 				padding-bottom: 40px;
 				.price-holder {
-					text-align: right;					
+					text-align: right;			
+					.quantity {
+						float: left;
+					}
 				}
 			}
 		}
