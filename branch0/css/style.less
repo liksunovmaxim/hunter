@@ -1069,6 +1069,7 @@ header{
 	}
 	li {
 	.rel;
+	.transition(~"background-color .5s linear");
 		.prod-discount {
 		    .abs;
 		    top: 0;
@@ -1101,20 +1102,13 @@ header{
 		.prod-hover{
 			font-size: 14px;
 			.abs;
-			top: 0;
+			bottom: 0;
 			left: 0;
 			opacity: 0;
 			width: 100%;
-			height: 100%;
-			background: #fff;
+			height: auto;
+			background: rgba(255,255,255,.5);
 			.transition(~"opacity .5s linear");
-			.product-info{
-				.abs;
-				bottom: 0;
-				left: 0;
-				width: 100%;
-				background: rgba(255, 255, 255, 0.5);
-			}
 			.name{
 				text-align: center;
 				text-transform: uppercase;
@@ -1180,6 +1174,10 @@ header{
 			}
 		}
 		&:hover{
+			background-color: #f5f0da;
+			&>a span {
+				opacity: 0;
+			}
 			.prod-hover{
 				opacity: 1;
 			}
@@ -1865,7 +1863,7 @@ footer{
 		}
 	}
 	.main-col {
-		// float: right;
+		overflow: hidden;		
 		background: #fff;
 		max-width: 871px;
 		margin-left: 299px;
@@ -1969,6 +1967,7 @@ footer{
 
 .catalog-set {
 	padding: 20px;
+	text-align: right;
 	&>* {
 		padding-bottom: 10px;
 	}
@@ -1979,9 +1978,9 @@ footer{
 	}
 	.left-set {
 		width: 55%;		
+		text-align: left;
 	}
 	.right-set {
-		.clr;
 		width: 42%;		
 	}
 	.catalog-set__view, .catalog-set__sort, .catalog-set__show {
@@ -2094,9 +2093,9 @@ footer{
 		}
 	}	
 	.catalog-set__show {
-		margin: 0 25px 0 0;
+		margin: 0 25px 5px 0;
 			.jq-selectbox__select-text {
-					width: 25px !important;
+					width: 15px !important;
 			}
 	}
 	.catalog-set__page {
@@ -2177,15 +2176,15 @@ footer{
 .products-list-holder {
 	margin: 0 0 15px;
 	.products-list {
-		.rel;
-		text-align: center;		
+		overflow: hidden;		
+		.rel;		
 		&>li {
-			display: inline-block;
-			vertical-align: middle;
-			padding: 0 15px;
-			width: 271px;		
+			float: left;
+			width: 32%;
+			margin: 0 2% 0 0;
+			text-align: center;			
 			&:nth-child(3n) {
-				margin: 0;
+				margin-right: 0;
 			}
 		}
 	}
@@ -3928,8 +3927,10 @@ form.add-comments-form {
 	}
 
 	.catalog-set {
+		.left-set {
+			float: left;
+		}
 		.right-set {
-			float: right;
 			width: auto;
 		}
 		.catalog-set__show {
@@ -4201,6 +4202,21 @@ form.add-comments-form {
 		}
 	}
 
+	.products-list-holder {
+		.products-list {
+			&>li {
+				width: 48%;
+				margin-right: 4%;				
+				&:nth-child(3n) {
+					margin-right: 4%;
+				}
+				&:nth-child(2n) {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
 	.s-cart {
 		&__goods, &__benefits {
 			float: none;
@@ -4422,7 +4438,7 @@ form.add-comments-form {
     margin: 20px 0 20px;
 	}
 
-	.catalog-set {
+	.catalog-set {		
 		.catalog-set__view {
 	    display: none;	    
 		}
@@ -4920,6 +4936,19 @@ form.add-comments-form {
 		}
 	}
 
+	.catalog-set {
+		text-align: left;
+		.left-set,
+		.right-set {
+			float: none;
+			display: block;
+			width: auto;			
+		}
+		.catalog-set__page {
+			float: none;
+		}
+	}
+
 	.orders {
 		padding: 20px; 
 		&__num-holder,
@@ -5052,6 +5081,19 @@ form.add-comments-form {
 		}
 	}
 
+	.products-list-holder {
+		.products-list {
+			&>li {
+				width: 90%;
+				margin: 0 5% 20px;			
+				&:nth-child(3n),
+				&:nth-child(2n) {
+					margin-right: 5%;
+				}
+			}
+		}
+	}
+
 	.quick-look {
 	 .product-prew {
 	    padding: 0 5px 0 0;
@@ -5167,12 +5209,37 @@ form.add-comments-form {
 	}
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media (max-device-height: 600px) and (orientation: landscape) {
+	.homepage-slider {
+		&.showed {
+			.category-description-holder {
+		    height: 100%!important;
+		  }		  
+		}
+		.bx-controls {
+	    bottom: 105px;
+		}		
+	}
 	.welcome-msg-holder {
 		display: none;		
 	}
 }
 
+@media (max-device-height: 400px) and (orientation: landscape) {
+	.category-description-holder {
+		.category-description {
+	    margin-bottom: 20px;
+	    .title, 
+	    .price {
+	    	font-size: 20px;
+	    }
+	    .price {
+		    padding: 10px 0;
+		    margin: 0 0 15px;  	
+	    }
+		}
+	}
+}
 
 /*==========  Mobile First Method  ==========*/
 

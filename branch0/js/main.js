@@ -309,55 +309,55 @@ var Homepage = {
 		}
 		slider1 = jQuery('#tabs-1 > ul').bxSlider({
 			controls: true,
-			slideWidth: 272,
+			slideWidth: 273,
 			minSlides: 1,
 			maxSlides: maxSlides,
 			moveSlides: 1,
-			slideMargin: 25,
+			slideMargin: 26,
 			pager: false,
 			prevSelector: '.prev-1',
 			nextSelector: '.next-1'
 		});  		
 		slider2 = jQuery('#tabs-2 > ul').bxSlider({
 			controls: true,
-			slideWidth: 272,
+			slideWidth: 273,
 			minSlides: 1,
 			maxSlides: maxSlides,
 			moveSlides: 1,
-			slideMargin: 25,
+			slideMargin: 26,
 			pager: false,
 			prevSelector: '.prev-2',
 			nextSelector: '.next-2'
 		});
 		slider3 = jQuery('#tabs-3 > ul').bxSlider({
 			controls: true,
-			slideWidth: 272,
+			slideWidth: 273,
 			minSlides: 1,
 			maxSlides: maxSlides,
 			moveSlides: 1,
-			slideMargin: 25,
+			slideMargin: 26,
 			pager: false,
 			prevSelector: '.prev-3',
 			nextSelector: '.next-3'
 		});
 		slider4 = jQuery('#tabs-4 > ul').bxSlider({
 			controls: true,
-			slideWidth: 272,
+			slideWidth: 273,
 			minSlides: 1,
 			maxSlides: maxSlides,
 			moveSlides: 1,
-			slideMargin: 25,
+			slideMargin: 26,
 			pager: false,
 			prevSelector: '.prev-4',
 			nextSelector: '.next-4'
 		});
 		slider5 = jQuery('#tabs-5 > ul').bxSlider({
 			controls: true,
-			slideWidth: 272,
+			slideWidth: 273,
 			minSlides: 1,
 			maxSlides: maxSlides,
 			moveSlides: 1,
-			slideMargin: 25,
+			slideMargin: 26,
 			pager: false,
 			prevSelector: '.prev-5',
 			nextSelector: '.next-5'
@@ -411,11 +411,11 @@ var Homepage = {
 		}			
 		sliderBestSell = jQuery('.best-sell-block').find('.carousel-holder > ul').bxSlider({
 			controls: true,
-			slideWidth: 272,
+			slideWidth: 273,
 			minSlides: 1,
 			maxSlides: maxSlides,
 			moveSlides: 1,
-			slideMargin: 25,
+			slideMargin: 26,
 			pager: false,
 			prevSelector: '.prev-sell',
 			nextSelector: '.next-sell'
@@ -437,11 +437,11 @@ var Homepage = {
 		}
 		sliderConsider = jQuery('.consider-block').find('.carousel-holder > ul').bxSlider({
 			controls: true,
-			slideWidth: 272,
+			slideWidth: 273,
 			minSlides: 1,
 			maxSlides: maxSlides,
 			moveSlides: 1,
-			slideMargin: 25,
+			slideMargin: 26,
 			pager: false,
 			prevSelector: '.prev-cons',
 			nextSelector: '.next-cons'			
