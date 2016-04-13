@@ -1082,14 +1082,17 @@ header{
 		    line-height: 40px;
 		    text-align: center;
 		}
-		a{
+		&>a{
 			color: @base-color;
 			text-decoration: none;
-			display: inline-block;
+			display: block;
+			.transition(~"opacity .5s linear");
 			span{
 				display: block;
 				font-size: 14px;
 				text-align: center;
+				opacity: 1;
+				.transition(~"opacity .5s linear");
 				&.name{
 					text-transform: uppercase;
 					margin: 14px 0 13px;
@@ -1108,12 +1111,18 @@ header{
 			width: 100%;
 			height: auto;
 			background: rgba(255,255,255,.5);
+			text-align: center;
 			.transition(~"opacity .5s linear");
 			.name{
-				text-align: center;
+				display: inline-block;				
 				text-transform: uppercase;
 				font-size: 14px;
 				padding: 25px 0 19px;
+			}
+			a {
+				color: @base-color;
+				text-decoration: none;
+				display: block;				
 			}
 			.quick-link-holder{
 				text-align: center;
@@ -1137,6 +1146,7 @@ header{
 				background: #fff;
 				font-size: 17px;
 				padding: 3px 0 3px 12px;
+				text-align: left;
 				.rel;
 				.fa-list-alt{
 					.abs;
@@ -1154,26 +1164,37 @@ header{
 				}
 			}
 			.price-container{
+				.rel;
+				height: 40px;
+		    padding: 0 0 0 10px;
 				background: @second-color;
 				color: #fff;
-				padding: 13px 0 11px 12px;
-				.rel;
+				text-align: left;
+		    line-height: 40px;				
 				a{
+					float: right;
 					text-indent: -9999px;
+					width: 40px;
+					height: 40px;				
 					&:before{
 						text-indent: 0;
 						.abs;
 					    right: 0;
 					    top: 0;
+					    height: 40px;
+					    width: 40px;
 					    background: #49543c;
 					    color: #ccc;
-					    padding: 10px;
+					    line-height: 40px;
 					    font-size: 20px;
+					    text-align: center;					    
 					}
 				}
 			}
 		}
-		&:hover{
+		&:hover,
+		&:focus,
+		&:active {	
 			background-color: #f5f0da;
 			&>a span {
 				opacity: 0;
@@ -1862,8 +1883,7 @@ footer{
 			}			
 		}
 	}
-	.main-col {
-		overflow: hidden;		
+	.main-col {	
 		background: #fff;
 		max-width: 871px;
 		margin-left: 299px;
@@ -2028,6 +2048,7 @@ footer{
 				background: #E6E6E6;
 			}
 			.jq-selectbox__select-text {
+					.user-select;
 					width: 54px;
 					white-space: nowrap;
 			}

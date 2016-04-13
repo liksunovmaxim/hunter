@@ -99,7 +99,7 @@ var Mobile = {
             self.isMobileDevice = true;
             jQuery('body').addClass('mobile-device');
         }
-        self.resize();
+        self.resize();      
     },
 
     resize: function(){
@@ -571,6 +571,10 @@ var Homepage = {
 	/* Remove home link on main page */
 	removeHomeLink: function() {
 		jQuery('.home').find('.logo').removeAttr('href');		
+	},
+	correctHoverTouch: function() {
+		jQuery('.products-list li').on('click touchend', 'a', function(event) {
+		});
 	}
 };
 jQuery(function(){	
@@ -593,7 +597,8 @@ jQuery(function(){
 	Homepage.postSlider();
 	ScrollAnimation.init();	
 	Homepage.removeHomeLink();		
-	Homepage.modal();		
+	Homepage.modal();
+	Homepage.correctHoverTouch();
 	jQuery(window).on('load', function(){		
 		Homepage.mainMenu();	
 		Homepage.tabsSliderCorrect();			
