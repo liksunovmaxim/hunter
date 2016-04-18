@@ -1808,6 +1808,7 @@ footer{
 /* Page Top Image */
 .top-image-holder {
 	.rel;
+  margin-top: 75px;
 	background: url(../images/catalog-top-1.jpg) 50% 100% no-repeat;
 	background-size: cover;
 	.top-image {
@@ -2455,12 +2456,20 @@ img.mfp-img {
   width:auto;
   margin: 0 auto;
   max-width: 1105px;
-}
-
-.quick-look {
-	.product-prew, .product-content-holder {
-		display: table-cell;
-		vertical-align: top;	
+  overflow: hidden;  
+  z-index: 1000;
+	.product-var,
+	.product-content-holder  {
+		float: left;
+	}
+	.product-var {
+		width: 44.54%;
+	}
+	.product-content-holder {
+		width: 55.46%;
+		.product-content {
+			padding: 0 20% 0 7%;
+		}
 	}
 	.product-content-holder {
 		.product-content {
@@ -2477,40 +2486,101 @@ img.mfp-img {
 			}
 		}
 	}
-	.product-prew {
-		text-align: left;
-		width: 22.45%;
-		.product-prew__list {
-			max-height: 585px;
-			overflow: hidden;
-	    font-size: 0;
-	    line-height: 0;
-	    li {
-	    	padding: 1px 0;
-	    	cursor: pointer;
-	    }
-		}
-	}
 }	
 
-.quick-look-window {
+.product-var {
 	.rel;
-    overflow: hidden;
-    z-index: 1000;
-	.image-holder, .product-modal-holder  {
+	overflow: hidden;	
+	.bx-wrapper,
+	&__pager {
 		float: left;
 	}
-	.image-holder {
-		width: 37.13%;
-	    font-size: 0;
-	    line-height: 0;
+
+	.bx-wrapper {
+		width: 80%;
+		text-align: center;		
 	}
-	.product-modal-holder {
-		width: 62.87%;
-		.product-modal {
-			display: table;
-		}	
+	&__pager {
+		width: 20%;
+		font-size: 0;
+		line-height: 0;		
+		li {
+			background-color: #f2f2f2;
+			display: block;
+			text-align: center;
+			margin: 0 0 2px;
+			.transition(~'background-color .2s linear');
+			&:hover,
+			.active {
+				background-color: #fafafa;
+			}
+			a {
+				display: block;
+		    padding: 15px 5px;
+				text-align: center;		
+				img {
+					max-height: 105px;
+				}
+			}
+		}
+	}	
+	.controls{
+	display: none;		
+	.abs;
+	left: 0;
+	bottom: 0;
+	z-index: 10;
+	.prev,.next{
+		float: left;
+		font-size: 15px;
+		.rel;
+		a{
+			display: inline-block;
+			width: 32px;
+			height: 64px;
+			background: @second-color;
+			text-indent: -9999px;
+			.transition(~"box-shadow .2s linear");
+			&:before,&:after{
+				content: '';
+				width: 21px;
+				height: 4px;
+				.abs;
+				top: 36px;
+				left: 4px;
+				background: #fff;
+				border-radius: 0 3px 3px 0;
+				.transform(~"rotate(45deg)");
+			}
+			&:after{
+				.transform(~"rotate(-45deg)");
+				top: 24px;
+			}
+			&:hover{
+				box-shadow: inset 0 65px 0 0 lighten(@second-color, 20%);
+			}
+		}
 	}
+	.next{
+		a{
+			&:before{
+				left: auto;
+				right: 4px;
+				.transform(~"rotate(-45deg)");
+				border-radius: 3px 0 0 3px;
+			}
+			&:after{
+				left: auto;
+				right: 4px;
+				.transform(~"rotate(45deg)");
+				border-radius: 3px 0 0 3px;
+			}
+			&:hover{
+				box-shadow: inset 0 -65px 0 0 lighten(@second-color, 20%);
+			}
+		}
+	}
+}
 }
 
 /* Product Holder (Modal and Product Page) */
@@ -4380,14 +4450,6 @@ form.add-comments-form {
 	.category-description-holder{
 		.category-description{
 			max-width: 420px;
-			.price {
-
-			}
-			// .title {
-			// 	span {
-			// 		white-space: normal;
-			// 	}
-			// }
 		}
 	}
 
@@ -4414,18 +4476,6 @@ form.add-comments-form {
 		}	
 		.shop-options__filters {
 			display: none;		
-		}
-	}
-
-	.quick-look-window {
-		.image-holder, .product-modal-holder  {
-			float: none;
-		}
-		.image-holder {
-			display: none;			
-		}
-		.product-modal-holder {
-			width: 100%;
 		}
 	}
 
@@ -4637,6 +4687,64 @@ form.add-comments-form {
 	    bottom: 10px;
 	    left: 0;
 		}
+	}
+	.quick-look {
+		.product-var,
+		.product-content-holder  {
+			float: none;
+			width: auto;
+		}
+		.product-var {
+			padding: 0 20px;
+			margin: 0 0 20px;
+		}
+		.product-content-holder {
+			.product-content {
+				padding: 0 20px;
+			}
+		}
+	}	
+	.product-var {
+		text-align: center;
+		.bx-wrapper,
+		&__pager {
+			float: none;
+			width: 100%;		
+		}
+		.bx-wrapper {
+			display: inline-block;			
+			padding: 0 20px;
+		}
+		&__pager {
+			text-align: left;
+			li {
+				display: inline-block;
+				vertical-align: middle;
+				width: 90px;				
+				margin: 0 5px 5px 0;
+				a {
+			    padding: 15px 10px;
+					text-align: center;		
+				}
+			}			
+		}
+		.controls {
+			display: block;			
+			bottom: auto;
+			top: 40%;
+			left: 0;
+			margin-top: -32px;
+			width: 100%;
+			.prev-var,.next-var {
+				.abs;
+				left: 4px;
+				z-index: 10;
+			}
+			.next-var {
+				left: auto;
+				right: 4px;
+			}
+		}	
 	}
 }
 
