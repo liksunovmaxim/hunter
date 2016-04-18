@@ -213,7 +213,9 @@ var Homepage = {
 	},
 	mainBanner: function(){
 		var self = this;
-		self.resize();
+		if (jQuery(window).width() <= 1024) {
+			self.resize();
+		}
 	},
 	/* Main Slider Resize */
 	resize: function(){
@@ -223,9 +225,9 @@ var Homepage = {
 		self.slide.height(
 			jQuery(window).height() - jQuery('header').height() + Math.abs(parseInt(jQuery('header').css('marginBottom')))
 		);
-		jQuery('.category-description-holder').height(
-			self.slide.height() - jQuery('.welcome-msg-holder').innerHeight()
-		);
+		// jQuery('.category-description-holder').height(
+		// 	self.slide.height() - jQuery('.welcome-msg-holder').innerHeight()
+		// );
 	},
 	/* Main Slider */	
 	slider: function(){
@@ -300,12 +302,16 @@ var Homepage = {
 		    winWidth = jQuery(window).width();
 		if (winWidth < 684) {
 		    maxSlides = 1;
+		    slideMarginN = 0;
 		} else if ((winWidth >= 684)&&(winWidth < 986)) {
 		    maxSlides = 2;
+		    slideMarginN = 0;
 		} else if ((winWidth >= 986)&&(winWidth < 1288)) {
 		    maxSlides = 3;
+		    slideMarginN = 0;
 		} else {
 				maxSlides = 4;
+				slideMarginN = 26;
 		}
 		slider1 = jQuery('#tabs-1 > ul').bxSlider({
 			controls: true,
@@ -313,7 +319,7 @@ var Homepage = {
 			minSlides: 1,
 			maxSlides: maxSlides,
 			moveSlides: 1,
-			slideMargin: 26,
+			slideMargin: slideMarginN,
 			pager: false,
 			prevSelector: '.prev-1',
 			nextSelector: '.next-1'
@@ -324,7 +330,7 @@ var Homepage = {
 			minSlides: 1,
 			maxSlides: maxSlides,
 			moveSlides: 1,
-			slideMargin: 26,
+			slideMargin: slideMarginN,
 			pager: false,
 			prevSelector: '.prev-2',
 			nextSelector: '.next-2'
@@ -335,7 +341,7 @@ var Homepage = {
 			minSlides: 1,
 			maxSlides: maxSlides,
 			moveSlides: 1,
-			slideMargin: 26,
+			slideMargin: slideMarginN,
 			pager: false,
 			prevSelector: '.prev-3',
 			nextSelector: '.next-3'
@@ -346,7 +352,7 @@ var Homepage = {
 			minSlides: 1,
 			maxSlides: maxSlides,
 			moveSlides: 1,
-			slideMargin: 26,
+			slideMargin: slideMarginN,
 			pager: false,
 			prevSelector: '.prev-4',
 			nextSelector: '.next-4'
@@ -371,7 +377,7 @@ var Homepage = {
 		tabsTransformAll = jQuery('.tabs-wrapper .tabs')
 												.find('.products-list')
 												.css('transform', tabsTransFirst);	
-	},
+	},	
 	/* Recent Posts Slider */
 	postSlider: function(){
 		var self = this;
@@ -458,6 +464,17 @@ var Homepage = {
 			  pagerCustom: '.carousel-pager',
 				prevSelector: '.prev-prod',
 				nextSelector: '.next-prod'			    
+		});
+	},
+	/* Quick Launch Slider */
+	productVarSlider: function(){
+		var self = this;
+		sliderProduct = jQuery('.product-var-slider').bxSlider({
+				controls: false,
+				slideWidth: 410,
+				minSlides: 1,
+				maxSlides: 1,				
+			  pagerCustom: '.product-var-pager'
 		});
 	},
 	/* Pages number & products priority show select stylize */
@@ -600,8 +617,9 @@ jQuery(function(){
 	Homepage.modal();
 	Homepage.correctHoverTouch();
 	jQuery(window).on('load', function(){		
-		Homepage.mainMenu();	
-		Homepage.tabsSliderCorrect();			
+		Homepage.mainMenu();			
+		Homepage.tabsSliderCorrect();
+		Homepage.productVarSlider();
 	});
 
 	jQuery(window).on('orientationchange resize', function(){
