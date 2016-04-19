@@ -211,33 +211,35 @@ var Homepage = {
 		  self.navMain.slideToggle('fast');
 		});		
 	},
-	mainBanner: function(){
-		var self = this;
-		if (jQuery(window).width() <= 1024) {
-			self.resize();
-		}
-	},
 	/* Main Slider Resize */
 	resize: function(){
 		var self = this;
-		self.slide = jQuery('.homepage-slider').find('li');
-		self.welcomeMsgHolder = jQuery('.welcome-msg-holder').innerHeight()
-		self.slide.height(
-			jQuery(window).height() - jQuery('header').height() + Math.abs(parseInt(jQuery('header').css('marginBottom')))
-		);
+		self.sliderHome = jQuery('.homepage-slider');
+		self.slideHomeOne = jQuery('.homepage-slider').find('li');
+		// self.welcomeMsgHolder = jQuery('.welcome-msg-holder').innerHeight()
+		self.sliderHome.height(jQuery(window).height());
+		self.slideHomeOne.height(jQuery(window).height()
+			// jQuery(window).height() - jQuery('header').height() + Math.abs(parseInt(jQuery('header').css('marginBottom')))
+		);		
 		// jQuery('.category-description-holder').height(
 		// 	self.slide.height() - jQuery('.welcome-msg-holder').innerHeight()
-		// );
+		// );		
 	},
 	/* Main Slider */	
 	slider: function(){
-		var self = this;
-		jQuery('.homepage-slider').find('ul').bxSlider({
+		var self = this;	
+		self.mainSlider = jQuery('.homepage-slider').find('ul').bxSlider({
 			pager:false,
-			// auto: true,
+			auto: true,
 			pause: 4000
 		});
 	},
+	mainBanner: function(){
+		var self = this;		
+		if (jQuery(window).width() <= 1024) {
+			self.resize();			
+		}
+	},	
 	/* Welcome Message */
 	welcomeMsg: function(){
 		var self = this;
@@ -295,75 +297,81 @@ var Homepage = {
 			} e.preventDefault();
 		});
 	},
+	/* Tabs Sliders Resize*/
+	tabsSliderResize: function() {
+		var self = this;
+		self.maxTabSlides = 1;
+		self.slideTabMargin = 26;
+		self.winWidth = jQuery(window).width();
+		if (self.winWidth < 684) {
+		    self.maxTabSlides = 1;
+		    self.slideTabMargin = 0;
+		} else if ((self.winWidth >= 684)&&(self.winWidth < 986)) {
+		    self.maxTabSlides = 2;
+		    self.slideTabMargin = 0;
+		} else if ((self.winWidth >= 986)&&(self.winWidth < 1288)) {
+		    self.maxTabSlides = 3;
+		    self.slideTabMargin = 0;
+		} else {
+				self.maxTabSlides = 4;
+				self.slideTabMargin = 26;
+		}
+	},	
 		/* Main Products Tabs Sliders */
 	tabsSliders: function(){
 		var self = this;
-		var maxSlides,
-		    winWidth = jQuery(window).width();
-		if (winWidth < 684) {
-		    maxSlides = 1;
-		    slideMarginN = 0;
-		} else if ((winWidth >= 684)&&(winWidth < 986)) {
-		    maxSlides = 2;
-		    slideMarginN = 0;
-		} else if ((winWidth >= 986)&&(winWidth < 1288)) {
-		    maxSlides = 3;
-		    slideMarginN = 0;
-		} else {
-				maxSlides = 4;
-				slideMarginN = 26;
-		}
-		slider1 = jQuery('#tabs-1 > ul').bxSlider({
+		self.tabsSliderResize();
+		self.tabSlider1 = jQuery('#tabs-1 > ul').bxSlider({
 			controls: true,
 			slideWidth: 273,
 			minSlides: 1,
-			maxSlides: maxSlides,
+			maxSlides: self.maxTabSlides,
 			moveSlides: 1,
-			slideMargin: slideMarginN,
+			slideMargin: self.slideTabMargin,
 			pager: false,
 			prevSelector: '.prev-1',
 			nextSelector: '.next-1'
-		});  		
-		slider2 = jQuery('#tabs-2 > ul').bxSlider({
+		});  
+		self.tabSlider2 = jQuery('#tabs-2 > ul').bxSlider({
 			controls: true,
 			slideWidth: 273,
 			minSlides: 1,
-			maxSlides: maxSlides,
+			maxSlides: self.maxTabSlides,
 			moveSlides: 1,
-			slideMargin: slideMarginN,
+			slideMargin: self.slideTabMargin,
 			pager: false,
 			prevSelector: '.prev-2',
 			nextSelector: '.next-2'
 		});
-		slider3 = jQuery('#tabs-3 > ul').bxSlider({
+		self.tabSlider3 = jQuery('#tabs-3 > ul').bxSlider({
 			controls: true,
 			slideWidth: 273,
 			minSlides: 1,
-			maxSlides: maxSlides,
+			maxSlides: self.maxTabSlides,
 			moveSlides: 1,
-			slideMargin: slideMarginN,
+			slideMargin: self.slideTabMargin,
 			pager: false,
 			prevSelector: '.prev-3',
 			nextSelector: '.next-3'
 		});
-		slider4 = jQuery('#tabs-4 > ul').bxSlider({
+		self.tabSlider4 = jQuery('#tabs-4 > ul').bxSlider({
 			controls: true,
 			slideWidth: 273,
 			minSlides: 1,
-			maxSlides: maxSlides,
+			maxSlides: self.maxTabSlides,
 			moveSlides: 1,
-			slideMargin: slideMarginN,
+			slideMargin: self.slideTabMargin,
 			pager: false,
 			prevSelector: '.prev-4',
 			nextSelector: '.next-4'
 		});
-		slider5 = jQuery('#tabs-5 > ul').bxSlider({
+		self.tabSlider5 = jQuery('#tabs-5 > ul').bxSlider({
 			controls: true,
 			slideWidth: 273,
 			minSlides: 1,
-			maxSlides: maxSlides,
+			maxSlides: self.maxTabSlides,
 			moveSlides: 1,
-			slideMargin: 26,
+			slideMargin: self.slideTabMargin,
 			pager: false,
 			prevSelector: '.prev-5',
 			nextSelector: '.next-5'
@@ -456,7 +464,7 @@ var Homepage = {
 	/* Product Page Slider */
 	productSlider: function(){
 		var self = this;
-		sliderProduct = jQuery('.product-photo').find('.carousel-holder > ul').bxSlider({
+		sliderProduct = jQuery('.product-photo').find('.product-carousel').bxSlider({
 				controls: true,
 				slideWidth: 502,
 				minSlides: 1,
@@ -465,22 +473,6 @@ var Homepage = {
 				prevSelector: '.prev-prod',
 				nextSelector: '.next-prod'			    
 		});
-	},
-	/* Quick Launch Slider */
-	productVarSlider: function(){
-		var self = this;
-		jQuery('.quick-look-btn').on('click', function () {
-			productSliderVar = jQuery('.product-var__slider').bxSlider({
-					controls: true,
-					slideWidth: 400,
-					minSlides: 1,
-					maxSlides: 1,	
-				  pagerCustom: '.product-var__pager',
-	  			prevSelector: '.prev-var',
-					nextSelector: '.next-var',
-					preloadImages: 'all'
-			});
-		});		
 	},
 	/* Pages number & products priority show select stylize */
 	formStyler: function(){
@@ -535,6 +527,7 @@ var Homepage = {
 		});
 		jQuery('.quick-look-btn-ajax').magnificPopup({
 			type: 'ajax',
+			overflowY: 'scroll',
 			showClsBtn: true,
 			closeMarkup: '<button title="%title%" class="mfp-close"></button>'			
 		});	
@@ -621,17 +614,20 @@ jQuery(function(){
 	Homepage.removeHomeLink();		
 	Homepage.modal();
 	Homepage.correctHoverTouch();
-	Homepage.productVarSlider();		
 	jQuery(window).on('load', function(){		
 		Homepage.mainMenu();			
 		Homepage.tabsSliderCorrect();
+		Homepage.resize();
 	});
 
 	jQuery(window).on('orientationchange resize', function(){
-		Homepage.mainMenu();
 		Mobile.resize();
-		// Homepage.resize();
+		Homepage.tabsSliderResize();
 		// ScrollAnimation.resize();
+	});
+
+	jQuery(window).on('orientationchange', function(){
+		Homepage.mainBanner();
 	});
 
 	jQuery(window).on('scroll', function(){
