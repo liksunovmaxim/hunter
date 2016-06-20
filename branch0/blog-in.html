@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Hunter</title>
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">	
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript" src="js/angular.min.js"></script>
-	<script type="text/javascript" src="js/controllers.js"></script>
 	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-	<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
-	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/responsive-tables.js"></script>	
 	<script type="text/javascript" src="js/main.js"></script>
-	<title>Hunter</title>
 </head>
 <body class="blog">
 	<div class="wrapper">
 		<!-- Header -->
-		<!-- <div class="header-holder" ng-include=" 'header.html' "></div> -->
 		<div class="header-holder">
 			<header>
 				<div class="header-wrapper">
@@ -408,7 +407,7 @@
 			<div class="blog-block-holder">
 				<div class="hp-section blog-block slow-show" data-timeline="100">
 					<!-- Posts Slider  -->
-					<div class="carousel-holder">
+					<div class="carousel-holder blog-carousel-holder">
 						<div class="title">Recent post</div>
 						<div class="controls-holder">
 							<div class="prev-post"></div>
@@ -515,7 +514,129 @@
 			</div>
 		</div>	
 		<!-- Footer -->
-		<footer class="slow-show" ng-include=" 'footer.html' " data-timeline="100"></footer>
+		<footer class="slow-show" data-timeline="100">
+	<div class="footer-container">
+		<div class="footer-wrapper">
+		<!-- Footer Links -->
+			<ul class="footer-services">
+				<li>
+					<div class="title">
+						Our stores
+					</div>
+					<address>
+						Italy<br>
+						Massimo Pinarelli<br>
+						Mobile: <a href="tel:+39-393-33-26-294">+39 393 33 26 294</a>
+					</address>
+					<address>
+						Norway<br>
+						Frits Stephansen<br>
+						Mobile: <a href="tel:+39-393-33-26-294">+47 900 440 18</a>
+					</address>
+					<div class="social">
+						<ul>
+							<li><a class="fa fa-facebook" href="#">facebook</a></li>
+							<li><a class="fa fa-twitter" href="#">twitter</a></li>
+							<li><a class="fa fa-google" href="#">gplus</a></li>
+							<li><a class="fa fa-vimeo" href="#">vimeo</a></li>
+							<li><a class="fa fa-rss" href="#">rss</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="title">
+						Blog posts
+					</div>
+					<ul class="posts">
+						<li>
+							<div class="post-title">
+								<a href="blog-in.html">Hunters versus tailors</a>
+							</div>
+							<div class="post-descr">
+								Several times a year the R&amp;D team meets up with The Testr.
+							</div>
+						</li>
+						<li>
+							<div class="post-title">
+								<a href="blog-in.html">The reality test</a>
+							</div>
+							<div class="post-descr">
+								The sample products are put through the Härkila Reality
+							</div>
+						</li>
+						<li>
+							<div class="post-title">
+								<a href="blog-in.html">Hunting for perfection</a>
+							</div>
+							<div class="post-descr">
+								The Test Team strives to make the gear as functional as possible, while R&amp;D 
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<div class="title">
+						Support
+					</div>
+					<ul class="footer-links">
+						<li><a href="#">Terms &amp; conditions</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Press</a></li>
+						<li><a href="#">Payment</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="#">Refunds</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Track order</a></li>
+						<li><a href="#">Contact us</a></li>
+						<li><a href="#">Services</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- Copyrights -->
+	<div class="copyrights">
+		<div class="copyrights-holder">
+			<div class="copyrights-wrapper">
+				<div class="left-part">
+					&copy; 2015 <a href="http://oytheme.com/">Oytheme.com</a>  -  e-Commerce Template  -  Powered with love by OYtheme  
+				</div>
+				<div class="payment-block">
+					<img title="payment methods" src="images/payments.png" height="20" width="188" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Login Popup -->
+	<div id="login-modal" class="login-modal mfp-hide">	
+				<div class="header">hunter</div>
+				<div class="subtitle">I am a regular customer</div>
+				<form action="post" class="login-in-form">
+					<label>Email address
+						<input type="email" name="email" required>
+					</label>
+					<label>Password
+						<input type="password" name="email" required>
+					</label>
+					<div class="btn-wrap">
+						<input type="submit" value="enter">
+						<a href="#" class="f-forgot-btn">I forgot password</a>					
+					</div>
+				</form>
+				<div class="soc-enter-holder">
+					<div class="soc-enter">
+						<div class="title">Log in as a user</div>
+						<ul class="share-group var-box">
+		    				<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+		    				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+		    				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+		    			</ul>
+					</div>
+				</div>
+	</div>		
+</footer>
+
 	</div>
 </body>
 </html>

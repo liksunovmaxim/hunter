@@ -216,21 +216,15 @@ var Homepage = {
 		var self = this;
 		self.sliderHome = jQuery('.homepage-slider');
 		self.slideHomeOne = jQuery('.homepage-slider').find('li');
-		// self.welcomeMsgHolder = jQuery('.welcome-msg-holder').innerHeight()
 		self.sliderHome.height(jQuery(window).height());
-		self.slideHomeOne.height(jQuery(window).height()
-			// jQuery(window).height() - jQuery('header').height() + Math.abs(parseInt(jQuery('header').css('marginBottom')))
-		);		
-		// jQuery('.category-description-holder').height(
-		// 	self.slide.height() - jQuery('.welcome-msg-holder').innerHeight()
-		// );		
+		self.slideHomeOne.height(jQuery(window).height());
 	},
 	/* Main Slider */	
 	slider: function(){
 		var self = this;	
 		self.mainSlider = jQuery('.homepage-slider').find('ul').bxSlider({
 			pager:false,
-			auto: true,
+			auto: false,
 			pause: 4000
 		});
 	},
@@ -297,137 +291,80 @@ var Homepage = {
 			} e.preventDefault();
 		});
 	},
-	/* Tabs Sliders Resize*/
-	tabsSliderResize: function() {
-		var self = this;
-		self.maxTabSlides = 1;
-		self.slideTabMargin = 26;
-		self.winWidth = jQuery(window).width();
-		if (self.winWidth < 684) {
-		    self.maxTabSlides = 1;
-		    self.slideTabMargin = 0;
-		} else if ((self.winWidth >= 684)&&(self.winWidth < 986)) {
-		    self.maxTabSlides = 2;
-		    self.slideTabMargin = 0;
-		} else if ((self.winWidth >= 986)&&(self.winWidth < 1288)) {
-		    self.maxTabSlides = 3;
-		    self.slideTabMargin = 0;
-		} else {
-				self.maxTabSlides = 4;
-				self.slideTabMargin = 26;
-		}
-	},	
 		/* Main Products Tabs Sliders */
 	tabsSliders: function(){
 		var self = this;
-		self.tabsSliderResize();
-		self.tabSlider1 = jQuery('#tabs-1 > ul').bxSlider({
-			controls: true,
-			slideWidth: 273,
+		self.tabSlider1 = jQuery('#tabs-1 .carousel').bxSlider({
+			controls: true,			
 			minSlides: 1,
-			maxSlides: self.maxTabSlides,
+			maxSlides: 4,
 			moveSlides: 1,
-			slideMargin: self.slideTabMargin,
+			slideMargin: 26,
 			pager: false,
 			prevSelector: '.prev-1',
 			nextSelector: '.next-1'
 		});  
-		self.tabSlider2 = jQuery('#tabs-2 > ul').bxSlider({
+		self.tabSlider2 = jQuery('#tabs-2 .carousel').bxSlider({
 			controls: true,
-			slideWidth: 273,
 			minSlides: 1,
-			maxSlides: self.maxTabSlides,
+			maxSlides: 4,
 			moveSlides: 1,
-			slideMargin: self.slideTabMargin,
+			slideMargin: 26,
 			pager: false,
 			prevSelector: '.prev-2',
 			nextSelector: '.next-2'
 		});
-		self.tabSlider3 = jQuery('#tabs-3 > ul').bxSlider({
+		self.tabSlider3 = jQuery('#tabs-3 .carousel').bxSlider({
 			controls: true,
-			slideWidth: 273,
 			minSlides: 1,
-			maxSlides: self.maxTabSlides,
+			maxSlides: 4,
 			moveSlides: 1,
-			slideMargin: self.slideTabMargin,
+			slideMargin: 26,
 			pager: false,
 			prevSelector: '.prev-3',
 			nextSelector: '.next-3'
 		});
-		self.tabSlider4 = jQuery('#tabs-4 > ul').bxSlider({
+		self.tabSlider4 = jQuery('#tabs-4 .carousel').bxSlider({
 			controls: true,
-			slideWidth: 273,
 			minSlides: 1,
-			maxSlides: self.maxTabSlides,
+			maxSlides: 4,
 			moveSlides: 1,
-			slideMargin: self.slideTabMargin,
+			slideMargin: 26,
 			pager: false,
 			prevSelector: '.prev-4',
 			nextSelector: '.next-4'
 		});
-		self.tabSlider5 = jQuery('#tabs-5 > ul').bxSlider({
+		self.tabSlider5 = jQuery('#tabs-5 .carousel').bxSlider({
 			controls: true,
-			slideWidth: 273,
 			minSlides: 1,
-			maxSlides: self.maxTabSlides,
+			maxSlides: 4,
 			moveSlides: 1,
-			slideMargin: self.slideTabMargin,
+			slideMargin: 26,
 			pager: false,
 			prevSelector: '.prev-5',
 			nextSelector: '.next-5'
 		});    		
 	},
-	/*   Tabs indents correct at start  */
-	tabsSliderCorrect: function (){
-		tabsTransFirst = jQuery('.tabs-wrapper .tabs:first-child')
-												.find('.products-list')
-												.css('transform');
-		tabsTransformAll = jQuery('.tabs-wrapper .tabs')
-												.find('.products-list')
-												.css('transform', tabsTransFirst);	
-	},	
 	/* Recent Posts Slider */
 	postSlider: function(){
-		var self = this;
-		var maxSlides,
-				slideWidth,
-		    winWidth = jQuery(window).width();
-		if (winWidth < 684) {
-		    maxSlides = 1;
-		    slideWidth = 560;
-		} else {
-				maxSlides = 2;
-				slideWidth = 238;
-		}		
+		var self = this;	
 		self.sliderBlog = jQuery('.blog-carousel').bxSlider({
 			controls: true,
-			slideWidth: slideWidth,
 			minSlides: 1,
-			maxSlides: maxSlides,
+			maxSlides: 2,
 			moveSlides: 1,
-			slideMargin: 60,
 			pager: false,
 			prevSelector: '.prev-post',
 			nextSelector: '.next-post'
 		});
 	},
 	/* Best Sell Slider */
-	bestSellSlider: function(){
-		var self = this;
-		var maxSlides,
-		    winWidth = jQuery(window).width();
-		if (winWidth < 684) {
-		    maxSlides = 1;
-		} else if ((winWidth >= 684)&&(winWidth < 986)) {
-		    maxSlides = 2;
-		} else {
-				maxSlides = 3;
-		}			
-		sliderBestSell = jQuery('.best-sell-block').find('.carousel-holder > ul').bxSlider({
+	bestSellSlider: function(){	
+		sliderBestSell = jQuery('.best-sell-block').find('.carousel-holder .products-list').bxSlider({
 			controls: true,
 			slideWidth: 273,
 			minSlides: 1,
-			maxSlides: maxSlides,
+			maxSlides: 3,
 			moveSlides: 1,
 			slideMargin: 26,
 			pager: false,
@@ -438,22 +375,11 @@ var Homepage = {
 	/* Consider Slider */
 	considerSlider: function(){
 		var self = this;
-		var maxSlides,
-		    winWidth = jQuery(window).width();
-		if (winWidth < 684) {
-		    maxSlides = 1;
-		} else if ((winWidth >= 684)&&(winWidth < 986)) {
-		    maxSlides = 2;
-		} else if ((winWidth >= 986)&&(winWidth < 1160)) {
-		    maxSlides = 3;
-		} else {
-				maxSlides = 4;
-		}
-		sliderConsider = jQuery('.consider-block').find('.carousel-holder > ul').bxSlider({
+		sliderConsider = jQuery('.consider-block').find('.carousel-holder .products-list').bxSlider({
 			controls: true,
 			slideWidth: 273,
 			minSlides: 1,
-			maxSlides: maxSlides,
+			maxSlides: 4,
 			moveSlides: 1,
 			slideMargin: 26,
 			pager: false,
@@ -522,7 +448,7 @@ var Homepage = {
 				},
 				zoom: {
 					enabled: true,
-					duration: 300 // don't foget to change the duration also in CSS
+					duration: 300
 				}				
 		});
 		jQuery('.quick-look-btn-ajax').magnificPopup({
@@ -616,14 +542,11 @@ jQuery(function(){
 	Homepage.correctHoverTouch();
 	jQuery(window).on('load', function(){		
 		Homepage.mainMenu();			
-		Homepage.tabsSliderCorrect();
 		Homepage.resize();
 	});
 
 	jQuery(window).on('orientationchange resize', function(){
 		Mobile.resize();
-		Homepage.tabsSliderResize();
-		// ScrollAnimation.resize();
 	});
 
 	jQuery(window).on('orientationchange', function(){
@@ -634,32 +557,3 @@ jQuery(function(){
 		ScrollAnimation.onScroll();
 	});
 });
-
-
-
-// jQuery(function(){	
-// 	Homepage.cart();
-// 	Homepage.formStyler();	
-// 	Mobile.init();
-// 	Homepage.hideCheckbox();
-// 	Homepage.quantityBlock();
-// 	Homepage.showFilter();
-// 	Homepage.bestSellSlider();
-// 	Homepage.considerSlider();
-// 	Homepage.productSlider();		
-// 	Homepage.introBlockUp();
-// 	Homepage.customTabs();
-// 	Homepage.postSlider();
-// 	jQuery(window).on('load', function(){			
-// 		Homepage.mainBanner();		
-// 		Homepage.welcomeMsg();		
-// 		Homepage.slider();
-// 		Homepage.mainMenu();
-// 		Homepage.menuBtn();			
-// 		Homepage.tabsSliders();
-// 		ScrollAnimation.init();	
-// 		Homepage.removeHomeLink();		
-// 		Homepage.tabsSliderCorrect();
-// 		Homepage.modal();		
-// 	});
-// }
